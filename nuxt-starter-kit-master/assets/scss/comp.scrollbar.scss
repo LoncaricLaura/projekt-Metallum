@@ -1,0 +1,20 @@
+.scrollbar {
+	scrollbar-color: $primary-color $primary-color-light;
+	scrollbar-width: thin;
+
+	&::-webkit-scrollbar-track {
+		border-radius: 10px;
+		background-color: $primary-color-light;
+	}
+
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+		background-color: $primary-color-light;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: $primary-color;
+	}
+}

@@ -1,0 +1,24 @@
+/* no outline for non-keyboard-inputs elements */
+button:focus,
+select:focus {
+	outline: none;
+}
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) a:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+	outline: none;
+}
+
+/* a subtle focus style for keyboard-input elements */
+.text-input:focus {
+	outline: 1px solid #aaa;
+
+	/* Adjust to suit your tastes */
+}
+
+body.user-is-tabbing *:focus {
+	outline: 1px solid black !important;
+}

@@ -1,0 +1,49 @@
+.btn {
+	/**
+    * Button base
+    */
+	display: inline-block;
+	vertical-align: middle;
+	touch-action: manipulation;
+	user-select: none;
+	cursor: pointer;
+	white-space: nowrap;
+	text-decoration: none;
+	text-align: center;
+	border: 0;
+	background: transparent;
+	transition: all 0.15s ease-in-out;
+
+	&--primary {
+		color: white;
+	}
+
+	&--secondary {
+		color: white;
+	}
+
+	&--tertiary {
+		color: white;
+	}
+
+	&--lg {
+		color: white;
+	}
+
+	&--md {
+		color: white;
+	}
+
+	&--sm {
+		color: white;
+	}
+
+	&--disabled {
+		pointer-events: none;
+	}
+
+	&--w-icon {
+		display: flex;
+		align-items: baseline;
+	}
+}

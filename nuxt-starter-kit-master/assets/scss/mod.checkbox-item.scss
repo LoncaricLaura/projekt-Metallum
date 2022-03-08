@@ -1,0 +1,61 @@
+.checkbox-item {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 7px;
+	width: 100%;
+	cursor: pointer;
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 1px;
+		width: 1px;
+		left: 0;
+		top: 50%;
+		pointer-events: none;
+	}
+
+	.checkmark {
+		position: absolute;
+		top: 49%;
+		transform: translateY(-50%);
+		left: 0;
+		height: 18px;
+		width: 18px;
+		border: 1px solid $primary-color;
+
+		&--radio {
+			border-radius: 50%;
+		}
+	}
+
+	&:hover input ~ .checkmark {
+		background-color: lighten($primary-color, 30%);
+	}
+
+	input:checked ~ .checkmark {
+		background-color: $primary-color;
+	}
+
+	.checkmark::after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	input:checked ~ .checkmark::after {
+		display: block;
+	}
+}
+
+// How to use in HTML
+// <div class="form-item">
+//   <label class="checkbox-item fs-base">
+//     Checkbox Label
+//     <input type="checkbox" v-model="checkboxVModel" />
+//     <span class="checkmark"></span>
+//   </label>
+// </div>

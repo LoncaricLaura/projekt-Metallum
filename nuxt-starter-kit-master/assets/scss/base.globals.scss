@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	text-size-adjust: 100%;
+}
+
+body {
+	font-family: $ff-sans;
+	line-height: 1.5;
+	font-size: ms(0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $ff-serif;
+}
+
+a,
+button {
+	font-family: $ff-serif;
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+// this is optional
+
+// img {
+// 	display: inline-block;
+// 	vertical-align: middle;
+// 	max-width: 100%;
+// 	height: auto;
+// }
+
+textarea {
+	resize: vertical;
+}

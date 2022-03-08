@@ -1,0 +1,41 @@
+.fs-sm {
+	@include ms-respond(font-size, -1);
+
+	line-height: 1;
+}
+
+.fs-base {
+	@include ms-respond(font-size, 0);
+
+	line-height: 1;
+}
+
+.fs-md {
+	@include ms-respond(font-size, 1);
+
+	line-height: 1;
+}
+
+.fs-lg {
+	@include ms-respond(font-size, 2);
+
+	line-height: 1;
+}
+
+.fs-xl {
+	@include ms-respond(font-size, 3);
+
+	line-height: 1;
+}
+
+.fs-xxl {
+	@include ms-respond(font-size, 4);
+
+	line-height: 1;
+}
+
+.fs-xxxl {
+	@include ms-respond(font-size, 5);
+
+	line-height: 1;
+}

@@ -1,0 +1,22 @@
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: gray;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 300ms;
+
+	&--opened {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	&__close-btn {
+		position: absolute;
+		top: 50px;
+		right: 50px;
+	}
+}

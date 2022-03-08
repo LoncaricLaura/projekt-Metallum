@@ -1,0 +1,76 @@
+{
+	"name": "nuxt-starter-kit",
+	"version": "1.0.0",
+	"description": "Lloyds Digital Nuxt.js Starter Kit",
+	"homepage": "https://lloyds-digital.com",
+	"author": {
+		"name": "Lloyds Digital",
+		"email": "weare@lloyds-digital.com",
+		"url": "https://lloyds-digital.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.com/lloydsgroup/nuxt-starter-kit.git"
+	},
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate --modern",
+		"export": "nuxt export",
+		"check-js": "eslint --cache ./**/*.{js,ts,vue}",
+		"format-js": "npm run check-js -- --fix",
+		"check-css": "stylelint --cache assets/scss/**/*.scss",
+		"format-css": "npm run check-css -- --fix",
+		"pre-commit-check": "npm run check-js && npm run check-css && npm run build",
+		"deploy": "pm2 deploy prod",
+		"deploy-setup": "npm run deploy -- setup",
+		"post-deploy": "npm install && cpy --rename=env.js env.prod.js . && npm run build && pm2 restart ecosystem.config.js && pm2 save",
+		"postinstall": "npm cache clean -f && husky install && cpy --no-overwrite --rename=env.js env.dev.js ."
+	},
+	"prettier": {
+		"printWidth": 160,
+		"useTabs": true,
+		"semi": true,
+		"singleQuote": true,
+		"quoteProps": "as-needed",
+		"trailingComma": "none",
+		"bracketSpacing": true,
+		"bracketSameLine": false,
+		"arrowParens": "avoid",
+		"endOfLine": "lf"
+	},
+	"dependencies": {
+		"@aceforth/nuxt-optimized-images": "^1.0.0",
+		"@nuxtjs/axios": "^5.13.6",
+		"@nuxtjs/i18n": "^7.0.3",
+		"@nuxtjs/recaptcha": "^1.0.4",
+		"@nuxtjs/redirect-module": "^0.3.1",
+		"@nuxtjs/sitemap": "^2.2.0",
+		"@nuxtjs/style-resources": "^1.1.0",
+		"imagemin-mozjpeg": "^9.0.0",
+		"imagemin-pngquant": "^9.0.2",
+		"imagemin-svgo": "^9.0.0",
+		"jimp": "^0.16.1",
+		"nuxt": "^2.15.8",
+		"nuxt-mail": "^3.0.12",
+		"responsive-loader": "^2.3.0",
+		"smoothscroll-polyfill": "^0.4.4"
+	},
+	"devDependencies": {
+		"@nuxt/types": "latest",
+		"@nuxt/typescript-build": "latest",
+		"@vue/eslint-config-typescript": "latest",
+		"cpy-cli": "latest",
+		"eslint": "latest",
+		"eslint-plugin-nuxt": "latest",
+		"eslint-plugin-vue": "latest",
+		"eslint-plugin-vue-scoped-css": "latest",
+		"husky": "latest",
+		"sass": "latest",
+		"sass-loader": "^10.1.1",
+		"stylelint": "latest",
+		"stylelint-config-standard-scss": "latest"
+	}
+}

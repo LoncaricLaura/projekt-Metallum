@@ -1,0 +1,27 @@
+image: node:lts
+
+stages:
+  - build
+  - test
+
+install:
+  stage: build
+  only:
+    - merge_requests
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - node_modules
+      - env.js
+
+validate:
+  stage: test
+  only:
+    - merge_requests
+  script:
+    - npm run pre-commit-check
+  artifacts:
+    paths:
+      - node_modules
+      - env.js

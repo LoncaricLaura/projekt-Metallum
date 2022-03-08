@@ -1,0 +1,44 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "Node",
+		"lib": [
+			"ESNext",
+			"ESNext.AsyncIterable",
+			"DOM"
+		],
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"allowJs": true,
+		"sourceMap": true,
+		"strict": true,
+		"noEmit": true,
+		"experimentalDecorators": true,
+		"baseUrl": ".",
+		"paths": {
+			"~/*": [
+				"./*"
+			],
+			"@/*": [
+				"./*"
+			]
+		},
+		"types": [
+			"@nuxt/types",
+			"@nuxtjs/style-resources",
+			"@nuxtjs/axios",
+			"@nuxtjs/recaptcha",
+			"@nuxtjs/i18n",
+			"@types/node"
+		]
+	},
+	"exclude": [
+		"node_modules",
+		".nuxt",
+		"dist",
+		"static",
+		".husky",
+		".vscode"
+	]
+}
