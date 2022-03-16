@@ -199,6 +199,8 @@ $spacer: 8px;
 	margin-left: ($spacer * 9);
 }
 
+
+
 // Margin left-right
 .mlr-xxs {
 	margin-left: ($spacer * 0.5);
@@ -254,6 +256,12 @@ $spacer: 8px;
 	margin-left: ($spacer * 9);
 	margin-right: ($spacer * 9);
 }
+
+.mlr-7xl {
+	margin-left: ($spacer * 10);
+	margin-right: ($spacer * 10);
+}
+
 
 // margin top-bottom
 .mtb-xxs {
@@ -545,6 +553,11 @@ $spacer: 8px;
 .plr-6xl {
 	padding-left: ($spacer * 9);
 	padding-right: ($spacer * 9);
+}
+
+.plr-9xl {
+	padding-left: ($spacer * 12);
+	padding-right: ($spacer * 12);
 }
 
 // padding top-bottom

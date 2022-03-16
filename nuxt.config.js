@@ -4,7 +4,7 @@ const IS_PRODUCTION = env.isProduction;
 const SSR_PORT = env.ssrPort;
 const BASE_APP_URL = env.baseAppUrl;
 
-const APP_NAME = 'Nuxt Starter Kit';
+const APP_NAME = 'Metallum';
 const APP_EMAIL = IS_PRODUCTION ? 'info@domain.com' : 'ricardo@lloyds.design';
 
 export default {
@@ -14,7 +14,7 @@ export default {
 	},
 
 	head: {
-		title: APP_NAME + ' | Lorem Ipsum',
+		title: APP_NAME + ' |  ',
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
@@ -44,7 +44,7 @@ export default {
 			{
 				hid: 'og:image',
 				property: 'og:image',
-				content: BASE_APP_URL + '/img/og-image.jpg'
+				content: BASE_APP_URL + '/img/og-image.png'
 			},
 			{
 				hid: 'og:url',
@@ -54,7 +54,8 @@ export default {
 		],
 
 		link: [
-			{ rel: 'icon', type: 'image/png', href: '/favicon.png' }
+			{ rel: 'icon', type: 'image/png', href: '/img/favicon.png' },
+			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Raleway:wght@400;500&display=swap' }
 		]
 	},
 
@@ -86,6 +87,7 @@ export default {
 
 	plugins: [
 		'@/plugins/cms-helpers',
+		'@/plugins/fontawesome.js',
 		'@/plugins/responsive-images',
 		// { src: '@/plugins/google-analytics', mode: 'client' },
 		{
@@ -100,16 +102,12 @@ export default {
 
 	build: {
 		babel: {
-			presets({ isServer }, [ preset, options ]) {
+			presets({ isServer }, [preset, options]) {
 				return [
 					[
 						preset,
 						{
-							browsers: [
-								'last 1 Chrome version',
-								'last 1 Firefox version',
-								'last 1 Safari version'
-							]
+							browsers: ['last 1 Chrome version', 'last 1 Firefox version', 'last 1 Safari version']
 						}
 					]
 				];
@@ -119,7 +117,7 @@ export default {
 
 	optimizedImages: {
 		optimizeImages: true,
-		imagesName: ({ isDev }) => isDev ? '[path][name][hash:optimized].[ext]' : '[path][name][hash:7].[ext]',
+		imagesName: ({ isDev }) => (isDev ? '[path][name][hash:optimized].[ext]' : '[path][name][hash:7].[ext]'),
 		responsive: {
 			sizes: [500, 1024, 1367, 1601, 1921],
 			placeholder: true,
@@ -133,15 +131,7 @@ export default {
 		}
 	},
 
-	modules: [
-		'@nuxtjs/style-resources',
-		'@nuxtjs/axios',
-		'@nuxtjs/recaptcha',
-		'@nuxtjs/sitemap',
-		'@nuxtjs/i18n',
-		'@nuxtjs/redirect-module',
-		'nuxt-mail'
-	],
+	modules: ['@nuxtjs/style-resources', '@nuxtjs/axios', '@nuxtjs/recaptcha', '@nuxtjs/sitemap', '@nuxtjs/i18n', '@nuxtjs/redirect-module', 'nuxt-mail'],
 
 	i18n: {
 		locales: [{ code: 'hr', iso: 'hr-HR' }],
@@ -168,7 +158,7 @@ export default {
 	sitemap: {
 		hostname: BASE_APP_URL,
 		defaults: {
-			lastmod: new Date,
+			lastmod: new Date(),
 			changefreq: 'monthly',
 			priority: 0.9
 		}
