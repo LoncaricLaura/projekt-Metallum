@@ -64,6 +64,7 @@ $spacer: 8px;
 	margin-top: ($spacer * 9);
 }
 
+
 // Margin right
 .mr-xxs {
 	margin-right: ($spacer * 0.5);
@@ -108,6 +109,11 @@ $spacer: 8px;
 .mr-6xl {
 	margin-right: ($spacer * 9);
 }
+
+.mr-boxWrap {
+	margin-left: ($spacer * 15);
+}
+
 
 // Margin bottom
 .mb-xxs {
@@ -198,8 +204,9 @@ $spacer: 8px;
 .ml-6xl {
 	margin-left: ($spacer * 9);
 }
-
-
+.ml-boxWrap {
+	margin-left: ($spacer * 15);
+}
 
 // Margin left-right
 .mlr-xxs {
@@ -262,6 +269,10 @@ $spacer: 8px;
 	margin-right: ($spacer * 10);
 }
 
+.mlr-main {
+	margin-left: 220px;
+	margin-right: 220px;
+}
 
 // margin top-bottom
 .mtb-xxs {
@@ -318,11 +329,17 @@ $spacer: 8px;
 	margin-top: ($spacer * 9);
 	margin-bottom: ($spacer * 9);
 }
+.mtb-box {
+	margin-top: ($spacer * 14);
+	margin-bottom: ($spacer * 14);
+
+}
 
 // padding top
 .pt-xxs {
 	padding-top: ($spacer * 0.5);
 }
+
 
 .pt-xs {
 	padding-top: ($spacer * 1);
@@ -555,9 +572,19 @@ $spacer: 8px;
 	padding-right: ($spacer * 9);
 }
 
-.plr-9xl {
-	padding-left: ($spacer * 12);
-	padding-right: ($spacer * 12);
+.plr-8xl {
+	padding-left: ($spacer * 11);
+	padding-right: ($spacer * 11);
+}
+
+.plr-main {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.plr-box {
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 // padding top-bottom
@@ -614,4 +641,9 @@ $spacer: 8px;
 .ptb-6xl {
 	padding-top: ($spacer * 9);
 	padding-bottom: ($spacer * 9);
+}
+
+.ptb-main {
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
