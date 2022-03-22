@@ -471,6 +471,11 @@ $spacer: 8px;
 	padding-bottom: ($spacer * 9);
 }
 
+.pb-box {
+	padding-bottom: ($spacer * 20);
+}
+
+
 // padding left
 .pl-xxs {
 	padding-left: ($spacer * 0.5);
@@ -514,6 +519,10 @@ $spacer: 8px;
 
 .pl-6xl {
 	padding-left: ($spacer * 9);
+}
+
+.pl-footer {
+	padding-left: ($spacer * 15);
 }
 
 // padding left-right
@@ -586,6 +595,7 @@ $spacer: 8px;
 	padding-left: 100px;
 	padding-right: 100px;
 }
+
 
 // padding top-bottom
 .ptb-xxs {

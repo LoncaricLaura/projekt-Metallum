@@ -74,16 +74,17 @@
 		</div>
 
 		<div class="group u-flex hor-center txt-align-c">
-			<p class="text mtb-xl">
+			<p class="text mtb-3xl">
 				Naši proizvodi koriste se u izgradnji nosiva konstrukcija te u svim vrstama ograda. Kako u industrijskim tako i u privatnim sektorima.
 			</p>
 		</div>
 
+		<!-- Usluge -->
 		<div class="center">
-			<h2 class="mtb-6xl">Usluge</h2>
+			<h2 class="mt-6xl">Usluge</h2>
 		</div>
 
-		<div class="box-services u-grid u-grid-4 plr-box box-services--text txt-align-c">
+		<div class="box-services u-grid u-grid-4 plr-box box-services--text txt-align-c ptb-main">
 			<div>
 				<img src="/img/field.png" class="mb-lg"/>
 				<p>Izvid terena</p>
@@ -100,10 +101,7 @@
 				<img src="/img/protection-el.png" class="mb-lg"/>
 				<p>Antikorozivna zaštita elemenata</p>
 			</div>
-		</div>
-
-		<div class="box-services u-grid u-grid-4 plr-box mtb-box box-services--text txt-align-c">
-			<div>
+				<div>
 				<img src="/img/drilling.png" class="mb-lg"/>
 				<p>Dijamantno bušenje armiranog betona</p>
 			</div>
@@ -120,6 +118,40 @@
 				<p>Servisiranje na terenu</p>
 			</div>
 		</div>
+
+		<div class="bg-item u-flex u-flex-fd--c u-flex-ai--c center">
+			<div class="bg-item--text txt-align-c">
+				Kontaktirajte nas za više informacija
+			</div>
+			<div class="btn mt-5xl">
+				<p class="btn--text mtb-xs">KONTAKTIRAJTE NAS</p>
+			</div>
+		</div>
+
+		<div class="slider u-flex center ptb-main">
+			<div>
+				<img src="/img/6.jpg" class="slider--img">
+			</div>
+		</div>
+
+		<div class="box-services u-flex u-flex-fd--r u-flex-jc--sb u-flex-as--c center plr-main pb-box">
+			<div>
+				<img src="/img/ghiastaff.png" >
+			</div>
+			<div>
+				<img src="/img/maslinica.png" >
+			</div>
+			<div>
+				<img src="/img/kempinski-hotel.png" >
+			</div>
+			<div>
+				<img src="/img/valamar.png" >
+			</div>
+			<div>
+				<img src="/img/spina.png" >
+			</div>
+		</div>
+
 	</div>
 </template>
 
@@ -190,15 +222,45 @@ h2 {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 14px;
+	&--text {
+		font-family: $ff-serif;
+		font-size: 14px;
+		line-height: 16.44px;
+		font-weight: 700;
+		letter-spacing: 1px;
+	}
 }
 
 .box-services {
 	width: 100%;
+	row-gap: 100px;
 	&--text {
 		font-family: $ff-serif;
 		color: $iron80;
 		font-size: 27px;
 		line-height: 160%;
+	}
+}
+
+.bg-item {
+	background: #428ACE;
+	background-image: url('/img/6-1.jpg');
+	background-blend-mode: multiply;
+	height: 492px;
+	width: 100%;
+	&--text {
+		font-family: $ff-serif;
+		font-size: 61px;
+		line-height: 80.22px;
+		color: $secondary-color;
+		width: 723px;
+	}
+}
+
+.slider {
+	&--img {
+		width: 1228px;
+		height: 691px;
 	}
 }
 </style>
