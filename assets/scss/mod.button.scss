@@ -16,6 +16,10 @@
 
 	&--primary {
 		color: white;
+		background-color: $coral;
+		border:  1px solid $coral;
+		height: 100px;
+		width: 100px;
 	}
 
 	&--secondary {

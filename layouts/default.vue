@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<Header />
+		<MobileMenu />
 		<nuxt />
 		<Footer />
 	</div>

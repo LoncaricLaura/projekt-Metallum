@@ -7,3 +7,16 @@
 .page-leave-active {
 	opacity: 0;
 }
+
+.fadeFromUp-enter-active,
+.fadeFromUp-leave-active {
+  transition: all 300ms ease;
+}
+
+.fadeFromUp-enter,
+.fadeFromUp-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 300ms ease;
+  pointer-events: none;
+}

@@ -97,6 +97,10 @@ export default {
 		{
 			src: '@/plugins/global-stuff',
 			mode: 'client'
+		},
+		{
+			src: '@/plugins/splide',
+			mode: 'client'
 		}
 	],
 

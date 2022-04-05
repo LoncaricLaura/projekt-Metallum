@@ -109,19 +109,17 @@
 
 	</div>
 
-	<div>
-		<hr>
-		<div class="u-grid u-grid-2 ptb-4xl">
-			<div class="u-grid u-grid-2 center">
+	<div class="footer--line">
+		<div class="u-grid u-grid-2 ">
+			<div class="footer--block u-grid u-grid-2 center ptb-4xl">
 				<div class="footer--text3">
 					E-mail
 				</div>
-				<div class="footer--text4 pr-xl">
+				<div class="footer--text4 pr-3xl">
 					metallum@metallum.hr
 				</div>
 			</div>
-		<div class="footer--vl mt-xl"><hr></div>
-			<div class="u-grid u-grid-2 center">
+			<div class="u-grid u-grid-2 center ">
 				<div class="footer--text3 pl-xl">
 					Telefon
 				</div>
@@ -130,7 +128,6 @@
 				</div>
 			</div>
 		</div>
-		<hr>
 	</div>
 
 	<div class=" u-flex u-flex-jc--sb pt-6xl">
@@ -188,13 +185,20 @@
 	&--item {
 		gap: 150px;
 	}
-	&--vl {
-		position: absolute;
-		transform: rotate(90deg);
-		height: 1px;
-		width: 172px;
-		left: 45%;
+
+	&--line {
+		border-style: solid;
+		color: $secondary-color;
+		border-left: 1px;
+		border-right: 1px;
 	}
+	&--block {
+		border-style: solid;
+		border-left: 1px;
+		border-block-start: 0px;
+		border-block-end: 0px;
+	}
+
 	&--text3 {
 		font-family: $ff-serif;
 		color: $secondary-color;
@@ -207,6 +211,7 @@
 		font-weight: 400;
 		font-size: 40px;
 	}
+
 }
 
 </style>

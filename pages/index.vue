@@ -128,11 +128,14 @@
 			</div>
 		</div>
 
-		<div class="slider u-flex center ptb-main">
+			<Slider :imgs="['6']" />
+
+
+		<!-- <div class="u-flex center ptb-main">
 			<div>
 				<img src="/img/6.jpg" class="slider--img">
 			</div>
-		</div>
+		</div> -->
 
 		<div class="box-services u-flex u-flex-fd--r u-flex-jc--sb u-flex-as--c center plr-main pb-box">
 			<div>
@@ -155,12 +158,18 @@
 	</div>
 </template>
 
-<script></script>
+<script>
+
+export default {
+
+}
+
+</script>
 
 <style lang="scss" scoped>
 .bg {
 	background: #428ace;
-	background-image: url('/img/6.jpg');
+	background-image: url('/img/image-6.jpg');
 	background-blend-mode: multiply;
 	height: 944px;
 	width: 100%;
@@ -261,6 +270,12 @@ h2 {
 	&--img {
 		width: 1228px;
 		height: 691px;
+	}
+}
+
+@media (max-width: 1080px) {
+	.title {
+		padding: 25px;
 	}
 }
 </style>
