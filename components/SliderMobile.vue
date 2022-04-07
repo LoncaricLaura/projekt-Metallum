@@ -1,9 +1,9 @@
 <template>
-	<section v-if="imgs" class="slider-home ptb-main max-width">
+	<section v-if="imgs" class="slider-services pt-3xl pb-6xl">
 		<div class="u-flex slider-image">
 			<splide :options="slider" class="main__slider">
 				<splide-slide v-for="(img, i) in imgs" :key="i" class="slide__track">
-					<img :src="require(`/static/img/image-${img}.jpg`)" :data-splide-lazy="require(`/static/img/image-${img}.jpg`)" />
+					<img :src="require(`/static/img/image-${img}.png`)" :data-splide-lazy="require(`/static/img/image-${img}.png`)" />
 				</splide-slide>
 			</splide>
 		</div>
@@ -27,12 +27,11 @@ export default Vue.extend({
 				type: 'loop',
 				lazyLoad: 'nearby',
 				//padding: '30rem',
-				rewind: true,
-				perPage: 1.5,
+				rewind: false,
+				perPage: 1,
 
 				focus: 'center',
-				pagination: false,
-
+				pagination: 'slider',
 				perMove: 1,
 				arrows: true,
 
