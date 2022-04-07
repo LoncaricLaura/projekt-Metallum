@@ -3,7 +3,7 @@
 		<div class="mobile-menu--nav u-flex u-flex-fd--c">
 			<div class="mobile-menu--text u-flex u-flex-fd--c">
 				<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
-					<NuxtLink :to="localePath('/Proizvodi')" class="mobile-menu--item">Proizvodi</NuxtLink>
+					<NuxtLink :to="localePath('/Proizvodi')" class="mobile-menu--item mb-xs">Proizvodi</NuxtLink>
 					<div class="u-flex u-flex-ai--c hamburger" @click="productsMenu = !productsMenu">
 						<div class="hamb-btn">
 							<div class="hamb-line" />
@@ -13,8 +13,8 @@
 				</div>
 				<transition name="fadeFromUp">
 					<div class="sub-menu u-flex u-flex-fd--c" v-show="productsMenu">
-						<div class="sub-menu mtb-sm">
-							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
+						<div class="sub-menu mb-xs mt-xs">
+							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
 								<NuxtLink :to="localePath('/proizvodi/pletivo')">Pletivo</NuxtLink>
 								<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('pletivo')" :class="{ active: activeCategory == 'pletivo' }">
 									<div class="hamb-btn">
@@ -25,19 +25,19 @@
 							</div>
 							<transition name="fadeFromUp">
 								<div class="sub-menu--item u-flex u-flex-fd--c mt-sm" v-show="activeCategory === 'pletivo'">
-									<div class="mtb-sm">Univerzalno pletivo</div>
-									<div class="mtb-sm">Plastificirano pletivo</div>
-									<div class="mtb-sm">Farmer pletivo</div>
-									<div class="mtb-sm">Vareno plastificirano pletivo</div>
-									<div class="mtb-sm">Pribor</div>
-									<div class="mtb-sm">Mreže i ostala oprema za sportske objekte</div>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/univerzal-pletivo')" class="mtb-sm">Univerzalno pletivo</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/plastificirano-pletivo')" class="mtb-sm">Plastificirano pletivo</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/farmer-pletivo')" class="mtb-sm">Farmer pletivo</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/vareno-pletivo')" class="mtb-sm">Vareno plastificirano pletivo</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/pribor')" class="mtb-sm">Pribor</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/mreže')" class="mtb-sm">Mreže i ostala oprema za sportske objekte</NuxtLink>
 								</div>
 							</transition>
 						</div>
-						<div class="sub-menu mb-sm">Valovita (vibro) mreža</div>
-						<div class="sub-menu mtb-sm">Stupovi (kosnici, konzole, prečke)</div>
-						<div class="sub-menu mtb-sm">
-							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
+						<div class="sub-menu mb-xxs mt-xs mobile-menu--line">Valovita (vibro) mreža</div>
+						<div class="sub-menu mtb-sm mobile-menu--line">Stupovi (kosnici, konzole, prečke)</div>
+						<div class="sub-menu mb-sm mt-xxs">
+							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
 								<NuxtLink :to="localePath('/proizvodi/panelni-sustav')">Panelni sustav</NuxtLink>
 								<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('panelni')" :class="{ active: activeCategory == 'panelni' }">
 									<div class="hamb-btn">
@@ -51,18 +51,18 @@
 									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m3-5mm')" class="mtb-sm">Panel M3 5mm</NuxtLink>
 									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m3-4mm')" class="mtb-sm">Panel M3 4mm</NuxtLink>
 									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m2-6-5-6-mm')" class="mtb-sm">Panel M2 6-5-6 mm</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="mtb-sm">Panel M2 8-6-8 mm</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="mtb-sm">Stup Metallum</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="mtb-sm">Stup omega</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="mtb-sm">Stup sport</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="mtb-sm">Sjenila za privatnost</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m2-8-6-8-mm')" class="mtb-sm">Panel M2 8-6-8 mm</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/stup-metallum')" class="mtb-sm">Stup Metallum</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/stup-omega')" class="mtb-sm">Stup omega</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/stup-sport')" class="mtb-sm">Stup sport</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/sjenila-za-privatnost')" class="mtb-sm">Sjenila za privatnost</NuxtLink>
 								</div>
 							</transition>
 						</div>
-						<div class="sub-menu mtb-sm">Pružni sustavi</div>
-						<div class="sub-menu mtb-sm">Ogradni gabioni</div>
-						<div class="sub-menu mtb-sm">
-							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
+						<div class="sub-menu mb-sm mt-xxs mobile-menu--line">Pružni sustavi</div>
+						<div class="sub-menu mb-sm mt-xxs mobile-menu--line">Ogradni gabioni</div>
+						<div class="sub-menu mt-xxs">
+							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
 								<NuxtLink :to="localePath('/proizvodi/vrata')">Vrata</NuxtLink>
 								<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('vrata')" :class="{ active: activeCategory == 'vrata' }">
 									<div class="hamb-btn">
@@ -73,16 +73,16 @@
 							</div>
 							<transition name="fadeFromUp">
 								<div class="sub-menu--item u-flex u-flex-fd--c mt-sm" v-show="activeCategory === 'vrata'">
-									<div class="mtb-sm">Pješačka vrata</div>
-									<div class="mtb-sm">Krilna vrata</div>
-									<div class="mtb-sm">Klizna vrata</div>
-									<div class="mtb-sm">Samonosiva vrata</div>
-									<div class="mtb-sm">Dodatna oprema za vrata</div>
+									<NuxtLink :to="localePath('/vrata/pjesacka-vrata')" class="mtb-sm">Pješačka vrata</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/krilna-vrata')" class="mtb-sm">Krilna vrata</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/klizna-vrata')" class="mtb-sm">Klizna vrata</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/samonosiva-vrata')" class="mtb-sm">Samonosiva vrata</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/dodatna-oprema')" class="mtb-sm">Dodatna oprema za vrata</NuxtLink>
 								</div>
 							</transition>
 						</div>
-						<div class="sub-menu mtb-sm">
-							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
+						<div class="sub-menu mb-sm mt-xxs mobile-menu--bline">
+							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
 								<NuxtLink :to="localePath('/proizvodi/izrada-po-nacrtu')">Izrada po nacrtu</NuxtLink>
 								<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('poNacrtu')" :class="{ active: activeCategory == 'poNacrtu' }">
 									<div class="hamb-btn">
@@ -93,8 +93,8 @@
 							</div>
 							<transition name="fadeFromUp">
 								<div class="sub-menu--item u-flex u-flex-fd--c mt-sm" v-show="activeCategory === 'poNacrtu'">
-									<div class="mtb-sm">Zaštitna pješačka ograda</div>
-									<div class="mtb-sm">Vanstandardna ograda</div>
+									<NuxtLink :to="localePath('/vrata/izrada-po-nacrtu/zastitna-ograda')" class="mtb-sm">Zaštitna pješačka ograda</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/izrada-po-nacrtu/vanstandardna-ograda')" class="mtb-sm">Vanstandardna ograda</NuxtLink>
 								</div>
 							</transition>
 						</div>
@@ -180,6 +180,24 @@ export default Vue.extend({
 		}
 		&.open {
 			display: flex;
+		}
+		&--line {
+			border-style: solid;
+			border-color: $metallum40;
+			border-left: 0;
+			border-right: 0;
+			border-block-end: 0px;
+			padding-top: 15px;
+		}
+		&--bline {
+			border-style: solid;
+			border-color: $metallum40;
+			border-left: 0;
+			border-right: 0;
+			border-top: 0;
+			border-bottom-right-radius: 1px;
+			padding-bottom: 15px;
+			padding-top: 12px;
 		}
 	}
 	.sub-menu {
