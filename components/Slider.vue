@@ -37,11 +37,23 @@ export default Vue.extend({
 				arrows: true,
 
 				arrowPath: 'M14.9999 7H2.74994L7.99994 12.25L7.33594 13L0.835938 6.5L7.33594 0L7.99994 0.75L2.74994 6H14.9999V7Z',
-				fill: 'white'
+				fill: 'white',
+				breakpoints: {
+					1150: {
+						perPage: 1,
+						pagination: 'slider'
+					}
+				}
 			}
 		};
 	}
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media (max-width: 1000px) {
+	.slider-home {
+		padding-bottom: 80px;
+	}
+}
+</style>

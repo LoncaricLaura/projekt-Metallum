@@ -1,9 +1,10 @@
 <template>
-	<section v-if="imgs" class="slider-services pt-3xl pb-6xl">
+	<section v-if="services" class="slider-services pt-3xl pb-6xl">
 		<div class="u-flex slider-image">
 			<splide :options="slider" class="main__slider">
-				<splide-slide v-for="(img, i) in imgs" :key="i" class="slide__track">
-					<img :src="require(`/static/img/image-${img}.png`)" :data-splide-lazy="require(`/static/img/image-${img}.png`)" />
+				<splide-slide v-for="(service, i) in services" :key="i" class="slide__track">
+					<img :src="require(`/static/img/image-${service.img}.png`)" :data-splide-lazy="require(`/static/img/image-${service.img}.png`)" />
+					<p class="slide__track--title">{{ service.title }}</p>
 				</splide-slide>
 			</splide>
 		</div>
@@ -16,7 +17,7 @@ import Vue from 'vue';
 export default Vue.extend({
 	name: 'Slider',
 	props: {
-		imgs: {
+		services: {
 			type: Array,
 			default: () => ['1']
 		}

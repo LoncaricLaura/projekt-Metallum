@@ -65,7 +65,20 @@
 		}
 	}
 
-	@media (max-width: 1200px) {
+	@media (max-width: 1350px) {
+		.slider-image {
+			.main__slider {
+				max-width: 100%;
+			}
+
+			.splide__arrow--prev {
+				left: 150px;
+			}
+
+			.splide__arrow--next {
+				right: 150px;
+			}
+		}
 		.splide__slide {
 			display: flex;
 			flex-direction: column;
@@ -73,19 +86,52 @@
 			justify-content: center;
 		}
 	}
-
-	@media (max-width: 1200px) {
+	/*	@media (max-width: 1150px) {
 		.slider-image {
 			.main__slider {
 				max-width: 100%;
 			}
 
 			.splide__arrow--prev {
-				left: 20px;
+				left: 120px;
 			}
 
 			.splide__arrow--next {
-				right: 20px;
+				right: 120px;
+			}
+		}
+	}*/
+
+	@media (max-width: 1150px) {
+		.slider-image {
+			.splide__track {
+				height: auto;
+			}
+
+			.splide__arrow--prev {
+				display: none;
+			}
+
+			.splide__arrow--next {
+				display: none;
+			}
+		}
+		.splide__slide {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.splide__pagination {
+			position: relative;
+			padding: 50px;
+			.splide__pagination__page {
+				border-radius: 0%;
+				background: $coral;
+			}
+			.splide__pagination__page.is-active {
+				border: 1px solid $coral;
+				background: $secondary-color;
 			}
 		}
 	}
@@ -93,6 +139,7 @@
 
 .slider-services {
 	display: none;
+	padding-top: 0;
 
 	@media (max-width: 1250px) {
 		display: flex;
@@ -100,12 +147,19 @@
 
 		.splide__slide {
 			margin: 0px 16px !important;
-			display: flex;
+			display: grid;
 			justify-content: center;
 			img {
+				justify-self: center;
 				width: auto;
 				height: auto;
-				padding: 100px 400px;
+				padding-top: 100px;
+				padding-bottom: 30px;
+			}
+			p {
+				//justify-self: center;
+				width: 300px;
+				text-align: center;
 			}
 		}
 
@@ -166,14 +220,34 @@
 				max-width: 100%;
 			}
 		}
+		.splide__pagination {
+			position: relative;
+			padding: 50px;
+			.splide__pagination__page {
+				border-radius: 0%;
+				background: $coral;
+			}
+			.splide__pagination__page.is-active {
+				border: 1px solid $coral;
+				background: $secondary-color;
+			}
+		}
 	}
 
 	@media (max-width: 1000px) {
+		.splide__slide {
+			display: grid;
+			img {
+				justify-items: center;
+				padding-bottom: 20px;
+			}
+			p {
+				justify-self: center;
+				width: 300px;
+				text-align: center;
+			}
+		}
 		.slider-image {
-			display: flex;
-			justify-content: center;
-			position: relative;
-
 			.splide__arrow {
 				color: white;
 				background-color: $coral;

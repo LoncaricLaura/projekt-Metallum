@@ -34,7 +34,8 @@
 						<div class="btn mt-4xl fs-sm">SAZNAJTE VIŠE</div>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-						<img src="/img/Fence-Knits.png" />
+						<img class="box-item--img" src="/img/Fence-Knits.png" />
+						<img class="box-item--img-mobile" src="/img/Fence-Knits-mobile.png" />
 					</div>
 				</div>
 
@@ -45,7 +46,8 @@
 						<div class="btn mt-4xl fs-sm">SAZNAJTE VIŠE</div>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-						<img src="/img/Garden-Door.J03.png" />
+						<img class="box-item--img" src="/img/Garden-Door.J03.png" />
+						<img class="box-item--img-mobile" src="/img/Garden-Door-mobile.png" />
 					</div>
 				</div>
 			</div>
@@ -119,7 +121,7 @@
 			</div>
 		</div>
 
-		<SliderMobile :imgs="['automation', 'docs', 'drilling', 'fence-door', 'field', 'installation', 'protection-el', 'service']" />
+		<SliderMobile :services="services" />
 
 		<div class="bg-item u-flex u-flex-fd--c u-flex-ai--c center">
 			<div class="bg-item--text fs-xl txt-align-c">Kontaktirajte nas za više informacija</div>
@@ -136,7 +138,7 @@
 			</div>
 		</div> -->
 
-		<div class="box-services u-flex u-flex-fd--r u-flex-jc--sb u-flex-as--c center plr-main pb-box">
+		<div class="box-logos u-flex u-flex-fd--r u-flex-jc--sb u-flex-as--c center plr-main pb-box">
 			<div>
 				<img src="/img/ghiastaff.png" />
 			</div>
@@ -157,7 +159,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+	data() {
+		return {
+			services: [
+				{ img: 'automation', title: 'Automatizaija vratiju' },
+				{ img: 'docs', title: 'Izrada nacrtne dokumentacije za ograde dizajna po želji klijenta' },
+				{ img: 'drilling', title: 'Dijamantno bušenje armiranog betona' },
+				{ img: 'fence-door', title: 'Proizvodnja ograda i vrata' },
+				{ img: 'field', title: 'Izvid terena' },
+				{ img: 'installation', title: 'Montaža ograde i vratiju' },
+				{ img: 'protection-el', title: 'Antikorozivna zaštita elemenata' },
+				{ img: 'service', title: 'Servisiranje na terenu' }
+			]
+		};
+	}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -210,6 +227,9 @@ h2 {
 		img {
 			object-fit: cover;
 		}
+	}
+	&--img-mobile {
+		display: none;
 	}
 }
 
@@ -273,6 +293,10 @@ h2 {
 		margin-left: 90px;
 		margin-right: 90px;
 	}
+	.box-logos {
+		padding: 100px 80px;
+		padding-top: 0;
+	}
 }
 
 @media (max-width: 1350px) {
@@ -297,6 +321,10 @@ h2 {
 	.box-services {
 		padding: 60px 60px;
 	}
+	.box-logos {
+		padding: 100px 30px;
+		padding-top: 0;
+	}
 }
 
 @media (max-width: 1250px) {
@@ -307,6 +335,11 @@ h2 {
 		display: flex;
 		justify-content: center;
 		padding: 60px 60px;
+	}
+	.box-logos {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
 	}
 }
 
@@ -342,6 +375,12 @@ h2 {
 					width: 100%;
 				}
 			}
+			&--img {
+				display: none;
+			}
+			&--img-mobile {
+				display: flex;
+			}
 			&--title {
 				margin-top: 50px;
 				margin-left: 50px;
@@ -350,6 +389,13 @@ h2 {
 	}
 	.box-items {
 		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+	.bg-item {
+		padding: 0 24px;
+		&--text {
+			width: auto;
+			margin: 0 60px;
+		}
 	}
 }
 </style>

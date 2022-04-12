@@ -1,6 +1,6 @@
 <template>
 	<div class="footer u-flex u-flex-fd--c plr-6xl">
-		<div class="u-flex u-flex-fd--r u-flex-jc--sb ptb-2xl">
+		<div class="footer--row u-flex u-flex-fd--r u-flex-jc--sb ptb-2xl">
 			<div class="u-flex u-flex-fd--c">
 				<div>
 					<a href="#" class="u-flex-ai--c">
@@ -58,15 +58,15 @@
 				</div>
 
 				<div class="footer--text fs-lg">30 godina iskustva</div>
-
-				<div class="footer--items fs-base u-flex u-flex-fd--r pt-xl">
-					<a href="#" class="">Proizvodi</a>
-					<a href="#" class="">Usluge</a>
-					<a href="#" class="">Galerija</a>
-					<a href="#" class="">Kontakt</a>
+				<div>
+					<div class="footer--items fs-base u-flex u-flex-fd--r pt-xl">
+						<a href="#" class="">Proizvodi</a>
+						<a href="#" class="">Usluge</a>
+						<a href="#" class="">Galerija</a>
+						<a href="#" class="">Kontakt</a>
+					</div>
 				</div>
 			</div>
-
 			<div class="u-flex u-flex-fd--r">
 				<div class="footer--item u-grid u-grid-3">
 					<div class="footer--text2 fs-base pt-4xl">
@@ -105,7 +105,7 @@
 				</div>
 				<div class="u-grid u-grid-2 center">
 					<div class="footer--text3 pl-xl fs-md">Telefon</div>
-					<div class="footer--text4 pl-footer fs-lg">+385 52 869 006</div>
+					<div class="footer--text4 u-flex u-flex-jc--fe pl-footer fs-lg">+385 52 869 006</div>
 				</div>
 			</div>
 		</div>
@@ -131,7 +131,6 @@
 	}
 	&--items {
 		font-family: $ff-sans;
-		font-size: 18px;
 		line-height: 100%;
 		color: $metallum0;
 		gap: 30px;
@@ -185,6 +184,50 @@
 		color: $secondary-color;
 		font-weight: 400;
 		//font-size: 40px;
+	}
+}
+
+@media (max-width: 1900px) {
+	.footer {
+		padding: 0 40px;
+		&--item {
+			gap: 80px;
+		}
+		&--text4 {
+			padding-left: 10px;
+		}
+	}
+}
+
+@media (max-width: 1460px) {
+	.footer {
+		&--text3 {
+			padding-left: 0;
+		}
+		&--text4 {
+			padding-left: 0;
+			padding-left: 0;
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.footer {
+		display: flex;
+		width: 100%;
+		height: auto;
+		&--row {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&--items {
+			display: grid;
+			grid-template-rows: repeat(2, minmax(0, 1fr));
+		}
+		&--line {
+			display: grid;
+		}
 	}
 }
 </style>
