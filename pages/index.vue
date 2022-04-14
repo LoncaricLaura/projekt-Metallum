@@ -184,6 +184,7 @@ export default {
 	background-blend-mode: multiply;
 	height: 944px;
 	width: 100%;
+	background-size: cover;
 }
 
 .title {
@@ -266,6 +267,7 @@ h2 {
 	background: #428ace;
 	background-image: url('/img/6-1.jpg');
 	background-blend-mode: multiply;
+	background-size: cover;
 	height: 492px;
 	width: 100%;
 	&--text {

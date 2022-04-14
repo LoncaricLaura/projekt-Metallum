@@ -202,6 +202,9 @@ $spacer: 8px;
 .ml-6xl {
 	margin-left: ($spacer * 9);
 }
+.ml-footer {
+	margin-left: ($spacer * 12);
+}
 .ml-boxWrap {
 	margin-left: ($spacer * 15);
 }
@@ -375,6 +378,9 @@ $spacer: 8px;
 
 .pt-6xl {
 	padding-top: ($spacer * 9);
+}
+.pt-footer {
+	padding-top: ($spacer * 23);
 }
 
 // padding right
