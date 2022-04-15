@@ -9,17 +9,13 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import Header from '../components/Header.vue'
+import Header from '../components/Header.vue';
 
 export default Vue.extend({
 	components: {
-		Header,
+		Header
 	}
 });
 </script>
 
-<style lang="scss" scoped>
-
-
-
-</style>
+<style lang="scss" scoped></style>

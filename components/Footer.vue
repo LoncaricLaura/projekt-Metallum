@@ -170,12 +170,10 @@
 	&--text3 {
 		font-family: $ff-serif;
 		font-weight: 400;
-		//font-size: 27px;
 	}
 	&--text4 {
 		font-family: $ff-serif;
 		font-weight: 400;
-		//font-size: 40px;
 	}
 }
 
@@ -206,7 +204,6 @@
 
 @media (max-width: 1300px) {
 	.footer {
-		display: flex;
 		width: 100%;
 		height: auto;
 		padding: 0 30px;
@@ -265,6 +262,7 @@
 			color: $secondary-color;
 			border-right: 1px;
 			padding-bottom: 30px;
+			padding-top: 0;
 			width: 100%;
 		}
 		&--number {
