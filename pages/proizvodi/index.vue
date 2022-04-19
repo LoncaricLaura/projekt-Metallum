@@ -48,7 +48,11 @@ export default {
 					title: 'Vrata',
 					text: 'U ponudi imamo pješačka, krilna, klizna i samonosiva vrata, dimenzija i dizajna prema zahtjevima naručitelja.'
 				},
-				{ img: 'fence_blue_draft', title: 'Izrada po nacrtu', text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' }
+				{
+					img: 'fence_blue_draft',
+					title: 'Izrada po nacrtu',
+					text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+				}
 			]
 		};
 	}

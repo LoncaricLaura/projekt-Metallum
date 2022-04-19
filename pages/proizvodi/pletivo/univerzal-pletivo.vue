@@ -1,3 +1,3 @@
 <template>
-	<div>UNIVERZAL PLETIVO</div>
+	<div>Iniverzal pletivo</div>
 </template>

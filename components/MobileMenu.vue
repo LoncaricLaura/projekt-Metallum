@@ -34,8 +34,8 @@
 								</div>
 							</transition>
 						</div>
-						<div class="sub-menu mb-xxs mt-xs mobile-menu--line">Valovita (vibro) mreža</div>
-						<div class="sub-menu mtb-sm mobile-menu--line">Stupovi (kosnici, konzole, prečke)</div>
+						<div class="sub-menu mb-xxs mt-xs mobile-menu--line"><NuxtLink :to="localePath('/proizvodi/valovit-mreza')">Valovita (vibro) mreža</NuxtLink></div>
+						<div class="sub-menu mtb-sm mobile-menu--line"><NuxtLink :to="localePath('/proizvodi/stupovi')">Stupovi (kosnici, konzole, prečke)</NuxtLink></div>
 						<div class="sub-menu mb-sm mt-xxs">
 							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
 								<NuxtLink :to="localePath('/proizvodi/panelni-sustav')">Panelni sustav</NuxtLink>
@@ -59,8 +59,8 @@
 								</div>
 							</transition>
 						</div>
-						<div class="sub-menu mb-sm mt-xxs mobile-menu--line">Pružni sustavi</div>
-						<div class="sub-menu mb-sm mt-xxs mobile-menu--line">Ogradni gabioni</div>
+						<div class="sub-menu mb-sm mt-xxs mobile-menu--line"><NuxtLink :to="localePath('/proizvodi/pruzni-sustav')">Pružni sustavi</NuxtLink></div>
+						<div class="sub-menu mb-sm mt-xxs mobile-menu--line"><NuxtLink :to="localePath('/proizvodi/ogradni-gabioni')">Ogradni gabioni</NuxtLink></div>
 						<div class="sub-menu mt-xxs">
 							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
 								<NuxtLink :to="localePath('/proizvodi/vrata')">Vrata</NuxtLink>

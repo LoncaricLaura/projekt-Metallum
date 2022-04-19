@@ -4,10 +4,10 @@
 			<div class="box-item--title ml-6xl fs-md">
 				<h2 class="mb-3xl">{{ product.title }}</h2>
 				<p class="fs-base">{{ product.text }}</p>
-				<div class="btn mt-4xl">SAZNAJTE VIŠE</div>
+				<div class="btn mt-4xl">SANZAJTE VIŠE</div>
 			</div>
 			<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-				<img :src="require(`/pages/proizvodi/img/${product.img}.png`)" />
+				<img :src="require(`/pages/proizvodi/images/${product.img}.png`)" />
 			</div>
 		</div>
 	</div>
@@ -66,7 +66,9 @@ h2 {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
+	cursor: pointer;
 	//font-size: 14px;
+
 	&--text {
 		font-family: $ff-serif;
 		font-size: 14px;
