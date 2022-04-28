@@ -3,7 +3,8 @@
 		<div class="bg u-flex u-flex-ai--c center">
 			<p class="fs-xxl title txt-align-c">
 				Postavite granice <br />
-				Ostavite vrata
+				Ostavite vrata <br />
+				<!--{{ $t('home') }}-->
 			</p>
 		</div>
 		<div class="group u-flex u-flex-fd--c hor-center txt-align-c ptb-main">
@@ -19,7 +20,9 @@
 			<div class="box-item u-flex u-flex-ai--c">
 				<div class="box-item--title ml-boxWrap fs-md">
 					<h2>Pletivo</h2>
-					<div class="btn mt-4xl fs-sm">SAZNAJTE VIŠE</div>
+					<NuxtLink :to="localePath('/proizvodi/pletivo')" class="btn btn--primary mt-4xl fs-base">
+					SAZNAJTE VIŠE
+					</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 					<img src="/img/fence_blue_1.png" />
@@ -31,7 +34,7 @@
 				<div class="box-item u-flex u-flex-ai--c">
 					<div class="box-item--title ml-boxWrap fs-md">
 						<h2>Valovita (vibro) mreža</h2>
-						<div class="btn mt-4xl fs-sm">SAZNAJTE VIŠE</div>
+						<NuxtLink :to="localePath('/proizvodi/valovita-mreza')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 						<img class="box-item--img" src="/img/Fence-Knits.png" />
@@ -43,7 +46,7 @@
 				<div class="box-item u-flex u-flex-ai--c">
 					<div class="box-item--title ml-boxWrap fs-md">
 						<h2>Vrata</h2>
-						<div class="btn mt-4xl fs-sm">SAZNAJTE VIŠE</div>
+						<NuxtLink :to="localePath('/proizvodi/vrata')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 						<img class="box-item--img" src="/img/Garden-Door.J03.png" />
@@ -56,7 +59,7 @@
 			<div class="box-item u-flex u-flex-ai--c mt-lg">
 				<div class="box-item--title ml-boxWrap fs-md">
 					<h2>Panelni sustav</h2>
-					<div class="btn mt-4xl fs-sm">SAZNAJTE VIŠE</div>
+					<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink >
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 					<img src="/img/Barbed-Wire-Fence.G03.png" />
@@ -67,7 +70,7 @@
 			<div class="box-item u-flex u-flex-ai--c mtb-lg">
 				<div class="box-item--title ml-boxWrap fs-md">
 					<h2>Pružni sustav</h2>
-					<div class="btn mt-4xl fs-sm">SAZNAJTE VIŠE</div>
+					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink >
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 					<img src="/img/fence_blue_1.png" />
@@ -125,7 +128,7 @@
 
 		<div class="bg-item u-flex u-flex-fd--c u-flex-ai--c center">
 			<div class="bg-item--text fs-xl txt-align-c">Kontaktirajte nas za više informacija</div>
-			<div class="btn mt-3xl">
+			<div class="btn btn--primary mt-3xl">
 				<p class="btn--text mtb-xxs">KONTAKTIRAJTE NAS</p>
 			</div>
 		</div>
@@ -229,26 +232,11 @@ h2 {
 			object-fit: cover;
 		}
 	}
+	&--title{
+		z-index: 2;
+	}
 	&--img-mobile {
 		display: none;
-	}
-}
-
-.btn {
-	background-color: $coral;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	//font-size: 14px;
-	&--text {
-		font-family: $ff-serif;
-		font-size: 14px;
-		line-height: 16.44px;
-		font-weight: 700;
-		letter-spacing: 1px;
 	}
 }
 
@@ -306,6 +294,7 @@ h2 {
 		margin-left: 30px;
 		margin-right: 30px;
 		.box-item {
+			height: 514px;
 			align-items: flex-start;
 			&--image {
 				align-items: flex-end;

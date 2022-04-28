@@ -2,14 +2,19 @@
 	<div>
 		<div class="bg u-flex u-flex-ai--c center u-flex-fd--c">
 			<div class="fs-xl title txt-align-c">Pletiva u roli</div>
-			<div class="btn mt-6xl">
+			<div class="btn btn--primary mt-6xl">
 				PREUZMI PDF
 				<img class="icon ml-sm" src="/img/pdf-icon.png" />
 			</div>
 		</div>
 		<ProductMenu />
-		<div class="pletivo u-flex u-flex-fd--c mtb-6xl">
-			<div class="galery mt-md mb-6xl"></div>
+		<div class="pletivo u-flex u-flex-fd--c mtb-6xl" id="uni-pletivo">
+			<div class="galery u-flex u-flex-ai--fe u-flex-jc--fe mt-md mb-6xl">
+				<div class="btn btn--primary u-flex u-flex-ai--c">
+					<img src="/img/mdi-light_picture.png" class="mr-md">
+					Pogledaj galeriju (14)
+				</div>
+			</div>
 			<div class="u-flex u-flex-fd--c u-flex-as--fs">
 				<div class="pletivo--subtitle fs-lg pr-2xl">Univerzal pletivo</div>
 				<p class="mtb-xl">
@@ -26,7 +31,7 @@
 						<thead>
 							<tr>
 								<th colspan="4">
-									<div class="table-title fs-md ptb-xl plr-xl">Univerzal pocinčano pletivo</div>
+									<div class="table-title fs-md ptb-lg plr-xl">Univerzal pocinčano pletivo</div>
 									<img src="/img/pocincano_pletivo.png" class="image" />
 								</th>
 							</tr>
@@ -40,7 +45,7 @@
 						<tbody class="fs-base">
 							<tr>
 								<td class="ptb-xl pl-md">1,8</td>
-								<td class="ptb-xl pl-md">30x30 40x40</td>
+								<td class="pl-md">30x30 40x40</td>
 								<td rowspan="3" class="pl-md">
 									0,60 <br />
 									0,80<br />
@@ -55,7 +60,7 @@
 
 							<tr>
 								<td class="ptb-xl pl-md">2,0</td>
-								<td class="ptb-xl pl-md">
+								<td class="pl-md">
 									30x30 40x40 <br />
 									50x50 60x60
 								</td>
@@ -63,7 +68,7 @@
 
 							<tr>
 								<td class="ptb-xl pl-md">2,8</td>
-								<td class="ptb-xl pl-md">
+								<td class="pl-md">
 									30x30 40x40 <br />
 									50x50 60x60
 								</td>
@@ -76,7 +81,7 @@
 					</table>
 				</div>
 
-				<div class="pletivo--table-plastificirano mtb-2xl">
+				<div class="pletivo--table-plastificirano mtb-2xl" id="plastificirano-pletivo">
 					<table>
 						<thead>
 							<tr>
@@ -95,7 +100,7 @@
 						<tbody class="fs-base">
 							<tr>
 								<td rowspan="3" class="ptb-xl pl-md">1,8 / 2,7</td>
-								<td class="ptb-xl pl-md">40x40</td>
+								<td class="ptb-lg pl-md">40x40</td>
 								<td rowspan="3" class="pl-md">
 									0,60 <br />
 									0,80<br />
@@ -109,11 +114,11 @@
 							</tr>
 
 							<tr>
-								<td class="ptb-xl pl-md">50x50</td>
+								<td class="ptb-lg pl-md">50x50</td>
 							</tr>
 
 							<tr>
-								<td class="ptb-xl pl-md">60x60</td>
+								<td class="ptb-lg pl-md">60x60</td>
 							</tr>
 
 							<tr>
@@ -123,22 +128,211 @@
 					</table>
 				</div>
 
-				<div class="pletivo--subtitle fs-lg pt-xl pr-2xl">Farmer pletivo</div>
+				<div class="pletivo--subtitle fs-lg pt-xl pr-2xl" id="farmer-pletivo">Farmer pletivo</div>
 				<p class="mt-xl mb-sm">Farmer pletivo se upotrebljava za ograđivanje pašnjaka, poljoprivrednih parcela, divljači, domaćih životinja.</p>
 				<p class="mb-md">Svi dijelovi ogradnog sustava su vruće cinčani.</p>
 				<p class="mb-md">U ponudi imamo farmer pletivo visine mreže od 1,0 m do 2,0 m.</p>
-				<p class="mb-md">Postavljanje Farmer pletiva je jednostavno bez upotrebe zateznih žica.</p>
+				<p>Postavljanje Farmer pletiva je jednostavno bez upotrebe zateznih žica.</p>
 
-				<div class="pletivo--subtitle fs-lg pt-6xl pr-2xl">Vareno plastificirano pletivo</div>
+				<div class="pletivo--subtitle fs-lg pt-6xl pr-2xl" id="vareno-pletivo">Vareno plastificirano pletivo</div>
 				<p class="mt-xl mb-sm">
 					PVC vareno pletivo je elektro-varena mreža koja se koristi za ograđivanje okućnica, vrtova, poljoprivrednih parcela. Horizontalne žice su valovite, što ovo
 					pletivo čini atraktivnim i robusnim.
 				</p>
 				<p>Svi dijelovi ogradnog sustava su vruće cinčani i plastificirani u zelenu boju (RAL 6005).</p>
-				<div class="mtb-3xl u-grid">
-					<img src="/img/50-100-mm.png" />
-					<p class="mt-sm">100/50 mm</p>
+				<div class="pletivo--vareno mt-3xl u-grid u-grid-2">
+					<div>
+						<img src="/img/50-100-mm.png" />
+						<p class="mt-sm">100/50 mm</p>
+					</div>
+					<div>
+						<img src="/img/50-50-mm.png" />
+						<p class="mt-sm">50/50 mm</p>
+					</div>
 				</div>
+
+				<div class="pletivo--subtitle fs-lg pt-6xl pr-2xl" id="pribor">Pribor</div>
+				<p class="mt-xl mr-6xl">
+					U našoj ponudi imamo sav pribor potreban za montažu mreža i posebnih ograda, uključujući kliješta, zatezače, spojnice, razne vrste žica (zatezne žice, žice
+					za učvršćivanje, bodljikave žice) te ostali pribor.<br />
+					Sav pribor je zaštićen od korozije pocinčavanjem i /ili plastifikacijom.
+				</p>
+
+				<div class="pletivo--table-pocincana mt-2xl">
+					<table>
+						<thead>
+							<tr>
+								<th colspan="4">
+									<div class="table-title fs-md ptb-xl plr-xl">Pocinčana žica</div>
+									<img src="/img/6-1.jpg" class="image" />
+								</th>
+							</tr>
+							<tr class="fs-sm">
+								<th class="ptb-lg pl-md">Promjer žice (mm)</th>
+								<th class="pl-md">
+									Tolerancija prema <br />
+									UNE-EN 102 18-2 (mm)
+								</th>
+								<th class="pl-md">
+									Debljina cinčane presvlake prema <br />
+									UNE-EN 10244-2 (g/m2)
+								</th>
+								<th class="pl-md">Zatezna čvrstoća (N/mm2)</th>
+							</tr>
+						</thead>
+						<tbody class="fs-base">
+							<tr>
+								<td class="ptb-lg pl-md">1,8</td>
+								<td class="pl-md">+/- 0,04</td>
+								<td class="pl-md">30-50</td>
+								<td class="pl-md">450-550</td>
+							</tr>
+
+							<tr>
+								<td class="ptb-lg pl-md">2,0</td>
+								<td class="pl-md">+/- 0,04</td>
+								<td class="pl-md">40-60</td>
+								<td class="pl-md">450-550</td>
+							</tr>
+
+							<tr>
+								<td class="ptb-lg pl-md">2,8</td>
+								<td class="pl-md">+/- 0,05</td>
+								<td class="pl-md">50-70</td>
+								<td class="pl-md">450-550</td>
+							</tr>
+
+							<tr>
+								<td class="ptb-lg pl-md">4,0</td>
+								<td class="pl-md">+/- 0,06</td>
+								<td class="pl-md">60-90</td>
+								<td class="pl-md">450-550</td>
+							</tr>
+
+							<tr>
+								<td colspan="4" class="fs-sm ptb-md pl-md">Prema potrebi naručitelja izrađujemo i nestandardne visine mreža, ukupne visine do 5.00 m.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="pletivo--table-plastificirana mt-2xl">
+					<table>
+						<thead>
+							<tr>
+								<th colspan="6">
+									<div class="table-title fs-md ptb-xl plr-xl">Plastificirana pocinčana žica</div>
+									<img src="/img/6-1.jpg" class="image" />
+								</th>
+							</tr>
+							<tr class="fs-sm">
+								<th class="ptb-lg pl-md">
+									Unutarnji <br />
+									promjer (mm)
+								</th>
+								<th class="pl-md">
+									Vanjski <br />
+									promjer (mm)
+								</th>
+								<th class="pl-md">
+									Tolerancija ZN žice prema <br />
+									UNE-EN 102 18-2 (mm)
+								</th>
+								<th class="pl-md">
+									Tolerancija promjera organski <br />
+									plastificirane žice (mm)
+								</th>
+								<th class="pl-md">
+									Minimalna debljina cinčane presvlake <br />
+									prema UNE-EN 10244-2 (g/m2)
+								</th>
+								<th class="pl-md">
+									Zatezna čvrstoća <br />
+									(N/mm2)
+								</th>
+							</tr>
+						</thead>
+						<tbody class="fs-base">
+							<tr>
+								<td class="ptb-lg pl-md">1,8</td>
+								<td class="pl-md">2,6</td>
+								<td class="pl-md">+/- 0,05</td>
+								<td class="pl-md">+/- 0,01</td>
+								<td class="pl-md">30</td>
+								<td class="pl-md">550</td>
+							</tr>
+
+							<tr>
+								<td class="ptb-lg pl-md">2,5</td>
+								<td class="pl-md">3,1</td>
+								<td class="pl-md">+/- 0,05</td>
+								<td class="pl-md">+/- 0,01</td>
+								<td class="pl-md">30</td>
+								<td class="pl-md">550</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="pletivo--table-bodljikava mtb-2xl">
+					<table>
+						<thead>
+							<tr>
+								<th colspan="6">
+									<div class="table-title fs-md ptb-xl plr-xl">Bodljikava žica</div>
+									<img src="/img/6-1.jpg" class="image" />
+								</th>
+							</tr>
+							<tr class="fs-sm">
+								<th class="ptb-lg pl-md">
+									Promjer linijske <br />
+									žice (mm)
+								</th>
+								<th class="pl-md">
+									Promjer <br />
+									bodlji (mm)
+								</th>
+								<th class="pl-md">
+									Minimalna debljina cinčane <br />
+									presvlake linijske žice prema <br />
+									UNE-EN 10244-2 (g/m2)
+								</th>
+								<th class="pl-md">
+									Minimalna debljina cinčane <br />
+									presvlake bodlji prema UNE- <br />
+									EN 10244-2 (g/m2)
+								</th>
+								<th class="pl-md">
+									Minimalna zatezna čvrstoća <br />
+									linijske žice (N/mm2)
+								</th>
+								<th class="pl-md">
+									Minimalna zatezna <br />
+									čvrstoća bodlji (N/mm2)
+								</th>
+							</tr>
+						</thead>
+						<tbody class="fs-base">
+							<tr>
+								<td class="ptb-lg pl-md">1,8</td>
+								<td class="pl-md">2,6</td>
+								<td class="pl-md">205</td>
+								<td class="pl-md">195</td>
+								<td class="pl-md">900</td>
+								<td class="pl-md">800</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="pletivo--subtitle fs-lg pt-xl pr-2xl" id="pomocni-pribor">Pomoćni pribor</div>
+				<p class="mt-xl mb-sm">U pomoćni pribor spadaju kliješta, zatezači, pocinčani i plastificirani, te spojnice.</p>
+
+				<div class="pletivo--subtitle fs-lg pt-xl pr-2xl" id="mreze">Mreže i ostala oprema za sportske objekte</div>
+				<p class="mt-xl mb-6xl mr-6xl">
+					Za potrebe projekta, u mogućnosti smo dobaviti i montirati razne vrste mreža i ostale opreme potrebne za opremanje sportskih terena, dječjih igrališta,
+					vrtića i škola.
+				</p>
 			</div>
 		</div>
 	</div>
@@ -162,25 +356,11 @@
 }
 
 .btn {
-	background-color: $coral;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	//font-size: 14px;
-	&--text {
-		font-family: $ff-serif;
-		font-size: 14px;
-		line-height: 16.44px;
-		font-weight: 700;
-		letter-spacing: 1px;
-	}
+	font-family: $ff-sans;
 }
 
 .pletivo {
-	margin-left: 700px;
+	margin-left: 650px;
 	margin-right: 220px;
 	&--subtitle {
 		font-family: $ff-serif;
@@ -190,6 +370,9 @@
 		font-family: $ff-sans;
 		font-size: 18px;
 		color: $iron;
+	}
+	&--vareno {
+		width: 35%;
 	}
 }
 table {
@@ -211,7 +394,6 @@ table {
 
 thead {
 	tr {
-		font-family: $ff-serif;
 		text-align: justify;
 		background-color: $metallum0;
 	}
@@ -219,11 +401,14 @@ thead {
 
 tbody {
 	background-color: $metallum0;
+	font-family: $ff-sans;
 }
 
 .galery {
 	background-image: url('/img/image-6.jpg');
+	background-size: cover;
 	height: 621px;
 	width: 1102px;
 }
+
 </style>

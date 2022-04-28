@@ -1,12 +1,12 @@
 <template>
-	<div class="box u-grid mlr-main mb-card">
+	<div class="box u-grid mb-card plr-main">
 		<div class="box-item u-flex u-flex-ai--c" v-for="(product, i) in products" :key="i">
 			<div class="box-item--title ml-6xl fs-md">
-				<h2 class="mb-3xl">{{ product.title }}</h2>
+				<h2 class="mb-2xl">{{ product.title }}</h2>
 				<p class="fs-base">{{ product.text }}</p>
-				<div class="btn mt-4xl">SANZAJTE VIŠE</div>
+				<NuxtLink :to="localePath(`/proizvodi${product.button}`)" class="btn btn--primary fs-base mt-4xl">SAZNAJTE VIŠE</NuxtLink>
 			</div>
-			<div class="pos-a box-item--image u-flex u-flex-jc--fe">
+			<div class="pos-a box-item--image u-flex u-flex-jc--fe ">
 				<img :src="require(`/pages/proizvodi/images/${product.img}.png`)" />
 			</div>
 		</div>
@@ -45,8 +45,8 @@ h2 {
 	height: 493px;
 	position: relative;
 	&--title {
-		margin-top: 0px;
 		width: 600px;
+		z-index: 2;
 	}
 	&--image {
 		position: absolute;
@@ -54,29 +54,11 @@ h2 {
 		height: 100%;
 		img {
 			object-fit: cover;
+			width: 55%;
 		}
 	}
 }
-.btn {
-	background-color: $coral;
-	border: none;
-	color: white;
-	font-size: 14px;
-	padding: 20px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	cursor: pointer;
-	//font-size: 14px;
 
-	&--text {
-		font-family: $ff-serif;
-		font-size: 14px;
-		line-height: 16.44px;
-		font-weight: 700;
-		letter-spacing: 1px;
-	}
-}
 
 @media (max-width: 1900px) {
 	.box {
@@ -113,6 +95,7 @@ h2 {
 @media (max-width: 1350px) {
 	.box {
 		.box-item {
+			height: 650px;
 			&--image {
 				align-items: flex-end;
 				img {
@@ -134,7 +117,7 @@ h2 {
 			&--image {
 				align-items: flex-end;
 				img {
-					height: 50%;
+					height: 40%;
 					width: 100%;
 				}
 			}
@@ -144,11 +127,13 @@ h2 {
 			}
 		}
 	}
-	p {
-		display: none;
-	}
 	.btn {
-		margin-top: 20px;
+		margin-top: 10px;
+		padding: 15px 25px;
+	}
+	p {
+		padding-right: 30px;
+		padding-bottom: 20px;
 	}
 }
 </style>

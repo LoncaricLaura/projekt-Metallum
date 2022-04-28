@@ -138,14 +138,18 @@ export default {
 	modules: ['@nuxtjs/style-resources', '@nuxtjs/axios', '@nuxtjs/recaptcha', '@nuxtjs/sitemap', '@nuxtjs/i18n', '@nuxtjs/redirect-module', 'nuxt-mail'],
 
 	i18n: {
-		locales: [{ code: 'hr', iso: 'hr-HR' }],
+		locales: [
+			{ code: 'hr', iso: 'hr-HR' },
+			{ code: 'en', iso: 'en-US' }
+		],
 		detectBrowserLanguage: false,
 		defaultLocale: 'hr',
 		baseUrl: BASE_APP_URL,
 		vueI18n: {
 			fallbackLocale: 'hr',
 			messages: {
-				hr: require('./locales/hr.json')
+				hr: require('./locales/hr.json'),
+				en: require('./locales/en.json')
 			}
 		}
 	},

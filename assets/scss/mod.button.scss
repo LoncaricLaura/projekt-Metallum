@@ -13,13 +13,12 @@
 	border: 0;
 	background: transparent;
 	transition: all 0.15s ease-in-out;
+	padding: 15px 32px;
 
 	&--primary {
 		color: white;
 		background-color: $coral;
 		border:  1px solid $coral;
-		height: 100px;
-		width: 100px;
 	}
 
 	&--secondary {

@@ -17,12 +17,12 @@
 					</div>
 					<transition name="fadeFromUp">
 						<div class="sub-menu--item u-flex u-flex-fd--c mt-sm" v-show="activeCategory === 'pletivo'">
-							<NuxtLink :to="localePath('/proizvodi/pletivo/univerzal-pletivo')" class="mtb-sm">Univerzalno pletivo</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/pletivo/plastificirano-pletivo')" class="mtb-sm">Plastificirano pletivo</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/pletivo/farmer-pletivo')" class="mtb-sm">Farmer pletivo</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/pletivo/vareno-pletivo')" class="mtb-sm">Vareno plastificirano pletivo</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/pletivo/pribor')" class="mtb-sm">Pribor</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/pletivo/mreže')" class="mtb-sm">Mreže i ostala oprema za sportske objekte</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/pletivo/#uni-pletivo')" class="mtb-md">Univerzalno pletivo</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/pletivo/#plastificirano-pletivo')" class="mtb-md">Plastificirano pletivo</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/pletivo/#farmer-pletivo')" class="mtb-md">Farmer pletivo</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/pletivo/#vareno-pletivo')" class="mtb-md">Vareno plastificirano pletivo</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/pletivo/#pribor')" class="mtb-md">Pribor</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/pletivo/#mreze')" class="mtb-md">Mreže i ostala oprema za sportske objekte</NuxtLink>
 						</div>
 					</transition>
 				</div>
@@ -40,14 +40,14 @@
 					</div>
 					<transition name="fadeFromUp">
 						<div class="sub-menu--item u-flex u-flex-fd--c mt-sm" v-show="activeCategory === 'panelni'">
-							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m3-5mm')" class="mtb-sm">Panel M3 5mm</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m3-4mm')" class="mtb-sm">Panel M3 4mm</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m2-6-5-6-mm')" class="mtb-sm">Panel M2 6-5-6 mm</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m2-8-6-8-mm')" class="mtb-sm">Panel M2 8-6-8 mm</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/stup-metallum')" class="mtb-sm">Stup Metallum</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/stup-omega')" class="mtb-sm">Stup omega</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/stup-sport')" class="mtb-sm">Stup sport</NuxtLink>
-							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/sjenila-za-privatnost')" class="mtb-sm">Sjenila za privatnost</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m3-5mm')" class="mtb-md">Panel M3 5mm</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m3-4mm')" class="mtb-md">Panel M3 4mm</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m2-6-5-6-mm')" class="mtb-md">Panel M2 6-5-6 mm</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/panel-m2-8-6-8-mm')" class="mtb-md">Panel M2 8-6-8 mm</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/stup-metallum')" class="mtb-md">Stup Metallum</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/stup-omega')" class="mtb-md">Stup omega</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/stup-sport')" class="mtb-md">Stup sport</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/panelni-sustav/sjenila-za-privatnost')" class="mtb-md">Sjenila za privatnost</NuxtLink>
 						</div>
 					</transition>
 				</div>
@@ -65,11 +65,11 @@
 					</div>
 					<transition name="fadeFromUp">
 						<div class="sub-menu--item u-flex u-flex-fd--c mt-sm" v-show="activeCategory === 'vrata'">
-							<NuxtLink :to="localePath('/vrata/pjesacka-vrata')" class="mtb-sm">Pješačka vrata</NuxtLink>
-							<NuxtLink :to="localePath('/vrata/krilna-vrata')" class="mtb-sm">Krilna vrata</NuxtLink>
-							<NuxtLink :to="localePath('/vrata/klizna-vrata')" class="mtb-sm">Klizna vrata</NuxtLink>
-							<NuxtLink :to="localePath('/vrata/samonosiva-vrata')" class="mtb-sm">Samonosiva vrata</NuxtLink>
-							<NuxtLink :to="localePath('/vrata/dodatna-oprema')" class="mtb-sm">Dodatna oprema za vrata</NuxtLink>
+							<NuxtLink :to="localePath('/vrata/pjesacka-vrata')" class="mtb-md">Pješačka vrata</NuxtLink>
+							<NuxtLink :to="localePath('/vrata/krilna-vrata')" class="mtb-md">Krilna vrata</NuxtLink>
+							<NuxtLink :to="localePath('/vrata/klizna-vrata')" class="mtb-md">Klizna vrata</NuxtLink>
+							<NuxtLink :to="localePath('/vrata/samonosiva-vrata')" class="mtb-md">Samonosiva vrata</NuxtLink>
+							<NuxtLink :to="localePath('/vrata/dodatna-oprema')" class="mtb-md">Dodatna oprema za vrata</NuxtLink>
 						</div>
 					</transition>
 				</div>
@@ -85,8 +85,8 @@
 					</div>
 					<transition name="fadeFromUp">
 						<div class="sub-menu--item u-flex u-flex-fd--c mt-sm" v-show="activeCategory === 'poNacrtu'">
-							<NuxtLink :to="localePath('/vrata/izrada-po-nacrtu/zastitna-ograda')" class="mtb-sm">Zaštitna pješačka ograda</NuxtLink>
-							<NuxtLink :to="localePath('/vrata/izrada-po-nacrtu/vanstandardna-ograda')" class="mtb-sm">Vanstandardna ograda</NuxtLink>
+							<NuxtLink :to="localePath('/vrata/izrada-po-nacrtu/zastitna-ograda')" class="mtb-md">Zaštitna pješačka ograda</NuxtLink>
+							<NuxtLink :to="localePath('/vrata/izrada-po-nacrtu/vanstandardna-ograda')" class="mtb-md">Vanstandardna ograda</NuxtLink>
 						</div>
 					</transition>
 				</div>

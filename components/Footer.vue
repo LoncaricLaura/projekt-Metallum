@@ -135,7 +135,7 @@
 		background-color: $coral;
 		width: 212px;
 		height: 212px;
-		justify-self: end;
+		justify-self: flex-end;
 		&--img {
 			position: absolute;
 		}
