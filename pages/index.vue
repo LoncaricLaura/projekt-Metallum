@@ -89,7 +89,7 @@
 			<h2 class="fs-lg">Usluge</h2>
 		</div>
 
-		<div class="box-services u-grid u-grid-4 plr-box box-services--text fs-md txt-align-c ptb-main">
+		<div class="box-services u-grid u-grid-4 plr-main box-services--text fs-md txt-align-c ptb-main">
 			<div>
 				<img src="/img/image-field.png" class="mb-lg" />
 				<p>Izvid terena</p>

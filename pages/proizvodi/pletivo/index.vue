@@ -10,10 +10,11 @@
 		<ProductMenu />
 		<div class="pletivo u-flex u-flex-fd--c mtb-6xl" id="uni-pletivo">
 			<div class="galery u-flex u-flex-ai--fe u-flex-jc--fe mt-md mb-6xl">
-				<div class="btn btn--primary u-flex u-flex-ai--c">
+				<div class="btn btn--primary u-flex u-flex-ai--c" :class="{active: $store.state.openMenu}" @click="galery = !galery">
 					<img src="/img/mdi-light_picture.png" class="mr-md">
 					Pogledaj galeriju (14)
 				</div>
+				<SliderProducts :imgs="['6']" v-show="galery" />
 			</div>
 			<div class="u-flex u-flex-fd--c u-flex-as--fs">
 				<div class="pletivo--subtitle fs-lg pr-2xl">Univerzal pletivo</div>
@@ -337,6 +338,30 @@
 		</div>
 	</div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend ({
+	data() {
+		return {
+			visible: false,
+			galery: false
+		};
+	},
+	methods: {
+		toggleHam() {
+			this.$store.commit('toggleOpen', 'openMenu');
+			if (this.$store.state.openMenu) {
+				document.body.classList.add('noscroll');
+			} else {
+				document.body.classList.remove('noscroll');
+			}
+		}
+	}
+})
+</script>
+
 
 <style lang="scss" scoped>
 .bg {

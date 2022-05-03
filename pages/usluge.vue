@@ -31,7 +31,18 @@ export default {
 					icon: 'fence-door',
 					title: 'Proizvodnja ograda i vrata',
 					text:
-						'Za sve proizvode iz proizvodnog programa nudimo kompletnu uslugu dostave, pripremnih igrađevinskih radova, te montaže i završne obrade prije predaje objekta prema ugovorenom obujmu posla. Usluge uključuju:'
+						'Za sve proizvode iz proizvodnog programa nudimo kompletnu uslugu dostave, pripremnih igrađevinskih radova, te montaže i završne obrade prije predaje objekta prema ugovorenom obujmu posla. Usluge uključuju:',
+					servicesItems: [
+
+						 'Izlazak na teren radi uvida u obujam posla i planiranja potrebnog materijala',
+						 'Pripremu materijala prema dogovoru na terenu',
+						 'Prijevoz materijala na gradilište',
+						 'Pripremne i građevinske radove',
+						 'Montažu stupova, elemenata ograde i vratiju',
+						 'Završnu obradu ograde i čišćenje terena prije predaje gotovog objekta',
+						 'Predaju objekta korisniku'
+
+					]
 				},
 				{
 					id: 'antikorozivna-zastita',

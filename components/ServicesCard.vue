@@ -13,6 +13,9 @@
 				<div class="box-item--title mb-3xl fs-md mr-2xl">{{ service.title }}</div>
 				<div class="box-item--text fs-base">{{ service.text }}</div>
 			</div>
+			<div v-for="(item, i) in service.servicesItems" :key="i" class="box-item--services mt-md fs-base">
+				{{ item }}
+			</div>
 		</div>
 	</div>
 </template>
@@ -43,17 +46,25 @@ export default {
 	}
 	&--text {
 		width: 724px;
+		font-family: $ff-sans;
+		color: $iron80;
+		font-weight: $fw-normal;
 	}
 	&--card {
 		width: 346px;
 		height: 372px;
 		background-color: $coral;
-	object-fit: none;
+		object-fit: none;
 	}
 	&--img {
 		height: 372px;
 		width: 750px;
 		object-fit: cover;
+	}
+	&--services {
+		font-family: $ff-sans;
+		color: $iron80;
+		font-weight: $fw-light;
 	}
 }
 </style>

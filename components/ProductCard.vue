@@ -62,8 +62,8 @@ h2 {
 
 @media (max-width: 1900px) {
 	.box {
-		margin-left: 120px;
-		margin-right: 120px;
+		padding-left: 120px;
+		padding-right: 120px;
 	}
 	p {
 		width: 400px;
@@ -77,8 +77,8 @@ h2 {
 
 @media (max-width: 1600px) {
 	.box {
-		margin-left: 30px;
-		margin-right: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
 		.box-item {
 			align-items: center;
 			&--image {
@@ -94,6 +94,8 @@ h2 {
 
 @media (max-width: 1350px) {
 	.box {
+		padding-left: 20px;
+		padding-right: 20px;
 		.box-item {
 			height: 650px;
 			&--image {
@@ -110,7 +112,7 @@ h2 {
 	}
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
 	.box {
 		.box-item {
 			align-items: flex-start;

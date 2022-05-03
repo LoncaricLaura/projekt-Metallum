@@ -1,13 +1,13 @@
 <template>
-		<header class="header u-flex u-flex-fw--w u-flex-jc--sb u-flex-fd--r plr-6xl pt-md pl-3xl" :class="{ fixed: $store.state.openMenu ,'header--dark' : ($route.name || '').includes('proizvodi') || ($route.name || '').includes('usluge') }">
+		<header class="header u-flex u-flex-fw--w u-flex-jc--sb u-flex-fd--r plr-6xl pt-md pl-3xl" :class="{ fixed: $store.state.openMenu ,'header--dark' : ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge') }">
 			<NuxtLink :to="localePath('/')" class="light"
 				><img src="/img/icon-l.png">
-				<img src="/img/icon-metallum-l.png" class="mb-sm ml-xl">
+				<img src="/img/icon-metallum-l.png" class="header--img-icon mb-sm ml-xl">
 				</NuxtLink>
 
 			<NuxtLink :to="localePath('/')" class="dark">
 				<img src="/img/icon.png">
-				<img src="/img/icon-metallum.png" class="mb-sm ml-xl">
+				<img src="/img/icon-metallum.png" class="heder--img-icon mb-sm ml-xl">
 			</NuxtLink>
 
 			<div class="u-flex u-flex--if u-flex-ai--fe mb-sm header__top">
@@ -20,11 +20,16 @@
 				</div>
 			</div>
 
-			<div class="u-flex u-flex-ai--c hamburger" :class="{ active: $store.state.openMenu }" @click="$store.commit('toggleField', 'openMenu')">
+			<div class="u-flex u-flex-ai--c hamburger" :class="{ active: $store.state.openMenu, 'hamburger--dark' : ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge') }" @click="$store.commit('toggleField', 'openMenu')">
 				<div class="hamb-btn">
-					<div class="hamb-line" />
-					<div class="hamb-line" />
-					<div class="hamb-line" />
+					<div class="hamb-line light" />
+					<div class="hamb-line light" />
+					<div class="hamb-line light" />
+				</div>
+				<div class="hamb-btn ">
+					<div class="hamb-line dark" />
+					<div class="hamb-line dark" />
+					<div class="hamb-line dark" />
 				</div>
 			</div>
 		</header>
@@ -100,12 +105,15 @@ export default Vue.extend({
 
 @media (max-width: 1080px) {
 	.header {
-		position: relative;
-		padding-left: 30px;
-		padding-right: 35px;
+		position: absolute;
+		padding-left: 20px;
+		padding-right: 15px;
 		width: 100%;
 		&.fixed {
 			position: fixed;
+		}
+		&--img-icon {
+			margin-left: 10px;
 		}
 	}
 	.hamburger {
@@ -120,6 +128,15 @@ export default Vue.extend({
 			background-color: $metallum0;
 			transition: all 0.6s;
 			margin-right: 12px;
+		}
+		&--dark {
+			.dark {
+				display: block;
+				background-color: $iron;
+			}
+			.light {
+				display: none;
+			}
 		}
 	}
 	.hamburger.active {
