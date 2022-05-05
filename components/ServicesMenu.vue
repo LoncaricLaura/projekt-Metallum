@@ -112,4 +112,16 @@ export default Vue.extend({
 		color: $iron80;
 	}
 }
+
+@media (max-width: 1800px) {
+	.menu {
+		margin-left: 50px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.menu {
+		display: none;
+	}
+}
 </style>

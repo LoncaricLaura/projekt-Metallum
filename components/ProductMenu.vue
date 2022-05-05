@@ -223,4 +223,16 @@ export default Vue.extend({
 		background-color: $iron;
 	}
 }
+
+@media (max-width: 1800px) {
+	.menu {
+		margin-left: 50px;
+	}
+}
+
+@media (max-width: 1550px) {
+	.menu {
+		display: none;
+	}
+}
 </style>

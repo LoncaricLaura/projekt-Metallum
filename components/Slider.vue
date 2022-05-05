@@ -26,7 +26,6 @@ export default Vue.extend({
 			slider: {
 				type: 'loop',
 				lazyLoad: 'nearby',
-				//padding: '30rem',
 				rewind: true,
 				perPage: 1.5,
 

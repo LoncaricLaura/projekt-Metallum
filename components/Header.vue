@@ -1,38 +1,48 @@
 <template>
-		<header class="header u-flex u-flex-fw--w u-flex-jc--sb u-flex-fd--r plr-6xl pt-md pl-3xl" :class="{ fixed: $store.state.openMenu ,'header--dark' : ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge') }">
-			<NuxtLink :to="localePath('/')" class="light"
-				><img src="/img/icon-l.png">
-				<img src="/img/icon-metallum-l.png" class="header--img-icon mb-sm ml-xl">
-				</NuxtLink>
+	<header
+		class="header u-flex u-flex-fw--w u-flex-jc--sb u-flex-fd--r plr-6xl pt-md pl-3xl"
+		:class="{
+			fixed: $store.state.openMenu,
+			'header--dark': ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge')
+		}"
+	>
+		<NuxtLink :to="localePath('/')" class="light"
+			><img src="/img/icon-l.png" />
+			<img src="/img/icon-metallum-l.png" class="header--img-icon mb-sm ml-xl" />
+		</NuxtLink>
 
-			<NuxtLink :to="localePath('/')" class="dark">
-				<img src="/img/icon.png">
-				<img src="/img/icon-metallum.png" class="heder--img-icon mb-sm ml-xl">
-			</NuxtLink>
+		<NuxtLink :to="localePath('/')" class="dark">
+			<img src="/img/icon.png" />
+			<img src="/img/icon-metallum.png" class="heder--img-icon mb-sm ml-xl" />
+		</NuxtLink>
 
-			<div class="u-flex u-flex--if u-flex-ai--fe mb-sm header__top">
-				<div class="nav fs-base">
-					<NuxtLink :to="localePath('/Proizvodi')" class="menuItem">Proizvodi</NuxtLink>
-					<NuxtLink :to="localePath('/Usluge')" class="menuItem ml-lg">Usluge</NuxtLink>
-					<NuxtLink :to="localePath('/Galerija')" class="menuItem ml-lg">Galerija</NuxtLink>
-					<NuxtLink :to="localePath('/Kontakt')" class="menuItem ml-lg">Kontakt</NuxtLink>
-					<a href="" class="menuItem ml-6xl">HR | EN</a>
-				</div>
+		<div class="u-flex u-flex--if u-flex-ai--fe mb-sm header__top">
+			<div class="nav fs-base">
+				<NuxtLink :to="localePath('/Proizvodi')" class="menuItem">Proizvodi</NuxtLink>
+				<NuxtLink :to="localePath('/Usluge')" class="menuItem ml-lg">Usluge</NuxtLink>
+				<NuxtLink :to="localePath('/Galerija')" class="menuItem ml-lg">Galerija</NuxtLink>
+				<NuxtLink :to="localePath('/Kontakt')" class="menuItem ml-lg">Kontakt</NuxtLink>
+				<a href="" class="menuItem ml-6xl">HR | EN</a>
 			</div>
+		</div>
 
-			<div class="u-flex u-flex-ai--c hamburger" :class="{ active: $store.state.openMenu, 'hamburger--dark' : ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge') }" @click="$store.commit('toggleField', 'openMenu')">
-				<div class="hamb-btn">
-					<div class="hamb-line light" />
-					<div class="hamb-line light" />
-					<div class="hamb-line light" />
-				</div>
-				<div class="hamb-btn ">
-					<div class="hamb-line dark" />
-					<div class="hamb-line dark" />
-					<div class="hamb-line dark" />
-				</div>
+		<div
+			class="u-flex u-flex-ai--c hamburger"
+			:class="{ active: $store.state.openMenu, 'hamburger--dark': ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge') }"
+			@click="$store.commit('toggleField', 'openMenu')"
+		>
+			<div class="hamb-btn">
+				<div class="hamb-line light" />
+				<div class="hamb-line light" />
+				<div class="hamb-line light" />
 			</div>
-		</header>
+			<div class="hamb-btn">
+				<div class="hamb-line dark" />
+				<div class="hamb-line dark" />
+				<div class="hamb-line dark" />
+			</div>
+		</div>
+	</header>
 </template>
 
 <script lang="ts">
@@ -78,7 +88,7 @@ export default Vue.extend({
 	width: 100%;
 	z-index: 60;
 	top: 0;
-	.dark{
+	.dark {
 		display: none;
 	}
 	&--dark {
@@ -93,7 +103,6 @@ export default Vue.extend({
 		}
 	}
 }
-
 
 .menuItem:hover {
 	text-decoration: underline;

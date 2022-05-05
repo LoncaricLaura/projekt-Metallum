@@ -8,15 +8,15 @@
 			</div>
 		</div>
 		<ProductMenu />
-		<div class="pletivo u-flex u-flex-fd--c mtb-6xl" id="uni-pletivo">
+		<div class="pletivo u-flex u-flex-fd--c u-flex-ai--fe mtb-6xl plr-main" id="uni-pletivo">
 			<div class="galery u-flex u-flex-ai--fe u-flex-jc--fe mt-md mb-6xl">
-				<div class="btn btn--primary u-flex u-flex-ai--c" :class="{active: $store.state.openMenu}" @click="galery = !galery">
-					<img src="/img/mdi-light_picture.png" class="mr-md">
+				<div class="btn btn--primary u-flex u-flex-ai--c" :class="{ active: $store.state.openMenu }" @click="galery = !galery">
+					<img src="/img/mdi-light_picture.png" class="mr-md" />
 					Pogledaj galeriju (14)
 				</div>
-				<SliderProducts :imgs="['6']" v-show="galery" />
+				<SliderProducts :imgs="['6']" v-if="galery" />
 			</div>
-			<div class="u-flex u-flex-fd--c u-flex-as--fs">
+			<div class="u-flex u-flex-fd--c u-flex-ai--fe">
 				<div class="pletivo--subtitle fs-lg pr-2xl">Univerzal pletivo</div>
 				<p class="mtb-xl">
 					Univerzal pletiva, od pocinčane ili pocinčane i plastificirane žice, namijenjena su za ograđivanje sportskih površina, stambenih prostora, vrtova, parkova,
@@ -141,19 +141,19 @@
 					pletivo čini atraktivnim i robusnim.
 				</p>
 				<p>Svi dijelovi ogradnog sustava su vruće cinčani i plastificirani u zelenu boju (RAL 6005).</p>
-				<div class="pletivo--vareno mt-3xl u-grid u-grid-2">
-					<div>
+				<div class="pletivo--vareno mt-3xl u-flex u-flex-fd--r u-flex-as--fs">
+					<div class="mr-xl">
 						<img src="/img/50-100-mm.png" />
-						<p class="mt-sm">100/50 mm</p>
+						<div class="mt-sm">100/50 mm</div>
 					</div>
 					<div>
 						<img src="/img/50-50-mm.png" />
-						<p class="mt-sm">50/50 mm</p>
+						<div class="mt-sm">50/50 mm</div>
 					</div>
 				</div>
 
 				<div class="pletivo--subtitle fs-lg pt-6xl pr-2xl" id="pribor">Pribor</div>
-				<p class="mt-xl mr-6xl">
+				<p class="mt-xl">
 					U našoj ponudi imamo sav pribor potreban za montažu mreža i posebnih ograda, uključujući kliješta, zatezače, spojnice, razne vrste žica (zatezne žice, žice
 					za učvršćivanje, bodljikave žice) te ostali pribor.<br />
 					Sav pribor je zaštićen od korozije pocinčavanjem i /ili plastifikacijom.
@@ -330,7 +330,7 @@
 				<p class="mt-xl mb-sm">U pomoćni pribor spadaju kliješta, zatezači, pocinčani i plastificirani, te spojnice.</p>
 
 				<div class="pletivo--subtitle fs-lg pt-xl pr-2xl" id="mreze">Mreže i ostala oprema za sportske objekte</div>
-				<p class="mt-xl mb-6xl mr-6xl">
+				<p class="mt-xl mb-6xl">
 					Za potrebe projekta, u mogućnosti smo dobaviti i montirati razne vrste mreža i ostale opreme potrebne za opremanje sportskih terena, dječjih igrališta,
 					vrtića i škola.
 				</p>
@@ -342,7 +342,7 @@
 <script lang="ts">
 import Vue from 'vue';
 
-export default Vue.extend ({
+export default Vue.extend({
 	data() {
 		return {
 			visible: false,
@@ -359,9 +359,8 @@ export default Vue.extend ({
 			}
 		}
 	}
-})
+});
 </script>
-
 
 <style lang="scss" scoped>
 .bg {
@@ -385,19 +384,23 @@ export default Vue.extend ({
 }
 
 .pletivo {
-	margin-left: 650px;
-	margin-right: 220px;
+	width: auto;
+	//margin-left: 650px;
+	//margin-right: 220px;
 	&--subtitle {
 		font-family: $ff-serif;
 		color: $iron;
+		width: 1102px;
 	}
 	p {
 		font-family: $ff-sans;
 		font-size: 18px;
 		color: $iron;
+		width: 1102px;
 	}
 	&--vareno {
 		width: 35%;
+		font-family: $ff-sans;
 	}
 }
 table {
@@ -436,4 +439,23 @@ tbody {
 	width: 1102px;
 }
 
+@media (max-width: 1800px) {
+	.pletivo {
+		padding-right: 100px;
+	}
+}
+
+@media (max-width: 1650px) {
+	.pletivo {
+		padding-right: 50px;
+	}
+}
+
+@media (max-width: 1550px) {
+	.pletivo {
+		padding-left: 100px;
+		padding-right: 100px;
+		align-items: center;
+	}
+}
 </style>

@@ -1,9 +1,9 @@
 <template>
-	<div class="box u-flex u-flex-fd--c hor-center mlr-main mb-card">
+	<div class="box u-flex u-flex-fd--c u-flex-ai--fe mb-card plr-main">
 		<div class="box-item u-flex u-flex-fd--c u-flex-jc--fe" v-for="(service, i) in services" :key="i" :id="`${service.id}`">
 			<div class="u-flex u-flex-fd--r">
 				<div class="">
-					<img :src="require(`/pages/img/${service.icon}.png`)" class="box-item--card " />
+					<img :src="require(`/pages/img/${service.icon}.png`)" class="box-item--card" />
 				</div>
 				<div>
 					<img :src="require(`/pages/img/${service.image}.jpg`)" class="box-item--img" />
@@ -35,8 +35,8 @@ export default {
 	font-family: $ff-serif;
 	font-weight: $fw-normal;
 	gap: 50px;
-	margin-left: 650px;
-	width: 1102px;
+	//margin-left: 650px;
+	width: auto;
 	padding-top: 240px;
 }
 
@@ -65,6 +65,20 @@ export default {
 		font-family: $ff-sans;
 		color: $iron80;
 		font-weight: $fw-light;
+	}
+}
+
+@media (max-width: 1800px) {
+	.box {
+		padding-right: 25px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.box {
+		padding-left: 30px;
+		padding-right: 30px;
+		align-items: center;
 	}
 }
 </style>
