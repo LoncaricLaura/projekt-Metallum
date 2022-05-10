@@ -1,7 +1,7 @@
 <template>
-	<div>
-		<ServicesMenu />
-		<ServicesCard :services="services" />
+	<div class="usluge u-flex u-flex-fd--r ml-6xl">
+		<div><ServicesMenu /></div>
+		<div><ServicesCard :services="services" /></div>
 	</div>
 </template>
 
@@ -87,3 +87,9 @@ export default {
 	}
 };
 </script>
+
+<style lang="scss" scoped>
+.usluge {
+	margin-right: 220px;
+}
+</style>

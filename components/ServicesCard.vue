@@ -1,6 +1,6 @@
 <template>
-	<div class="box u-flex u-flex-fd--c u-flex-ai--fe mb-card plr-main">
-		<div class="box-item u-flex u-flex-fd--c u-flex-jc--fe" v-for="(service, i) in services" :key="i" :id="`${service.id}`">
+	<div class="box u-flex u-flex-fd--c u-flex-ai--fe mb-card">
+		<div class="box-item u-flex u-flex-fd--c u-flex-jc--fe pt-xl" v-for="(service, i) in services" :key="i" :id="`${service.id}`">
 			<div class="u-flex u-flex-fd--r">
 				<div class="">
 					<img :src="require(`/pages/img/${service.icon}.png`)" class="box-item--card" />
@@ -10,11 +10,15 @@
 				</div>
 			</div>
 			<div class="box-item u-flex u-flex-fd--r pt-lg">
-				<div class="box-item--title mb-3xl fs-md mr-2xl">{{ service.title }}</div>
-				<div class="box-item--text fs-base">{{ service.text }}</div>
-			</div>
-			<div v-for="(item, i) in service.servicesItems" :key="i" class="box-item--services mt-md fs-base">
-				{{ item }}
+				<div class="box-item--title mb-3xl fs-md">{{ service.title }}</div>
+				<div class="box-item--text fs-base ml-2xl">
+					{{ service.text }}
+					<div class="service-list">
+						<div v-for="(item, i) in service.servicesItems" :key="i" class="mt-md fs-base service-list__item pr-lg">
+							{{ item }}
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -31,13 +35,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.service-list {
+	display: flex;
+	flex-wrap: wrap;
+	&__item {
+		width: 50%;
+		font-family: $ff-sans;
+		color: $iron80;
+		font-weight: $fw-light;
+	}
+}
 .box {
 	font-family: $ff-serif;
 	font-weight: $fw-normal;
 	gap: 50px;
-	//margin-left: 650px;
 	width: auto;
 	padding-top: 240px;
+	//padding-left: 220px;
 }
 
 .box-item {
@@ -60,11 +74,6 @@ export default {
 		height: 372px;
 		width: 750px;
 		object-fit: cover;
-	}
-	&--services {
-		font-family: $ff-sans;
-		color: $iron80;
-		font-weight: $fw-light;
 	}
 }
 

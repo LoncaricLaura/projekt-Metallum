@@ -3,7 +3,7 @@
 		class="header u-flex u-flex-fw--w u-flex-jc--sb u-flex-fd--r plr-6xl pt-md pl-3xl"
 		:class="{
 			fixed: $store.state.openMenu,
-			'header--dark': ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge')
+			'header--dark': ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge') || ($route.name || '').includes('galerija')
 		}"
 	>
 		<NuxtLink :to="localePath('/')" class="light"

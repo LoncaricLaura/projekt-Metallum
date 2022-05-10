@@ -1,5 +1,5 @@
 <template>
-	<div class="menu u-flex u-flex-fd--c mtb-xl ml-footer">
+	<div class="menu u-flex u-flex-fd--c mtb-xl">
 		<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
 			<NuxtLink :to="localePath('/Usluge')" class="menu--item fs-lg mtb-3xl">Usluge</NuxtLink>
 		</div>
@@ -59,10 +59,10 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .menu {
-	position: absolute;
+	position: relative;
 	font-family: $ff-serif;
 	color: $iron;
-	width: 19%;
+	width: 70%;
 	height: 100%;
 	z-index: 50;
 	top: 150px;

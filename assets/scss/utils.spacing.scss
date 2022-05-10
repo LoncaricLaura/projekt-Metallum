@@ -269,8 +269,8 @@ $spacer: 8px;
 }
 
 .mlr-7xl {
-	margin-left: ($spacer * 10);
-	margin-right: ($spacer * 10);
+	margin-left: ($spacer * 13);
+	margin-right: ($spacer * 13);
 }
 
 .mlr-main {
@@ -605,7 +605,6 @@ $spacer: 8px;
 	padding-right: 100px;
 }
 
-
 // padding top-bottom
 .ptb-xxs {
 	padding-top: ($spacer * 0.5);
@@ -665,4 +664,9 @@ $spacer: 8px;
 .ptb-main {
 	padding-top: 150px;
 	padding-bottom: 150px;
+}
+
+.ptb-gallery {
+	padding-top: 200px;
+	padding-bottom: 200px;
 }

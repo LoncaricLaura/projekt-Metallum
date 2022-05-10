@@ -1,7 +1,7 @@
 <template>
-	<div class="menu u-flex u-flex-fd--c mtb-xl ml-footer">
+	<div class="menu u-flex u-flex-fd--c">
 		<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
-			<NuxtLink :to="localePath('/Proizvodi')" class="menu--item fs-lg mtb-xl">Proizvodi</NuxtLink>
+			<NuxtLink :to="localePath('/Proizvodi')" class="menu--item fs-md mtb-xl">Proizvodi</NuxtLink>
 			<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('proizvodi')" :class="{ active: activeCategory == 'proizvodi' }">
 				<div class="hamb-btn">
 					<div class="hamb-line" />
@@ -11,27 +11,27 @@
 		</div>
 		<transition name="fadeFromUp">
 			<div class="sub-menu u-flex u-flex-fd--c" v-show="activeCategory === 'proizvodi'">
-				<div class="sub-menu mb-xs mt-xs">
-					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-md">
-						<NuxtLink :to="localePath('/proizvodi/pletivo')">Pletivo</NuxtLink>
+				<div class="sub-menu mb-xs">
+					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
+						<NuxtLink :to="localePath('/galerija/#pletivo')">Pletivo</NuxtLink>
 					</div>
 				</div>
-				<div class="sub-menu mb-xxs mt-xs fs-md"><NuxtLink :to="localePath('/proizvodi/valovit-mreza')">Valovita (vibro) mreža</NuxtLink></div>
-				<div class="sub-menu mtb-sm fs-md"><NuxtLink :to="localePath('/proizvodi/stupovi')">Stupovi (kosnici, konzole, prečke)</NuxtLink></div>
+				<div class="sub-menu mb-xxs mt-xs fs-base"><NuxtLink :to="localePath('/galerija/#valovit-mreza')">Valovita (vibro) mreža</NuxtLink></div>
+				<div class="sub-menu mtb-sm fs-base"><NuxtLink :to="localePath('/galerija/#stupovi')">Stupovi (kosnici, konzole, prečke)</NuxtLink></div>
 				<div class="sub-menu mb-sm mt-xxs">
-					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-md">
+					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
 						<NuxtLink :to="localePath('/proizvodi/panelni-sustav')">Panelni sustav</NuxtLink>
 					</div>
 				</div>
-				<div class="sub-menu mb-sm mt-xxs fs-md"><NuxtLink :to="localePath('/proizvodi/pruzni-sustav')">Pružni sustavi</NuxtLink></div>
-				<div class="sub-menu mb-sm mt-xxs fs-md"><NuxtLink :to="localePath('/proizvodi/ogradni-gabioni')">Ogradni gabioni</NuxtLink></div>
+				<div class="sub-menu mb-sm mt-xxs fs-base"><NuxtLink :to="localePath('/proizvodi/pruzni-sustav')">Pružni sustavi</NuxtLink></div>
+				<div class="sub-menu mb-sm mt-xxs fs-base"><NuxtLink :to="localePath('/proizvodi/ogradni-gabioni')">Ogradni gabioni</NuxtLink></div>
 				<div class="sub-menu mt-xxs">
-					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-md">
+					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
 						<NuxtLink :to="localePath('/proizvodi/vrata')">Vrata</NuxtLink>
 					</div>
 				</div>
-				<div class="sub-menu mb-sm mt-xxs">
-					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-md">
+				<div class="sub-menu mt-sm mb-lg">
+					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
 						<NuxtLink :to="localePath('/proizvodi/izrada-po-nacrtu')">Izrada po nacrtu</NuxtLink>
 					</div>
 				</div>
@@ -39,7 +39,7 @@
 		</transition>
 
 		<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb menu--line">
-			<NuxtLink :to="localePath('/Proizvodi')" class="menu--item fs-lg mtb-xl">Vrsta nekretnine</NuxtLink>
+			<NuxtLink :to="localePath('/Proizvodi')" class="menu--item fs-md mtb-xl">Vrsta nekretnine</NuxtLink>
 			<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('nekretnine')" :class="{ active: activeCategory == 'nekretnine' }">
 				<div class="hamb-btn">
 					<div class="hamb-line" />
@@ -49,13 +49,13 @@
 		</div>
 		<transition name="fadeFromUp">
 			<div class="sub-menu u-flex u-flex-fd--c" v-show="activeCategory === 'nekretnine'">
-				<div class="sub-menu mb-xs mt-xs">
-					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-md">
+				<div class="sub-menu mb-xs">
+					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
 						<NuxtLink :to="localePath('/proizvodi/pletivo')">Ville</NuxtLink>
 					</div>
 				</div>
-				<div class="sub-menu mb-xxs mt-xs fs-md"><NuxtLink :to="localePath('/proizvodi/valovit-mreza')">Novogradnja</NuxtLink></div>
-				<div class="sub-menu mtb-sm fs-md"><NuxtLink :to="localePath('/proizvodi/stupovi')">Industrija</NuxtLink></div>
+				<div class="sub-menu mb-xxs mt-xs fs-base"><NuxtLink :to="localePath('/proizvodi/valovit-mreza')">Novogradnja</NuxtLink></div>
+				<div class="sub-menu mtb-sm fs-base"><NuxtLink :to="localePath('/proizvodi/stupovi')">Industrija</NuxtLink></div>
 			</div>
 		</transition>
 	</div>

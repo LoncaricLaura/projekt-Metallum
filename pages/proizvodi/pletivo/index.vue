@@ -8,7 +8,7 @@
 			</div>
 		</div>
 		<ProductMenu />
-		<div class="pletivo u-flex u-flex-fd--c u-flex-ai--fe mtb-6xl plr-main" id="uni-pletivo">
+		<div class="pletivo u-flex u-flex-fd--c u-flex-ai--fe mtb-6xl plr-main">
 			<div class="galery u-flex u-flex-ai--fe u-flex-jc--fe mt-md mb-6xl">
 				<div class="btn btn--primary u-flex u-flex-ai--c" :class="{ active: $store.state.openMenu }" @click="galery = !galery">
 					<img src="/img/mdi-light_picture.png" class="mr-md" />
@@ -17,7 +17,7 @@
 				<SliderProducts :imgs="['6']" v-if="galery" />
 			</div>
 			<div class="u-flex u-flex-fd--c u-flex-ai--fe">
-				<div class="pletivo--subtitle fs-lg pr-2xl">Univerzal pletivo</div>
+				<div class="pletivo--subtitle fs-lg pr-2xl pt-xl" id="uni-pletivo">Univerzal pletivo</div>
 				<p class="mtb-xl">
 					Univerzal pletiva, od pocinčane ili pocinčane i plastificirane žice, namijenjena su za ograđivanje sportskih površina, stambenih prostora, vrtova, parkova,
 					te poljoprivrednih i sličnih površina.
@@ -82,7 +82,7 @@
 					</table>
 				</div>
 
-				<div class="pletivo--table-plastificirano mtb-2xl" id="plastificirano-pletivo">
+				<div class="pletivo--table-plastificirano ptb-2xl" id="plastificirano-pletivo">
 					<table>
 						<thead>
 							<tr>
