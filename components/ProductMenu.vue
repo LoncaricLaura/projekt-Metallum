@@ -229,10 +229,4 @@ export default Vue.extend({
 		margin-left: 50px;
 	}
 }
-
-@media (max-width: 1550px) {
-	.menu {
-		display: none;
-	}
-}
 </style>

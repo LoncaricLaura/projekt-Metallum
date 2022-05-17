@@ -95,10 +95,10 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .menu {
-	position: absolute;
+	position: relative;
 	font-family: $ff-serif;
 	color: $iron;
-	width: 19%;
+	width: 70%;
 	height: 100%;
 	z-index: 50;
 
@@ -178,15 +178,9 @@ export default Vue.extend({
 	}
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1650px) {
 	.menu {
-		margin-left: 50px;
-	}
-}
-
-@media (max-width: 1550px) {
-	.menu {
-		display: none;
+		display: flex;
 	}
 }
 </style>

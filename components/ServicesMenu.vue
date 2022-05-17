@@ -64,7 +64,7 @@ export default Vue.extend({
 	color: $iron;
 	width: 70%;
 	height: 100%;
-	z-index: 50;
+	//z-index: 50;
 	top: 150px;
 
 	&--nav {
@@ -114,9 +114,6 @@ export default Vue.extend({
 }
 
 @media (max-width: 1800px) {
-	.menu {
-		margin-left: 50px;
-	}
 }
 
 @media (max-width: 1500px) {

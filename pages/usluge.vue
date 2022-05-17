@@ -1,7 +1,7 @@
 <template>
-	<div class="usluge u-flex u-flex-fd--r ml-6xl">
-		<div><ServicesMenu /></div>
-		<div><ServicesCard :services="services" /></div>
+	<div class="usluge u-flex u-flex-fd--r mlr-7xl">
+		<div class="menu"><ServicesMenu /></div>
+		<div class="u-flex u-flex-ai--fe"><ServicesCard :services="services" /></div>
 	</div>
 </template>
 
@@ -89,7 +89,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.usluge {
-	margin-right: 220px;
+@media (max-width: 1700px) {
+	.usluge {
+		margin-left: 60px;
+		margin-right: 60px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.usluge {
+		justify-content: center;
+	}
 }
 </style>

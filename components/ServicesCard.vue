@@ -13,11 +13,12 @@
 				<div class="box-item--title mb-3xl fs-md">{{ service.title }}</div>
 				<div class="box-item--text fs-base ml-2xl">
 					{{ service.text }}
-					<div class="service-list">
-						<div v-for="(item, i) in service.servicesItems" :key="i" class="mt-md fs-base service-list__item pr-lg">
-							{{ item }}
-						</div>
-					</div>
+					<ul class="service-list">
+						<li v-for="(item, i) in service.servicesItems" :key="i" class="mt-md fs-base service-list__item pr-lg u-flex u-flex-ai--fs">
+							<!-- <div class="red-dot"></div> -->
+							<p>{{ item }}</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -38,6 +39,8 @@ export default {
 .service-list {
 	display: flex;
 	flex-wrap: wrap;
+	// list-style-type: none;
+	list-style-image: url('~/assets/img/nofollow/red-dot.png') !important;
 	&__item {
 		width: 50%;
 		font-family: $ff-sans;
@@ -76,6 +79,13 @@ export default {
 		object-fit: cover;
 	}
 }
+
+// .red-dot {
+// 	background-color: $coral;
+// 	width: 2px;
+// 	height: 2px;
+// 	border-radius: 50%;
+// }
 
 @media (max-width: 1800px) {
 	.box {

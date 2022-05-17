@@ -1,7 +1,7 @@
 <template>
-	<div class="u-flex u-flex-fd--r ptb-gallery mlr-7xl">
+	<div class="gallery u-flex u-flex-fd--r ptb-gallery mlr-7xl">
 		<div class="menu"><GalleryMenu /></div>
-		<div class="box pl-6xl">
+		<div class="box u-flex">
 			<div class="u-grid">
 				<div class="fs-lg mb-md pt-lg" id="pletivo">Pletivo</div>
 				<div class="box--pletivo u-grid u-grid-3 mb-2xl">
@@ -104,10 +104,10 @@
 
 <style lang="scss" scoped>
 .menu {
-	width: 20%;
+	width: 100%;
 }
 .box {
-	margin-left: 160px;
+	margin-left: 100px;
 	&--pletivo {
 		grid-template-rows: repeat(6);
 		&--item4 {
@@ -169,6 +169,41 @@
 		&--item9 {
 			grid-row: 6;
 		}
+	}
+}
+
+@media (max-width: 1800px) {
+	.gallery {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+
+@media (max-width: 1650px) {
+	.gallery {
+		flex-direction: column;
+		padding-left: 140px;
+		padding-right: 140px;
+	}
+	.box {
+		align-items: center;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.gallery {
+		flex-direction: column;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}
+
+@media (max-width: 800px) {
+	.gallery {
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 </style>

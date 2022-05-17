@@ -23,28 +23,29 @@ export default Vue.extend({
 	name: 'Slider',
 	props: {
 		imgs: {
-			type: Array,
-			default: () => ['1']
+			// type: Array,
+			// default: () => ['1']
 		}
 	},
 	data() {
 		return {
 			slider: {
-				//type: 'fade',
+				type: 'loop',
 				//lazyLoad: 'nearby',
 				//rewind: true,
 				perPage: 1,
 
 				//focus: 'center',
 				pagination: false,
+				//width: 500
 
 				//perMove: 1,
 				arrows: false
 			},
 
 			sliderThumb: {
-				type: 'slide',
-				gap: 10,
+				type: 'loop',
+				gap: 40,
 				rewind: true,
 				pagination: false,
 				perMove: 1,

@@ -175,9 +175,6 @@ export default Vue.extend({
 			font-family: $ff-serif;
 			font-size: 27px;
 		}
-		&--item:hover {
-			text-decoration: underline;
-		}
 		&.open {
 			display: flex;
 		}
