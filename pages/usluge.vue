@@ -96,9 +96,30 @@ export default {
 	}
 }
 
+@media (max-width: 1615px) {
+	.usluge {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+}
+
 @media (max-width: 1500px) {
 	.usluge {
-		justify-content: center;
+		flex-direction: column;
+		//align-items: center;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	.box {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.usluge {
+		margin-left: 30px;
+		margin-right: 30px;
 	}
 }
 </style>

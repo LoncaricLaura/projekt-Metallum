@@ -113,12 +113,10 @@ export default Vue.extend({
 	}
 }
 
-@media (max-width: 1800px) {
-}
-
 @media (max-width: 1500px) {
 	.menu {
-		display: none;
+		width: 100%;
+		margin-top: 0;
 	}
 }
 </style>

@@ -3,7 +3,7 @@
 		<div class="u-flex slider-image">
 			<splide :options="slider" class="main__slider">
 				<splide-slide v-for="(img, i) in imgs" :key="i" class="slide__track">
-					<img :src="require(`/static/img/image-${img}.jpg`)" :data-splide-lazy="require(`/static/img/image-${img}.jpg`)" />
+					<img :src="require(`~/assets/img/products/pletivo/image-${img}.jpg`)" :data-splide-lazy="require(`~/assets/img/products/pletivo/image-${img}.jpg`)" />
 				</splide-slide>
 			</splide>
 		</div>

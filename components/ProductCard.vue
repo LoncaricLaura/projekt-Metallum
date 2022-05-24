@@ -2,12 +2,12 @@
 	<div class="box u-grid mb-card plr-main">
 		<div class="box-item u-flex u-flex-ai--c" v-for="(product, i) in products" :key="i">
 			<div class="box-item--title ml-6xl fs-md">
-				<h2 class="mb-2xl">{{ product.title }}</h2>
+				<h2 class="mb-lg">{{ product.title }}</h2>
 				<p class="fs-base">{{ product.text }}</p>
 				<NuxtLink :to="localePath(`/proizvodi${product.button}`)" class="btn btn--primary fs-base mt-4xl">SAZNAJTE VIŠE</NuxtLink>
 			</div>
-			<div class="pos-a box-item--image u-flex u-flex-jc--fe ">
-				<img :src="require(`/pages/proizvodi/images/${product.img}.png`)" />
+			<div class="pos-a box-item--image u-flex u-flex-jc--fe">
+				<img :src="require(`~/assets/img/products/${product.img}.png`)" />
 			</div>
 		</div>
 	</div>
@@ -59,7 +59,6 @@ h2 {
 	}
 }
 
-
 @media (max-width: 1900px) {
 	.box {
 		padding-left: 120px;
@@ -97,16 +96,15 @@ h2 {
 		padding-left: 20px;
 		padding-right: 20px;
 		.box-item {
-			height: 650px;
 			&--image {
 				align-items: flex-end;
 				img {
 					height: 100%;
-					width: 65%;
+					width: 60%;
 				}
 			}
 			&--title {
-				width: 300px;
+				width: 100%;
 			}
 		}
 	}
@@ -115,11 +113,14 @@ h2 {
 @media (max-width: 1150px) {
 	.box {
 		.box-item {
+			height: 650px;
 			align-items: flex-start;
+			margin-bottom: 30px;
+
 			&--image {
 				align-items: flex-end;
 				img {
-					height: 40%;
+					height: 60%;
 					width: 100%;
 				}
 			}
@@ -134,8 +135,39 @@ h2 {
 		padding: 15px 25px;
 	}
 	p {
-		padding-right: 30px;
-		padding-bottom: 20px;
+		width: fit-content;
+		padding-right: 50px;
+		padding-bottom: 15px;
+	}
+}
+
+@media (max-width: 800px) {
+	.box {
+		.box-item {
+			&--image {
+				img {
+					height: 40%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.box {
+		.box-item {
+			&--title {
+				margin-left: 15px;
+			}
+			&--image {
+				img {
+					height: 26%;
+				}
+			}
+		}
+	}
+	p {
+		padding-right: 15px;
 	}
 }
 </style>

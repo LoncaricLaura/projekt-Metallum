@@ -1,5 +1,5 @@
 export const state = () => ({
-	openMenu: false,
+	openMenu: false
 });
 
 export const mutations = {

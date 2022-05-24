@@ -100,7 +100,6 @@ export default Vue.extend({
 	color: $iron;
 	width: 70%;
 	height: 100%;
-	z-index: 50;
 
 	&--nav {
 		padding: 150px 40px;
@@ -138,7 +137,6 @@ export default Vue.extend({
 }
 .hamburger {
 	display: flex;
-	z-index: 60;
 	cursor: pointer;
 	.hamb-line {
 		width: 18px;

@@ -20,12 +20,10 @@
 			<div class="box-item u-flex u-flex-ai--c">
 				<div class="box-item--title ml-boxWrap fs-md">
 					<h2>Pletivo</h2>
-					<NuxtLink :to="localePath('/proizvodi/pletivo')" class="btn btn--primary mt-4xl fs-base">
-					SAZNAJTE VIŠE
-					</NuxtLink>
+					<NuxtLink :to="localePath('/proizvodi/pletivo')" class="btn btn--primary mt-4xl fs-base"> SAZNAJTE VIŠE </NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-					<img src="/img/fence_blue_1.png" />
+					<img src="~/assets/img/index/fence_blue_1.png" />
 				</div>
 			</div>
 
@@ -37,8 +35,8 @@
 						<NuxtLink :to="localePath('/proizvodi/valovita-mreza')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-						<img class="box-item--img" src="/img/Fence-Knits.png" />
-						<img class="box-item--img-mobile" src="/img/Fence-Knits-mobile.png" />
+						<img class="box-item--img" src="~/assets/img//index/Fence-Knits.png" />
+						<img class="box-item--img-mobile" src="~/assets/img/index/Fence-Knits-mobile.png" />
 					</div>
 				</div>
 
@@ -49,8 +47,8 @@
 						<NuxtLink :to="localePath('/proizvodi/vrata')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-						<img class="box-item--img" src="/img/Garden-Door.J03.png" />
-						<img class="box-item--img-mobile" src="/img/Garden-Door-mobile.png" />
+						<img class="box-item--img" src="~/assets/img/index/Garden-Door.J03.png" />
+						<img class="box-item--img-mobile" src="~/assets/img/index/Garden-Door-mobile.png" />
 					</div>
 				</div>
 			</div>
@@ -59,10 +57,10 @@
 			<div class="box-item u-flex u-flex-ai--c mt-lg">
 				<div class="box-item--title ml-boxWrap fs-md">
 					<h2>Panelni sustav</h2>
-					<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink >
+					<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-					<img src="/img/Barbed-Wire-Fence.G03.png" />
+					<img src="~/assets/img/index/Barbed-Wire-Fence.G03.png" />
 				</div>
 			</div>
 
@@ -70,10 +68,10 @@
 			<div class="box-item u-flex u-flex-ai--c mtb-lg">
 				<div class="box-item--title ml-boxWrap fs-md">
 					<h2>Pružni sustav</h2>
-					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink >
+					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-					<img src="/img/fence_blue_1.png" />
+					<img src="~/assets/img/index/fence_blue_1.png" />
 				</div>
 			</div>
 		</div>
@@ -91,35 +89,35 @@
 
 		<div class="box-services u-grid u-grid-4 plr-main box-services--text fs-md txt-align-c ptb-main">
 			<div>
-				<img src="/img/image-field.png" class="mb-lg" />
+				<img src="~/assets/img/index/image-field.png" class="mb-lg" />
 				<p>Izvid terena</p>
 			</div>
 			<div>
-				<img src="/img/image-docs.png" class="mb-lg" />
+				<img src="~/assets/img/index/image-docs.png" class="mb-lg" />
 				<p>Izrada nacrtne dokumentacije za ograde dizajna po želji klijenta</p>
 			</div>
 			<div>
-				<img src="/img/image-fence-door.png" class="mb-4xl" />
+				<img src="~/assets/img/index/image-fence-door.png" class="mb-4xl" />
 				<p>Proizvodnja ograda i vrata</p>
 			</div>
 			<div>
-				<img src="/img/image-protection-el.png" class="mb-lg" />
+				<img src="~/assets/img/index/image-protection-el.png" class="mb-lg" />
 				<p>Antikorozivna zaštita elemenata</p>
 			</div>
 			<div>
-				<img src="/img/image-drilling.png" class="mb-lg" />
+				<img src="~/assets/img/index/image-drilling.png" class="mb-lg" />
 				<p>Dijamantno bušenje armiranog betona</p>
 			</div>
 			<div>
-				<img src="/img/image-installation.png" class="mb-lg" />
+				<img src="~/assets/img/index/image-installation.png" class="mb-lg" />
 				<p>Montaža ograde i vratiju</p>
 			</div>
 			<div>
-				<img src="/img/image-automation.png" class="mb-lg" />
+				<img src="~/assets/img/index/image-automation.png" class="mb-lg" />
 				<p>Automatizacija vratiju</p>
 			</div>
 			<div>
-				<img src="/img/image-service.png" class="mb-lg" />
+				<img src="~/assets/img/index/image-service.png" class="mb-lg" />
 				<p>Servisiranje na terenu</p>
 			</div>
 		</div>
@@ -143,19 +141,19 @@
 
 		<div class="box-logos u-flex u-flex-fd--r u-flex-jc--sb u-flex-as--c center plr-main pb-box">
 			<div>
-				<img src="/img/ghiastaff.png" />
+				<img src="~/assets/img/index/ghiastaff.png" />
 			</div>
 			<div>
-				<img src="/img/maslinica.png" />
+				<img src="~/assets/img/index/maslinica.png" />
 			</div>
 			<div>
-				<img src="/img/kempinski-hotel.png" />
+				<img src="~/assets/img/index/kempinski-hotel.png" />
 			</div>
 			<div>
-				<img src="/img/valamar.png" />
+				<img src="~/assets/img/index/valamar.png" />
 			</div>
 			<div>
-				<img src="/img/spina.png" />
+				<img src="~/assets/img/index/spina.png" />
 			</div>
 		</div>
 	</div>
@@ -183,7 +181,7 @@ export default {
 <style lang="scss" scoped>
 .bg {
 	background: #428ace;
-	background-image: url('/img/image-6.jpg');
+	background-image: url('~/assets/img/index/image-6.jpg');
 	background-blend-mode: multiply;
 	height: 944px;
 	width: 100%;
@@ -232,7 +230,7 @@ h2 {
 			object-fit: cover;
 		}
 	}
-	&--title{
+	&--title {
 		z-index: 2;
 	}
 	&--img-mobile {
@@ -253,7 +251,7 @@ h2 {
 
 .bg-item {
 	background: #428ace;
-	background-image: url('/img/6-1.jpg');
+	background-image: url('~/assets/img/index/6-1.jpg');
 	background-blend-mode: multiply;
 	background-size: cover;
 	height: 492px;
@@ -300,7 +298,7 @@ h2 {
 				align-items: flex-end;
 				img {
 					height: 100%;
-					width: 65%;
+					width: 70%;
 				}
 			}
 			&--title {
@@ -335,6 +333,9 @@ h2 {
 }
 
 @media (max-width: 1100px) {
+	.bg {
+		height: 728px;
+	}
 	.title {
 		font-family: $ff-serif;
 		line-height: 131.5%;
@@ -347,8 +348,8 @@ h2 {
 		font-weight: normal;
 	}
 	.group {
-		width: 400px;
-		padding: 60px 0;
+		width: 100%;
+		padding: 60px 50px;
 	}
 	.text {
 		padding: 0;
@@ -386,6 +387,20 @@ h2 {
 		&--text {
 			width: auto;
 			margin: 0 60px;
+		}
+	}
+}
+
+@media (max-width: 420px) {
+	.group {
+		padding: 60px 20px;
+	}
+	.box {
+		.box-item {
+			&--title {
+				margin-top: 22px;
+				margin-left: 22px;
+			}
 		}
 	}
 }

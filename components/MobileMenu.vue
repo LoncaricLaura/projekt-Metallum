@@ -34,8 +34,12 @@
 								</div>
 							</transition>
 						</div>
-						<div class="sub-menu mb-xxs mt-xs mobile-menu--line"><NuxtLink :to="localePath('/proizvodi/valovita-mreza')">Valovita (vibro) mreža</NuxtLink></div>
-						<div class="sub-menu mtb-sm mobile-menu--line"><NuxtLink :to="localePath('/proizvodi/stupovi')">Stupovi (kosnici, konzole, prečke)</NuxtLink></div>
+						<div class="sub-menu mb-xxs mt-xs mobile-menu--line">
+							<NuxtLink :to="localePath('/proizvodi/valovita-mreza')">Valovita (vibro) mreža</NuxtLink>
+						</div>
+						<div class="sub-menu mtb-sm mobile-menu--line">
+							<NuxtLink :to="localePath('/proizvodi/stupovi')">Stupovi (kosnici, konzole, prečke)</NuxtLink>
+						</div>
 						<div class="sub-menu mb-sm mt-xxs">
 							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
 								<NuxtLink :to="localePath('/proizvodi/panelni-sustav')">Panelni sustav</NuxtLink>
@@ -59,8 +63,12 @@
 								</div>
 							</transition>
 						</div>
-						<div class="sub-menu mb-sm mt-xxs mobile-menu--line"><NuxtLink :to="localePath('/proizvodi/pruzni-sustav')">Pružni sustavi</NuxtLink></div>
-						<div class="sub-menu mb-sm mt-xxs mobile-menu--line"><NuxtLink :to="localePath('/proizvodi/ogradni-gabioni')">Ogradni gabioni</NuxtLink></div>
+						<div class="sub-menu mb-sm mt-xxs mobile-menu--line">
+							<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')">Pružni sustavi</NuxtLink>
+						</div>
+						<div class="sub-menu mb-sm mt-xxs mobile-menu--line">
+							<NuxtLink :to="localePath('/proizvodi/ogradni-gabioni')">Ogradni gabioni</NuxtLink>
+						</div>
 						<div class="sub-menu mt-xxs">
 							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
 								<NuxtLink :to="localePath('/proizvodi/vrata')">Vrata</NuxtLink>
@@ -101,9 +109,9 @@
 					</div>
 				</transition>
 			</div>
-			<NuxtLink :to="localePath('/Usluge')" class="mobile-menu--text mtb-md"><div class="mobile-menu--item">Usluge</div></NuxtLink>
-			<NuxtLink :to="localePath('/Galerija')" class="mobile-menu--text mtb-md"><div class="mobile-menu--item">Galerija</div></NuxtLink>
-			<NuxtLink :to="localePath('/Kontakt')" class="mobile-menu--text mtb-md"><div class="mobile-menu--item">Kontakt</div></NuxtLink>
+			<NuxtLink :to="localePath('/usluge')" class="mobile-menu--text mtb-md"><div class="mobile-menu--item">Usluge</div></NuxtLink>
+			<NuxtLink :to="localePath('/galerija')" class="mobile-menu--text mtb-md"><div class="mobile-menu--item">Galerija</div></NuxtLink>
+			<NuxtLink :to="localePath('/kontakt')" class="mobile-menu--text mtb-md"><div class="mobile-menu--item">Kontakt</div></NuxtLink>
 			<div class="sub-menu--text mtb-md">HR | EN</div>
 		</div>
 	</div>
@@ -135,7 +143,7 @@ export default Vue.extend({
 	},
 	methods: {
 		toggleHam() {
-			this.$store.commit('toggleOpen', 'openSubMenu');
+			this.$store.commit('toggleField', 'openSubMenu');
 			if (this.$store.state.openSubMenu) {
 				document.body.classList.add('noscroll');
 			} else {
@@ -144,6 +152,12 @@ export default Vue.extend({
 		},
 		setActiveCategory(category: any) {
 			this.activeCategory == category ? (this.activeCategory = '') : (this.activeCategory = category);
+		}
+	},
+
+	watch: {
+		$route() {
+			this.$store.commit('updateField', ['openMenu', false]);
 		}
 	}
 });

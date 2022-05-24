@@ -3,13 +3,13 @@
 		<div class="box-item u-flex u-flex-fd--c u-flex-jc--fe pt-xl" v-for="(service, i) in services" :key="i" :id="`${service.id}`">
 			<div class="u-flex u-flex-fd--r">
 				<div class="">
-					<img :src="require(`/pages/img/${service.icon}.png`)" class="box-item--card" />
+					<img :src="require(`~/assets/img/services/${service.icon}.png`)" class="box-item--card" />
 				</div>
 				<div>
-					<img :src="require(`/pages/img/${service.image}.jpg`)" class="box-item--img" />
+					<img :src="require(`~/assets/img/services/${service.image}.jpg`)" class="box-item--img" />
 				</div>
 			</div>
-			<div class="box-item u-flex u-flex-fd--r pt-lg">
+			<div class="box-item--about u-flex u-flex-fd--r pt-lg">
 				<div class="box-item--title mb-3xl fs-md">{{ service.title }}</div>
 				<div class="box-item--text fs-base ml-2xl">
 					{{ service.text }}
@@ -95,9 +95,58 @@ export default {
 
 @media (max-width: 1500px) {
 	.box {
+		width: 100%;
 		padding-left: 30px;
 		padding-right: 30px;
 		align-items: center;
+	}
+}
+
+@media (max-width: 1150px) {
+	.box {
+		padding-top: 200px;
+	}
+	.box-item {
+		flex-direction: row;
+		justify-content: center;
+		&--img {
+			display: none;
+		}
+		&--about {
+			flex-direction: column;
+			margin-left: 30px;
+			padding-top: 0;
+		}
+		&--text,
+		&--title {
+			margin-left: 0;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+	.service-list {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		&__item {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.box {
+		gap: 30px;
+	}
+	.box-item {
+		flex-direction: column;
+		align-items: center;
+		&--about {
+			margin-left: 0;
+			padding-top: 24px;
+		}
+		img {
+			width: 100%;
+		}
 	}
 }
 </style>

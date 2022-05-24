@@ -3,7 +3,7 @@
 		<div class="u-flex slider-image">
 			<splide :options="slider" class="main__slider">
 				<splide-slide v-for="(service, i) in services" :key="i" class="slide__track">
-					<img :src="require(`/static/img/image-${service.img}.png`)" :data-splide-lazy="require(`/static/img/image-${service.img}.png`)" />
+					<img :src="require(`~/assets/img/index/image-${service.img}.png`)" :data-splide-lazy="require(`~/assets/img/index/image-${service.img}.png`)" />
 					<p class="slide__track--title">{{ service.title }}</p>
 				</splide-slide>
 			</splide>

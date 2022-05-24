@@ -3,7 +3,7 @@
 		<div class="u-flex slider-image">
 			<splide :options="slider" class="main__slider">
 				<splide-slide v-for="(img, i) in imgs" :key="i" class="slide__track">
-					<img :src="require(`/static/img/image-${img}.jpg`)" :data-splide-lazy="require(`/static/img/image-${img}.jpg`)" />
+					<img :src="require(`~/assets/img/index/image-${img}.jpg`)" :data-splide-lazy="require(`~/assets/img/index/image-${img}.jpg`)" />
 				</splide-slide>
 			</splide>
 		</div>
@@ -53,6 +53,7 @@ export default Vue.extend({
 @media (max-width: 1000px) {
 	.slider-home {
 		padding-bottom: 80px;
+		padding-top: 100px;
 	}
 }
 </style>

@@ -4,7 +4,7 @@
 			<div class="fs-xl title txt-align-c">Pletiva u roli</div>
 			<div class="btn btn--primary mt-6xl">
 				PREUZMI PDF
-				<img class="icon ml-sm" src="/img/pdf-icon.png" />
+				<img class="icon ml-sm" src="~/assets/img/nofollow/pdf-icon.png" />
 			</div>
 		</div>
 		<div class="u-flex u-flex-fd--r u-flex-jc--sb">
@@ -12,7 +12,7 @@
 			<div class="pletivo u-flex u-flex-fd--c u-flex-ai--fe mtb-6xl plr-main">
 				<div class="galery u-flex u-flex-ai--fe u-flex-jc--fe mt-md mb-6xl">
 					<div class="btn btn--primary u-flex u-flex-ai--c" :class="{ active: $store.state.openMenu }" @click="galery = !galery">
-						<img src="/img/mdi-light_picture.png" class="mr-md" />
+						<img src="~/assets/img/nofollow/mdi-light_picture.png" class="mr-md" />
 						Pogledaj galeriju (14)
 					</div>
 					<SliderProducts :imgs="['6']" v-if="galery" />
@@ -35,7 +35,7 @@
 								<tr>
 									<th colspan="4">
 										<div class="table-title fs-md ptb-lg plr-xl">Univerzal pocinčano pletivo</div>
-										<img src="/img/pocincano_pletivo.png" class="image" />
+										<img src="~/assets/img/products/pletivo/pocincano_pletivo.png" class="image" />
 									</th>
 								</tr>
 								<tr class="fs-sm">
@@ -90,7 +90,7 @@
 								<tr>
 									<th colspan="4">
 										<div class="table-title fs-md ptb-xl plr-xl">Univerzal plastificirano pocinčano pletivo</div>
-										<img src="/img/6-1.jpg" class="image" />
+										<img src="~/assets/img/products/pletivo/6-1.jpg" class="image" />
 									</th>
 								</tr>
 								<tr class="fs-sm">
@@ -145,11 +145,11 @@
 					<p>Svi dijelovi ogradnog sustava su vruće cinčani i plastificirani u zelenu boju (RAL 6005).</p>
 					<div class="pletivo--vareno mt-3xl u-flex u-flex-fd--r u-flex-as--fs">
 						<div class="mr-xl">
-							<img src="/img/50-100-mm.png" />
+							<img src="~/assets/img/products/pletivo/50-100-mm.png" />
 							<div class="mt-sm">100/50 mm</div>
 						</div>
 						<div>
-							<img src="/img/50-50-mm.png" />
+							<img src="~/assets/img/products/pletivo/50-50-mm.png" />
 							<div class="mt-sm">50/50 mm</div>
 						</div>
 					</div>
@@ -167,7 +167,7 @@
 								<tr>
 									<th colspan="4">
 										<div class="table-title fs-md ptb-xl plr-xl">Pocinčana žica</div>
-										<img src="/img/6-1.jpg" class="image" />
+										<img src="~/assets/img/products/pletivo/6-1.jpg" class="image" />
 									</th>
 								</tr>
 								<tr class="fs-sm">
@@ -225,7 +225,7 @@
 								<tr>
 									<th colspan="6">
 										<div class="table-title fs-md ptb-xl plr-xl">Plastificirana pocinčana žica</div>
-										<img src="/img/6-1.jpg" class="image" />
+										<img src="~/assets/img/products/pletivo/6-1.jpg" class="image" />
 									</th>
 								</tr>
 								<tr class="fs-sm">
@@ -283,7 +283,7 @@
 								<tr>
 									<th colspan="6">
 										<div class="table-title fs-md ptb-xl plr-xl">Bodljikava žica</div>
-										<img src="/img/6-1.jpg" class="image" />
+										<img src="~/assets/img/products/pletivo/6-1.jpg" class="image" />
 									</th>
 								</tr>
 								<tr class="fs-sm">
@@ -354,7 +354,7 @@ export default Vue.extend({
 	},
 	methods: {
 		toggleHam() {
-			this.$store.commit('toggleOpen', 'openMenu');
+			this.$store.commit('toggleField', 'openMenu');
 			if (this.$store.state.openMenu) {
 				document.body.classList.add('noscroll');
 			} else {
@@ -368,7 +368,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .bg {
 	background: #428ace;
-	background-image: url('/img/6-1.jpg');
+	background-image: url('~/assets/img/products/pletivo/6-1.jpg');
 	background-blend-mode: multiply;
 	height: 580px;
 	width: 100%;
@@ -434,7 +434,7 @@ tbody {
 }
 
 .galery {
-	background-image: url('/img/image-6.jpg');
+	background-image: url('~/assets/img/products/pletivo/image-6.jpg');
 	background-size: cover;
 	height: 621px;
 	width: 100%;
@@ -475,8 +475,14 @@ tbody {
 		padding-right: 0;
 		margin-left: 0;
 		&--box {
-			padding-left: 80px;
-			padding-right: 80px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		p,
+		&--subtitle,
+		&--vareno {
+			padding-left: 50px;
+			padding-right: 50px;
 		}
 	}
 }
@@ -500,7 +506,6 @@ tbody {
 
 @media (max-width: 650px) {
 	.pletivo {
-		width: 100%;
 		&--box {
 			align-items: flex-start;
 			padding-left: 0;
@@ -509,8 +514,8 @@ tbody {
 		p,
 		&--subtitle,
 		&--vareno {
-			padding-left: 24px;
-			padding-right: 24px;
+			padding-left: 20px;
+			padding-right: 30px;
 		}
 	}
 }

@@ -6,14 +6,10 @@
 			'header--dark': ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge') || ($route.name || '').includes('galerija')
 		}"
 	>
-		<NuxtLink :to="localePath('/')" class="light"
-			><img src="/img/icon-l.png" />
-			<img src="/img/icon-metallum-l.png" class="header--img-icon mb-sm ml-xl" />
-		</NuxtLink>
+		<NuxtLink :to="localePath('/')" class="light"><img src="~/assets/img/nofollow/logo-metallum.png" class="header--logo" /> </NuxtLink>
 
 		<NuxtLink :to="localePath('/')" class="dark">
-			<img src="/img/icon.png" />
-			<img src="/img/icon-metallum.png" class="heder--img-icon mb-sm ml-xl" />
+			<img src="~/assets/img/nofollow/logo-metallum-dark.png" class="header--logo" />
 		</NuxtLink>
 
 		<div class="u-flex u-flex--if u-flex-ai--fe mb-sm header__top">
@@ -28,7 +24,10 @@
 
 		<div
 			class="u-flex u-flex-ai--c hamburger"
-			:class="{ active: $store.state.openMenu, 'hamburger--dark': ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge') }"
+			:class="{
+				active: $store.state.openMenu,
+				'hamburger--dark': ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge') || ($route.name || '').includes('galerija')
+			}"
 			@click="$store.commit('toggleField', 'openMenu')"
 		>
 			<div class="hamb-btn">
@@ -69,7 +68,7 @@ export default Vue.extend({
 	},
 	methods: {
 		toggleHam() {
-			this.$store.commit('toggleOpen', 'openMenu');
+			this.$store.commit('toggleField', 'openMenu');
 			if (this.$store.state.openMenu) {
 				document.body.classList.add('noscroll');
 			} else {
@@ -88,6 +87,7 @@ export default Vue.extend({
 	width: 100%;
 	z-index: 60;
 	top: 0;
+
 	.dark {
 		display: none;
 	}
@@ -116,18 +116,25 @@ export default Vue.extend({
 	.header {
 		position: absolute;
 		padding-left: 20px;
-		padding-right: 15px;
+		padding-right: 20px;
 		width: 100%;
+
 		&.fixed {
 			position: fixed;
+			.dark {
+				display: none;
+			}
+			.light {
+				display: block;
+			}
 		}
 		&--img-icon {
-			margin-left: 10px;
+			margin-left: 20px;
 		}
 	}
 	.hamburger {
 		display: flex;
-		padding: 50px 0;
+		padding: 20px 0;
 		z-index: 60;
 		cursor: pointer;
 		.hamb-line {
@@ -164,6 +171,14 @@ export default Vue.extend({
 	}
 	.header__top {
 		display: none;
+	}
+}
+
+@media (max-width: 420px) {
+	.header {
+		&--logo {
+			height: 50px;
+		}
 	}
 }
 </style>
