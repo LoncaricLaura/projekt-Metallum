@@ -1,5 +1,297 @@
 {
-	"home": "text",
+	"header": {
+		"products": "Proizvodi",
+		"services": "Usluge",
+		"gallery": "Galerija",
+		"contact": "Kontakt"
+	},
+	"mobileMenu": {
+		"knit_title": "Pletivo",
+		"knit_submenu": {
+			"uni_knit": "Univerzalno pletivo",
+			"plast_knit": "Plastificirano pletivo",
+			"farm_knit": "Farmer pletivo",
+			"boiled_knit": "Vareno plastificirano pletivo",
+			"acc_knit": "Pribor",
+			"mesh_knit": "Mreže i ostala oprema za sportske objekte"
+		},
+		"mesh_title": "Valovita (vibro) mreža",
+		"pillars_title": "Stupovi (kosnici, konzole, prečke)",
+		"panel_title": "Panelni sustav",
+		"panel_submenu": {
+			"panel_sub1": "Panel M3 5mm",
+			"panel_sub2": "Panel M3 4mm",
+			"panel_sub3": "Panel M2 6-5-6 mm",
+			"panel_sub4": "Panel M2 8-6-8 mm",
+			"panel_sub5": "Stup Metallum",
+			"panel_sub6": "Stup omega",
+			"panel_sub7": "Stup sport",
+			"panel_sub8": "Sjenila za privatnost"
+		},
+		"rail_title": "Pružni sustavi",
+		"gabions_title": "Ogradni gabioni",
+		"door_title": "Vrata",
+		"door_submenu": {
+			"door_sub1": "Pješačka vrata",
+			"door_sub2": "Krilna vrata",
+			"door_sub3": "Klizna vrata",
+			"door_sub4": "Samonosiva vrata",
+			"door_sub5": "Dodatna oprema za vrata"
+		},
+		"drafting_title": "Izrada po nacrtu",
+		"drafting_submenu": {
+			"drafting_sub1": "Zaštitna pješačka ograda",
+			"drafting_sub2": "Vanstandardna ograda"
+		}
+	},
+	"footer": {
+		"subtitle": "30 godina iskustva",
+		"products_title": "Proizvodi",
+		"services_title": "Usluge",
+		"gallery_title": "Galerija",
+		"contact_title": "Kontakt",
+		"address": {
+			"title": "Adresa",
+			"street": "Most Pićan 2d",
+			"city": "52332 Pićan",
+			"cntry": "Hrvatska"
+		},
+		"time": {
+			"title": "Radno vrijeme",
+			"day1": "pon - pet",
+			"hour": "07:00 - 15:00",
+			"day2": "sub - ned",
+			"hour2": "zatvoreno"
+		},
+		"catalog": "SKINI KATALOG",
+		"mail": {
+			"title": "E-mail",
+			"email": "metallum@metallum.hr"
+		},
+		"phone": {
+			"title": "Telefon",
+			"numb": "+385 52 869 006"
+		},
+		"metallum": "© 2021, Metallum, sva prava pridržana."
+	},
+	"home": {
+		"title": "Postavite granice",
+		"title2": "Ostavite vrata",
+		"fences_title": "Ograde i ogradni sustav",
+		"fences_desc": "Nije bitno samo ograditi radni prostor ili prostor sačuvati od upada nezvanih gostiju, već se ograda mora uklapati u okolinu i činiti je privlačnijom. To je moguće sa odabirom naših ograda koje su čvrste, trajne i privlačne za oko. Odaberite ogradu koja naglašava Vaš stil!",
+		"pletivo_title": "Pletivo",
+		"button_more": "SAZNAJTE VIŠE",
+		"mesh_title": "Valovita (vibro) mreža",
+		"door_title": "Vrata",
+		"panel_title": "Panelni sustav",
+		"rail_title": "Pružni sustav",
+		"products_desc": "Naši proizvodi koriste se u izgradnji nosiva konstrukcija te u svim vrstama ograda. Kako u industrijskim tako i u privatnim sektorima.",
+		"services_title": "Usluge",
+		"services_field": "Izvid terena",
+		"services_docs": "Izrada nacrtne dokumentacije za ograde dizajna po želji klijenta",
+		"services_fence_door": "Proizvodnja ograda i vrata",
+		"services_protection": "Antikorozivna zaštita elemenata",
+		"services_drilling": "Dijamantno bušenje armiranog betona",
+		"services_installation": "Montaža ograde i vratiju",
+		"services_automation": "Automatizacija vratiju",
+		"services_service": "Servisiranje na terenu",
+		"contact_title": "Kontaktirajte nas za više informacija",
+		"contact_button": "KONTAKTIRAJTE NAS"
+	},
+	"products": {
+		"knit": {
+			"title": "Pletivo",
+			"desc": "Univerzal pletiva, od pocinčane ili pocinčane i plastificirane žice, namijenjena su za ograđivanje sportskih površina, stambenih prostora, vrtova, parkova, te poljoprivrednih i sličnih površina."
+		},
+		"mesh": {
+			"title": "Valovita (vibro) mreža",
+			"desc": "Vibro pletivo je temelj za izradu čvrstih ograda ili vrata, a koristi se i u građevinarstvu."
+		},
+		"pillars": {
+			"title": "Stupovi (kosnici, konzole, prečke)",
+			"desc": "Ovisno o zahtjevima projekta, nudimo različite profile i dimenzije stupova (okrugli, kvadratni, pravokutni, ovalni, poluovalni, elipsa)."
+		},
+		"panel": {
+			"title": "Panelni sustavi",
+			"desc": "Panelni ogradni sustavi osiguravaju maksimalnu funkcionalnost, zaštitu i estetiku našim klijentima. Svaki element se u svakoj proizvodnoj fazi pomno testira radi osiguranja maksimnalne kvalitete."
+		},
+		"rail": {
+			"title": "Pružni sustavi",
+			"desc": "Pružni sustavi tvrtke Wisniowski namjenjeni su za rezidencijalne, ali i javne objekte. U kompletu sa ogradom, moguće je proizvesti i vrata u pripadajućem dizajnu."
+		},
+		"gabions": {
+			"title": "Ogradni gabioni",
+			"desc": "Osim modernog izgleda, brza montaža razlog je zbog kojeg ogradni gabioni postaju sve češći odabir pri izboru načina zaštite okućnica."
+		},
+		"doors": {
+			"title": "Vrata",
+			"desc": "U ponudi imamo pješačka, krilna, klizna i samonosiva vrata, dimenzija i dizajna prema zahtjevima naručitelja."
+		},
+		"drafting": {
+			"title": "Izrada po nacrtu",
+			"desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+		}
+	},
+	"products_knit": {
+		"title": "Pletiva u roli",
+		"pdf_btn": "PREUZMI PDF",
+		"gallery": "Pogledaj galeriju (14)",
+		"uni_knit": {
+			"subtitle": "Univerzal pletivo",
+			"desc": "Univerzal pletiva, od pocinčane ili pocinčane i plastificirane žice, namijenjena su za ograđivanje sportskih površina, stambenih prostora, vrtova, parkova, te poljoprivrednih i sličnih površina.",
+			"desc2": "U kombinaciji sa ZN/ZN+PVC stupovima, UNIVERZAL PLETIVO je brz, ekonomičan i jednostavan sustav ograđivanja, koji je pri montaži najprilagodljiviji konfiguraciji terena.",
+			"table1": {
+				"title": "Univerzal pocinčano pletivo",
+				"sub1": "Promjer žice (mm)",
+				"sub2": "Otvor oka (mm)",
+				"sub3": "Visina mreže (m)",
+				"sub4": "Duljina role (m)",
+				"desc": "Prema potrebi naručitelja izrađujemo i nestandardne visine mreža, ukupne visine do 5.00 m."
+			},
+			"table2": {
+				"title": "Univerzal plastificirano pocinčano pletivo",
+				"sub1": "Promjer žice (mm)",
+				"sub2": "Otvor oka (mm)",
+				"sub3": "Visina mreže (m)",
+				"sub4": "Duljina role (m)",
+				"desc": ">Prema potrebi naručitelja izrađujemo i nestandardne visine mreža, ukupne visine do 5.00 m."
+			}
+		},
+		"farmer": {
+			"title": "Farmer pletivo",
+			"desc": "Farmer pletivo se upotrebljava za ograđivanje pašnjaka, poljoprivrednih parcela, divljači, domaćih životinja.",
+			"desc2": "Svi dijelovi ogradnog sustava su vruće cinčani.",
+			"desc3": "U ponudi imamo farmer pletivo visine mreže od 1,0 m do 2,0 m.",
+			"desc4": "Postavljanje Farmer pletiva je jednostavno bez upotrebe zateznih žica."
+		},
+		"boiled": {
+			"title": "Vareno plastificirano pletivo",
+			"desc": "PVC vareno pletivo je elektro-varena mreža koja se koristi za ograđivanje okućnica, vrtova, poljoprivrednih parcela. Horizontalne žice su valovite, što ovo pletivo čini atraktivnim i robusnim.",
+			"desc2": "Svi dijelovi ogradnog sustava su vruće cinčani i plastificirani u zelenu boju (RAL 6005)."
+		},
+		"acc_knit": {
+			"title": "Pribor",
+			"desc": "U našoj ponudi imamo sav pribor potreban za montažu mreža i posebnih ograda, uključujući kliješta, zatezače, spojnice, razne vrste žica (zatezne žice, žice za učvršćivanje, bodljikave žice) te ostali pribor.",
+			"desc2": "Sav pribor je zaštićen od korozije pocinčavanjem i /ili plastifikacijom.",
+			"table3": {
+				"title": "Pocinčana žica",
+				"sub1": "Promjer žice (mm)",
+				"sub2": "Tolerancija prema UNE-EN 102 18-2 (mm)",
+				"sub3": "Debljina cinčane presvlake prema UNE-EN 10244-2 (g/m2)",
+				"sub4": "Zatezna čvrstoća (N/mm2)",
+				"desc": "Prema potrebi naručitelja izrađujemo i nestandardne visine mreža, ukupne visine do 5.00 m."
+			},
+			"table4": {
+				"title": "Plastificirana pocinčana žica",
+				"sub1": "Unutarnji promjer (mm)",
+				"sub2": "Vanjski promjer (mm)",
+				"sub3": "Tolerancija ZN žice prema UNE-EN 102 18-2 (mm)",
+				"sub4": "Tolerancija promjera organski plastificirane žice (mm)",
+				"sub5": "Minimalna debljina cinčane presvlake prema UNE-EN 10244-2 (g/m2)",
+				"sub6": "Zatezna čvrstoća (N/mm2)"
+			},
+			"table5": {
+				"title": "Bodljikava žica",
+				"sub1": "Promjer linijske žice (mm)",
+				"sub2": "Promjer bodlji (mm)",
+				"sub3": "Minimalna debljina cinčane presvlake linijske žice prema UNE-EN 10244-2 (g/m2)",
+				"sub4": "Minimalna debljina cinčane presvlake bodlji prema UNE-EN 10244-2 (g/m2)",
+				"sub5": "Minimalna zatezna čvrstoća linijske žice (N/mm2)",
+				"sub6": "Minimalna zatezna čvrstoća bodlji (N/mm2"
+			}
+		},
+		"aux_acc": {
+			"title": "Pomoćni pribor",
+			"desc": "U pomoćni pribor spadaju kliješta, zatezači, pocinčani i plastificirani, te spojnice."
+		},
+		"mesh": {
+			"title": "Mreže i ostala oprema za sportske objekte",
+			"desc": "Za potrebe projekta, u mogućnosti smo dobaviti i montirati razne vrste mreža i ostale opreme potrebne za opremanje sportskih terena, dječjih igrališta, vrtića i škola."
+		}
+	},
+	"services": {
+		"field": {
+			"title": "Izvid terena",
+			"desc": "Po prihvaćanju ponude, naš inženjer gradilišta izlazi na konačnu izmjeru terena za pripremu nacrta, prije početka proizvodnje."
+		},
+		"docs": {
+			"title": "Izrada nacrtne dokumentacije za vrata i ograde dizajna po želji klijenta",
+			"desc": "Svim klijentima koji kupuju vrata izrađujemo radioničke nacrte istih, a za sve vanstandardne ograde I vrata izrađujemo nacrte od ideje do izvođenja."
+		},
+		"fence_door": {
+			"title": "Proizvodnja ograda i vrata",
+			"desc": "Za sve proizvode iz proizvodnog programa nudimo kompletnu uslugu dostave, pripremnih igrađevinskih radova, te montaže i završne obrade prije predaje objekta prema ugovorenom obujmu posla. Usluge uključuju:",
+			"items": {
+				"item1": "Izlazak na teren radi uvida u obujam posla i planiranja potrebnog materijala",
+				"item2": "Pripremu materijala prema dogovoru na terenu",
+				"item3": "'Prijevoz materijala na gradilište",
+				"item4": "Pripremne i građevinske radove",
+				"item5": "Montažu stupova, elemenata ograde i vratiju",
+				"item6": "Završnu obradu ograde i čišćenje terena prije predaje gotovog objekta",
+				"item7": "Predaju objekta korisniku"
+			}
+		},
+		"protection": {
+			"title": "Antikorozivna zaštita elemenata",
+			"desc": "Proizvodi iz našeg proizvodnog programa zaštićuju se protiv korozije primjenom suvremenih tehnologija pocinčavanja i plastifikacije. U vlastitom plastifikacijskom pogonu plastificiramo ogradne elemente u RAL boju prema odabiru klijent"
+		},
+		"drilling": {
+			"title": "Dijamantno bušenje armiranog betona",
+			"desc": "Usluge dijamantnog bušenja armiranog betona obavljamo najsuvremenijom opremom. U mogućnosti smo bušiti rupe promjera 25 mm - 162 mm do dubine od 400mm."
+		},
+		"installation": {
+			"title": "Montaža ograde i vratiju",
+			"desc": "Ukoliko iz bilo kojeg razloga dođe do oštećenja ograde (udar autom, provala, …), našim klijentima kojima smo izvršili montžu nudimo popravak oštećenja u najkraćem mogućem roku."
+		},
+		"automation": {
+			"title": "Automatizacija vratiju",
+			"desc": "Ukoliko iz bilo kojeg razloga dođe do oštećenja ograde (udar autom, provala, …), našim klijentima kojima smo izvršili montžu nudimo popravak oštećenja u najkraćem mogućem roku."
+		},
+		"service": {
+			"title": "Servisiranje na terenu",
+			"desc": "Ukoliko iz bilo kojeg razloga dođe do oštećenja ograde (udar autom, provala, …), našim klijentima kojima smo izvršili montžu nudimo popravak oštećenja u najkraćem mogućem roku."
+		},
+		"menu": {
+			"title": "Usluge",
+			"submenu": {
+				"field": "Izvid terena",
+				"docs": "Izrada nacrtne dokumentacije za vrata i ograde dizajna po želji klijenta",
+				"fence_door": "Proizvodnja ograda i vrata",
+				"protection": "Antikorozivna zaštita elemenata",
+				"drilling": "Dijamantno bušenje armiranog betona",
+				"installation": "Montaža ograde i vratiju",
+				"automation": "Automatizacija vratiju",
+				"service": "Servisiranje na terenu"
+			}
+		}
+	},
+	"gallery": {
+		"knit_title": "Pletivo",
+		"mesh_title": "Valovita (vibro) mreža",
+		"pillars_title": "Stupovi (kosnici, konzole, prečke)",
+		"catalog": "SKINI KATALOG",
+		"contact_desc": "Kontaktirajte nas za više informacija",
+		"contact_button": "KONTAKTIRAJTE NAS",
+		"menu": {
+			"products": {
+				"title": "Proizvodi",
+				"sub_knit": "Pletivo",
+				"sub_mesh": "Valovita (vibro) mreža",
+				"sub_pillars": "Stupovi (kosnici, konzole, prečke)",
+				"sub-panel": "Panelni sustav",
+				"sub-rail": "Pružni sustavi",
+				"sub-gabions": "Ogradni gabioni",
+				"sub_doors": "Vrata",
+				"sub_draft": "Izrada po nacrtu"
+			},
+			"property": {
+				"title": "Vrste nekretnine",
+				"sub_ville": "Ville",
+				"sub_const": "Novogradnja",
+				"sub_industry": "Industrija"
+			}
+		}
+	},
 	"gdpr": {
 		"title_main": "POLITIKA ZAŠTITE PRIVATNOSTI OSOBNIH PODATAKA",
 		"title1": "1. Uvod",

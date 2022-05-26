@@ -2,37 +2,37 @@
 	<div class="footer u-flex u-flex-fd--c plr-6xl">
 		<div class="footer--logo mt-2xl">
 			<img src="~/assets/img/nofollow/logo-metallum.png" />
-			<div class="footer--text fs-lg">30 godina iskustva</div>
+			<div class="footer--text fs-lg">{{ $t('footer.subtitle') }}</div>
 		</div>
 		<div class="footer--row u-grid ptb-2xl">
 			<div class="u-flex u-flex-fd--c">
 				<div class="footer--menu fs-base u-flex u-flex-fd--r pt-footer">
-					<a href="#" class="">Proizvodi</a>
-					<a href="#" class="">Usluge</a>
-					<a href="#" class="">Galerija</a>
-					<a href="#" class="">Kontakt</a>
+					<a href="#" class="">{{ $t('footer.products_title') }}</a>
+					<a href="#" class="">{{ $t('footer.services_title') }}</a>
+					<a href="#" class="">{{ $t('footer.gallery_title') }}</a>
+					<a href="#" class="">{{ $t('footer.contact_title') }}</a>
 				</div>
 			</div>
 			<div class="footer--text2 fs-base pt-4xl">
-				<div class="pb-md">Adresa</div>
-				<div>Most Pićan 2d</div>
-				<div>52332 Pićan</div>
-				<div>Hrvatska</div>
+				<div class="pb-md">{{ $t('footer.address.title') }}</div>
+				<div>{{ $t('footer.address.street') }}</div>
+				<div>{{ $t('footer.address.city') }}</div>
+				<div>{{ $t('footer.address.cntry') }}</div>
 			</div>
 
 			<div class="footer--text2 pt-4xl fs-base">
-				<div class="pb-md">Radno vrijeme</div>
-				<div>pon - pet</div>
-				<div>07:00 - 15:00</div>
-				<div>sub - ned</div>
-				<div>zatvoreno</div>
+				<div class="pb-md">{{ $t('footer.time.title') }}</div>
+				<div>{{ $t('footer.time.day1') }}</div>
+				<div>{{ $t('footer.time.hour') }}</div>
+				<div>{{ $t('footer.time.day2') }}</div>
+				<div>{{ $t('footer.time.hour2') }}</div>
 			</div>
 			<div class="footer--catalog u-flex center">
 				<div class="footer--catalog--img">
 					<img src="~/assets/img/nofollow/katalog.png" />
 				</div>
 				<div class="btn u-flex u-flex-as--fe pb-md">
-					SKINI KATALOG
+					{{ $t('footer.catalog') }}
 					<img src="~/assets/img/nofollow/mdi-light_download.png" class="ml-sm" />
 				</div>
 			</div>
@@ -40,17 +40,17 @@
 
 		<div class="footer--row2 u-grid u-grid-2">
 			<div class="footer--email u-grid u-grid-2 center ptb-4xl">
-				<div class="footer--text3 fs-md">E-mail</div>
-				<div class="footer--text4 pr-3xl fs-lg">metallum@metallum.hr</div>
+				<div class="footer--text3 fs-md">{{ $t('footer.mail.title') }}</div>
+				<div class="footer--text4 pr-3xl fs-lg">{{ $t('footer.mail.email') }}</div>
 			</div>
 			<div class="footer--number u-grid u-grid-2 center ptb-4xl">
-				<div class="footer--text3 pl-xl fs-md">Telefon</div>
-				<div class="footer--text4 u-flex u-flex-jc--fe pl-footer fs-lg">+385 52 869 006</div>
+				<div class="footer--text3 pl-xl fs-md">{{ $t('footer.phone.title') }}</div>
+				<div class="footer--text4 u-flex u-flex-jc--fe pl-footer fs-lg">{{ $t('footer.phone.numb') }}</div>
 			</div>
 		</div>
 
 		<div class="u-flex u-flex-jc--sb pt-6xl mb-md">
-			<div class="fs-base">© 2021, Metallum, sva prava pridržana.</div>
+			<div class="fs-base">{{ $t('footer.metallum') }}</div>
 			<div>
 				<img src="~/assets/img/nofollow/Group-2.png" />
 			</div>

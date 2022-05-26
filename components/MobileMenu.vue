@@ -3,7 +3,7 @@
 		<div class="mobile-menu--nav u-flex u-flex-fd--c">
 			<div class="mobile-menu--text u-flex u-flex-fd--c">
 				<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
-					<NuxtLink :to="localePath('/Proizvodi')" class="mobile-menu--item mb-xs">Proizvodi</NuxtLink>
+					<NuxtLink :to="localePath('/Proizvodi')" class="mobile-menu--item mb-xs">{{ $t('header.products') }}</NuxtLink>
 					<div class="u-flex u-flex-ai--c hamburger" @click="productsMenu = !productsMenu">
 						<div class="hamb-btn">
 							<div class="hamb-line" />
@@ -15,7 +15,7 @@
 					<div class="sub-menu u-flex u-flex-fd--c" v-show="productsMenu">
 						<div class="sub-menu mb-xs mt-xs">
 							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
-								<NuxtLink :to="localePath('/proizvodi/pletivo')">Pletivo</NuxtLink>
+								<NuxtLink :to="localePath('/proizvodi/pletivo')">{{ $t('mobileMenu.knit_title') }}</NuxtLink>
 								<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('pletivo')" :class="{ active: activeCategory == 'pletivo' }">
 									<div class="hamb-btn">
 										<div class="hamb-line" />
@@ -25,24 +25,24 @@
 							</div>
 							<transition name="fadeFromUp">
 								<div class="sub-menu--item u-flex u-flex-fd--c mt-sm" v-show="activeCategory === 'pletivo'">
-									<NuxtLink :to="localePath('/proizvodi/pletivo/#uni-pletivo')" class="mtb-sm">Univerzalno pletivo</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/pletivo/#plastificirano-pletivo')" class="mtb-sm">Plastificirano pletivo</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/pletivo/#farmer-pletivo')" class="mtb-sm">Farmer pletivo</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/pletivo/#vareno-pletivo')" class="mtb-sm">Vareno plastificirano pletivo</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/pletivo/#pribor')" class="mtb-sm">Pribor</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/pletivo/#mreže')" class="mtb-sm">Mreže i ostala oprema za sportske objekte</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/#uni-pletivo')" class="mtb-sm">{{ $t('mobileMenu.knit_submenu.uni_knit') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/#plastificirano-pletivo')" class="mtb-sm">{{ $t('mobileMenu.knit_submenu.plast_knit') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/#farmer-pletivo')" class="mtb-sm">{{ $t('mobileMenu.knit_submenu.farm_knit') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/#vareno-pletivo')" class="mtb-sm">{{ $t('mobileMenu.knit_submenu.boiled_knit') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/#pribor')" class="mtb-sm">{{ $t('mobileMenu.knit_submenu.acc_knit') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/pletivo/#mreže')" class="mtb-sm">{{ $t('mobileMenu.knit_submenu.mesh_knit') }}</NuxtLink>
 								</div>
 							</transition>
 						</div>
 						<div class="sub-menu mb-xxs mt-xs mobile-menu--line">
-							<NuxtLink :to="localePath('/proizvodi/valovita-mreza')">Valovita (vibro) mreža</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/valovita-mreza')">{{ $t('mobileMenu.mesh_title') }}</NuxtLink>
 						</div>
 						<div class="sub-menu mtb-sm mobile-menu--line">
-							<NuxtLink :to="localePath('/proizvodi/stupovi')">Stupovi (kosnici, konzole, prečke)</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/stupovi')">{{ $t('mobileMenu.pillars_title') }}</NuxtLink>
 						</div>
 						<div class="sub-menu mb-sm mt-xxs">
 							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
-								<NuxtLink :to="localePath('/proizvodi/panelni-sustav')">Panelni sustav</NuxtLink>
+								<NuxtLink :to="localePath('/proizvodi/panelni-sustav')">{{ $t('mobileMenu.panel_title') }}</NuxtLink>
 								<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('panelni')" :class="{ active: activeCategory == 'panelni' }">
 									<div class="hamb-btn">
 										<div class="hamb-line" />
@@ -52,26 +52,28 @@
 							</div>
 							<transition name="fadeFromUp">
 								<div class="sub-menu--item u-flex u-flex-fd--c mt-sm" v-show="activeCategory === 'panelni'">
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#panel-m3-5mm')" class="mtb-sm">Panel M3 5mm</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#panel-m3-4mm')" class="mtb-sm">Panel M3 4mm</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#panel-m2-6-5-6-mm')" class="mtb-sm">Panel M2 6-5-6 mm</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#panel-m2-8-6-8-mm')" class="mtb-sm">Panel M2 8-6-8 mm</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#stup-metallum')" class="mtb-sm">Stup Metallum</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#stup-omega')" class="mtb-sm">Stup omega</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#stup-sport')" class="mtb-sm">Stup sport</NuxtLink>
-									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#sjenila-za-privatnost')" class="mtb-sm">Sjenila za privatnost</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#panel-m3-5mm')" class="mtb-sm">{{ $t('mobileMenu.panel_submenu.panel_sub1') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#panel-m3-4mm')" class="mtb-sm">{{ $t('mobileMenu.panel_submenu.panel_sub2') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#panel-m2-6-5-6-mm')" class="mtb-sm">{{ $t('mobileMenu.panel_submenu.panel_sub3') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#panel-m2-8-6-8-mm')" class="mtb-sm">{{ $t('mobileMenu.panel_submenu.panel_sub4') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#stup-metallum')" class="mtb-sm">{{ $t('mobileMenu.panel_submenu.panel_sub5') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#stup-omega')" class="mtb-sm">{{ $t('mobileMenu.panel_submenu.panel_sub6') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#stup-sport')" class="mtb-sm">{{ $t('mobileMenu.panel_submenu.panel_sub7') }}</NuxtLink>
+									<NuxtLink :to="localePath('/proizvodi/panelni-sustav/#sjenila-za-privatnost')" class="mtb-sm">{{
+										$t('mobileMenu.panel_submenu.panel_sub8')
+									}}</NuxtLink>
 								</div>
 							</transition>
 						</div>
 						<div class="sub-menu mb-sm mt-xxs mobile-menu--line">
-							<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')">Pružni sustavi</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')">{{ $t('mobileMenu.rail_title') }}</NuxtLink>
 						</div>
 						<div class="sub-menu mb-sm mt-xxs mobile-menu--line">
-							<NuxtLink :to="localePath('/proizvodi/ogradni-gabioni')">Ogradni gabioni</NuxtLink>
+							<NuxtLink :to="localePath('/proizvodi/ogradni-gabioni')">{{ $t('mobileMenu.gabions_title') }}</NuxtLink>
 						</div>
 						<div class="sub-menu mt-xxs">
 							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
-								<NuxtLink :to="localePath('/proizvodi/vrata')">Vrata</NuxtLink>
+								<NuxtLink :to="localePath('/proizvodi/vrata')">{{ $t('mobileMenu.door_title') }}</NuxtLink>
 								<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('vrata')" :class="{ active: activeCategory == 'vrata' }">
 									<div class="hamb-btn">
 										<div class="hamb-line" />
@@ -81,17 +83,17 @@
 							</div>
 							<transition name="fadeFromUp">
 								<div class="sub-menu--item u-flex u-flex-fd--c mt-sm" v-show="activeCategory === 'vrata'">
-									<NuxtLink :to="localePath('/vrata/#pjesacka-vrata')" class="mtb-sm">Pješačka vrata</NuxtLink>
-									<NuxtLink :to="localePath('/vrata/#krilna-vrata')" class="mtb-sm">Krilna vrata</NuxtLink>
-									<NuxtLink :to="localePath('/vrata/#klizna-vrata')" class="mtb-sm">Klizna vrata</NuxtLink>
-									<NuxtLink :to="localePath('/vrata/#samonosiva-vrata')" class="mtb-sm">Samonosiva vrata</NuxtLink>
-									<NuxtLink :to="localePath('/vrata/#dodatna-oprema')" class="mtb-sm">Dodatna oprema za vrata</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/#pjesacka-vrata')" class="mtb-sm">{{ $t('mobileMenu.door_submenu.door_sub1') }}</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/#krilna-vrata')" class="mtb-sm">{{ $t('mobileMenu.door_submenu.door_sub2') }}</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/#klizna-vrata')" class="mtb-sm">{{ $t('mobileMenu.door_submenu.door_sub3') }}</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/#samonosiva-vrata')" class="mtb-sm">{{ $t('mobileMenu.door_submenu.door_sub4') }}</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/#dodatna-oprema')" class="mtb-sm">{{ $t('mobileMenu.door_submenu.door_sub5') }}</NuxtLink>
 								</div>
 							</transition>
 						</div>
 						<div class="sub-menu mb-sm mt-xxs mobile-menu--bline">
 							<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb mobile-menu--line">
-								<NuxtLink :to="localePath('/proizvodi/izrada-po-nacrtu')">Izrada po nacrtu</NuxtLink>
+								<NuxtLink :to="localePath('/proizvodi/izrada-po-nacrtu')">{{ $t('mobileMenu.drafting_title') }}</NuxtLink>
 								<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('poNacrtu')" :class="{ active: activeCategory == 'poNacrtu' }">
 									<div class="hamb-btn">
 										<div class="hamb-line" />
@@ -101,18 +103,28 @@
 							</div>
 							<transition name="fadeFromUp">
 								<div class="sub-menu--item u-flex u-flex-fd--c mt-sm" v-show="activeCategory === 'poNacrtu'">
-									<NuxtLink :to="localePath('/vrata/izrada-po-nacrtu/#zastitna-ograda')" class="mtb-sm">Zaštitna pješačka ograda</NuxtLink>
-									<NuxtLink :to="localePath('/vrata/izrada-po-nacrtu/#vanstandardna-ograda')" class="mtb-sm">Vanstandardna ograda</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/izrada-po-nacrtu/#zastitna-ograda')" class="mtb-sm">{{ $t('mobileMenu.drafting_submenu.drafting_sub1') }}</NuxtLink>
+									<NuxtLink :to="localePath('/vrata/izrada-po-nacrtu/#vanstandardna-ograda')" class="mtb-sm">{{
+										$t('mobileMenu.drafting_submenu.drafting_sub2')
+									}}</NuxtLink>
 								</div>
 							</transition>
 						</div>
 					</div>
 				</transition>
 			</div>
-			<NuxtLink :to="localePath('/usluge')" class="mobile-menu--text mtb-md"><div class="mobile-menu--item">Usluge</div></NuxtLink>
-			<NuxtLink :to="localePath('/galerija')" class="mobile-menu--text mtb-md"><div class="mobile-menu--item">Galerija</div></NuxtLink>
-			<NuxtLink :to="localePath('/kontakt')" class="mobile-menu--text mtb-md"><div class="mobile-menu--item">Kontakt</div></NuxtLink>
-			<div class="sub-menu--text mtb-md">HR | EN</div>
+			<NuxtLink :to="localePath('/usluge')" class="mobile-menu--text mtb-md"
+				><div class="mobile-menu--item">{{ $t('header.services') }}</div></NuxtLink
+			>
+			<NuxtLink :to="localePath('/galerija')" class="mobile-menu--text mtb-md"
+				><div class="mobile-menu--item">{{ $t('header.gallery') }}</div></NuxtLink
+			>
+			<NuxtLink :to="localePath('/kontakt')" class="mobile-menu--text mtb-md"
+				><div class="mobile-menu--item">{{ $t('header.contact') }}</div></NuxtLink
+			>
+			<div class="mt-md">
+				<NuxtLink :to="switchLocalePath('hr')" class="mr-sm">HR </NuxtLink> | <NuxtLink :to="switchLocalePath('en')" class="ml-sm">EN </NuxtLink>
+			</div>
 		</div>
 	</div>
 </template>

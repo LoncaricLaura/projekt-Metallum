@@ -2,16 +2,14 @@
 	<div>
 		<div class="bg u-flex u-flex-ai--c center">
 			<p class="fs-xxl title txt-align-c">
-				Postavite granice <br />
-				Ostavite vrata <br />
-				<!--{{ $t('home') }}-->
+				{{ $t('home.title') }} <br />
+				{{ $t('home.title2') }} <br />
 			</p>
 		</div>
 		<div class="group u-flex u-flex-fd--c hor-center txt-align-c ptb-main">
-			<h2 class="fs-lg mb-md">Ograde i ogradni sustav</h2>
+			<h2 class="fs-lg mb-md">{{ $t('home.fences_title') }}</h2>
 			<p class="text fs-base">
-				Nije bitno samo ograditi radni prostor ili prostor sačuvati od upada nezvanih gostiju, već se ograda mora uklapati u okolinu i činiti je privlačnijom. To je
-				moguće sa odabirom naših ograda koje su čvrste, trajne i privlačne za oko. Odaberite ogradu koja naglašava Vaš stil!
+				{{ $t('home.fences_desc') }}
 			</p>
 		</div>
 
@@ -19,8 +17,8 @@
 		<div class="box u-flex u-flex-fd--c mlr-main">
 			<div class="box-item u-flex u-flex-ai--c">
 				<div class="box-item--title ml-boxWrap fs-md">
-					<h2>Pletivo</h2>
-					<NuxtLink :to="localePath('/proizvodi/pletivo')" class="btn btn--primary mt-4xl fs-base"> SAZNAJTE VIŠE </NuxtLink>
+					<h2>{{ $t('home.pletivo_title') }}</h2>
+					<NuxtLink :to="localePath('/proizvodi/pletivo')" class="btn btn--primary mt-4xl fs-base">{{ $t('home.button_more') }} </NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 					<img src="~/assets/img/index/fence_blue_1.png" />
@@ -31,8 +29,8 @@
 			<div class="box-items u-grid u-grid-2 mt-lg">
 				<div class="box-item u-flex u-flex-ai--c">
 					<div class="box-item--title ml-boxWrap fs-md">
-						<h2>Valovita (vibro) mreža</h2>
-						<NuxtLink :to="localePath('/proizvodi/valovita-mreza')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink>
+						<h2>{{ $t('home.mesh_title') }}</h2>
+						<NuxtLink :to="localePath('/proizvodi/valovita-mreza')" class="btn btn--primary mt-4xl fs-base">{{ $t('home.button_more') }}</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 						<img class="box-item--img" src="~/assets/img//index/Fence-Knits.png" />
@@ -43,8 +41,8 @@
 				<!-- Vrata -->
 				<div class="box-item u-flex u-flex-ai--c">
 					<div class="box-item--title ml-boxWrap fs-md">
-						<h2>Vrata</h2>
-						<NuxtLink :to="localePath('/proizvodi/vrata')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink>
+						<h2>{{ $t('home.door_title') }}</h2>
+						<NuxtLink :to="localePath('/proizvodi/vrata')" class="btn btn--primary mt-4xl fs-base">{{ $t('home.button_more') }}</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 						<img class="box-item--img" src="~/assets/img/index/Garden-Door.J03.png" />
@@ -56,8 +54,8 @@
 			<!-- Panelni sustav -->
 			<div class="box-item u-flex u-flex-ai--c mt-lg">
 				<div class="box-item--title ml-boxWrap fs-md">
-					<h2>Panelni sustav</h2>
-					<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink>
+					<h2>{{ $t('home.panel_title') }}</h2>
+					<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="btn btn--primary mt-4xl fs-base">{{ $t('home.button_more') }}</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 					<img src="~/assets/img/index/Barbed-Wire-Fence.G03.png" />
@@ -67,8 +65,8 @@
 			<!-- Pruzni sustav -->
 			<div class="box-item u-flex u-flex-ai--c mtb-lg">
 				<div class="box-item--title ml-boxWrap fs-md">
-					<h2>Pružni sustav</h2>
-					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')" class="btn btn--primary mt-4xl fs-base">SAZNAJTE VIŠE</NuxtLink>
+					<h2>{{ $t('home.rail_title') }}</h2>
+					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')" class="btn btn--primary mt-4xl fs-base">{{ $t('home.button_more') }}</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 					<img src="~/assets/img/index/fence_blue_1.png" />
@@ -78,56 +76,56 @@
 
 		<div class="group u-flex hor-center txt-align-c">
 			<p class="text mtb-3xl pb-6xl fs-base">
-				Naši proizvodi koriste se u izgradnji nosiva konstrukcija te u svim vrstama ograda. Kako u industrijskim tako i u privatnim sektorima.
+				{{ $t('home.products_desc') }}
 			</p>
 		</div>
 
 		<!-- Usluge -->
 		<div class="u-flex center u-flex-ai--c">
-			<h2 class="fs-lg">Usluge</h2>
+			<h2 class="fs-lg">{{ $t('home.services_title') }}</h2>
 		</div>
 
 		<div class="box-services u-grid u-grid-4 plr-main box-services--text fs-md txt-align-c ptb-main">
 			<div>
 				<img src="~/assets/img/index/image-field.png" class="mb-lg" />
-				<p>Izvid terena</p>
+				<p>{{ $t('home.services_field') }}</p>
 			</div>
 			<div>
 				<img src="~/assets/img/index/image-docs.png" class="mb-lg" />
-				<p>Izrada nacrtne dokumentacije za ograde dizajna po želji klijenta</p>
+				<p>{{ $t('home.services_docs') }}</p>
 			</div>
 			<div>
 				<img src="~/assets/img/index/image-fence-door.png" class="mb-4xl" />
-				<p>Proizvodnja ograda i vrata</p>
+				<p>{{ $t('home.services_fence_door') }}</p>
 			</div>
 			<div>
 				<img src="~/assets/img/index/image-protection-el.png" class="mb-lg" />
-				<p>Antikorozivna zaštita elemenata</p>
+				<p>{{ $t('home.services_protection') }}</p>
 			</div>
 			<div>
 				<img src="~/assets/img/index/image-drilling.png" class="mb-lg" />
-				<p>Dijamantno bušenje armiranog betona</p>
+				<p>{{ $t('home.services_drilling') }}</p>
 			</div>
 			<div>
 				<img src="~/assets/img/index/image-installation.png" class="mb-lg" />
-				<p>Montaža ograde i vratiju</p>
+				<p>{{ $t('home.services_installation') }}</p>
 			</div>
 			<div>
 				<img src="~/assets/img/index/image-automation.png" class="mb-lg" />
-				<p>Automatizacija vratiju</p>
+				<p>{{ $t('home.services_automation') }}</p>
 			</div>
 			<div>
 				<img src="~/assets/img/index/image-service.png" class="mb-lg" />
-				<p>Servisiranje na terenu</p>
+				<p>{{ $t('home.services_service') }}</p>
 			</div>
 		</div>
 
 		<SliderMobile :services="services" />
 
 		<div class="bg-item u-flex u-flex-fd--c u-flex-ai--c center">
-			<div class="bg-item--text fs-xl txt-align-c">Kontaktirajte nas za više informacija</div>
+			<div class="bg-item--text fs-xl txt-align-c">{{ $t('home.contact_title') }}</div>
 			<div class="btn btn--primary mt-3xl">
-				<p class="btn--text mtb-xxs">KONTAKTIRAJTE NAS</p>
+				<p class="btn--text mtb-xxs">{{ $t('home.contact_button') }}</p>
 			</div>
 		</div>
 

@@ -4,7 +4,7 @@
 			<div class="box-item--title ml-6xl fs-md">
 				<h2 class="mb-lg">{{ product.title }}</h2>
 				<p class="fs-base">{{ product.text }}</p>
-				<NuxtLink :to="localePath(`/proizvodi${product.button}`)" class="btn btn--primary fs-base mt-4xl">SAZNAJTE VIŠE</NuxtLink>
+				<NuxtLink :to="localePath(`/proizvodi${product.button}`)" class="btn btn--primary fs-base mt-4xl">{{ $t('home.button_more') }}</NuxtLink>
 			</div>
 			<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 				<img :src="require(`~/assets/img/products/${product.img}.png`)" />

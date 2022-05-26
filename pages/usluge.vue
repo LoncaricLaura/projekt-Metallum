@@ -14,73 +14,66 @@ export default {
 					id: 'izvid-terena',
 					image: 'usluge',
 					icon: 'field',
-					title: 'Izvid terena',
-					text: 'Po prihvaćanju ponude, naš inženjer gradilišta izlazi na konačnu izmjeru terena za pripremu nacrta, prije početka proizvodnje.'
+					title: this.$t('services.field.title'),
+					text: this.$t('services.field.desc')
 				},
 				{
 					id: 'izrada-nacrtne',
 					image: 'usluge',
 					icon: 'docs',
-					title: 'Izrada nacrtne dokumentacije za vrata i ograde dizajna po želji klijenta',
-					text:
-						'Svim klijentima koji kupuju vrata izrađujemo radioničke nacrte istih, a za sve vanstandardne ograde I vrata izrađujemo nacrte od ideje do izvođenja.'
+					title: this.$t('services.docs.title'),
+					text: this.$t('services.docs.desc')
 				},
 				{
 					id: 'prozivodnja-ograde-vrata',
 					image: 'usluge',
 					icon: 'fence-door',
-					title: 'Proizvodnja ograda i vrata',
-					text:
-						'Za sve proizvode iz proizvodnog programa nudimo kompletnu uslugu dostave, pripremnih igrađevinskih radova, te montaže i završne obrade prije predaje objekta prema ugovorenom obujmu posla. Usluge uključuju:',
+					title: this.$t('services.fence_door.title'),
+					text: this.$t('services.fence_door.desc'),
 					servicesItems: [
-						'Izlazak na teren radi uvida u obujam posla i planiranja potrebnog materijala',
-						'Pripremu materijala prema dogovoru na terenu',
-						'Prijevoz materijala na gradilište',
-						'Pripremne i građevinske radove',
-						'Montažu stupova, elemenata ograde i vratiju',
-						'Završnu obradu ograde i čišćenje terena prije predaje gotovog objekta',
-						'Predaju objekta korisniku'
+						this.$t('services.fence_door.items.item1'),
+						this.$t('services.fence_door.items.item2'),
+						this.$t('services.fence_door.items.item3'),
+						this.$t('services.fence_door.items.item4'),
+						this.$t('services.fence_door.items.item5'),
+						this.$t('services.fence_door.items.item6'),
+						this.$t('services.fence_door.items.item7')
 					]
 				},
 				{
 					id: 'antikorozivna-zastita',
 					image: 'usluge',
 					icon: 'protection-el',
-					title: 'Antikorozivna zaštita elemenata',
-					text:
-						'Proizvodi iz našeg proizvodnog programa zaštićuju se protiv korozije primjenom suvremenih tehnologija pocinčavanja i plastifikacije. U vlastitom plastifikacijskom pogonu plastificiramo ogradne elemente u RAL boju prema odabiru klijent'
+					title: this.$t('services.protection.title'),
+					text: this.$t('services.protection.desc')
 				},
 				{
 					id: 'dijamantno-busenje',
 					image: 'dijamant-busenje',
 					icon: 'drilling',
-					title: 'Dijamantno bušenje armiranog betona',
-					text:
-						'Usluge dijamantnog bušenja armiranog betona obavljamo najsuvremenijom opremom. U mogućnosti smo bušiti rupe promjera 25 mm - 162 mm do dubine od 400mm. '
+					title: this.$t('services.drilling.title'),
+					text: this.$t('services.drilling.desc')
 				},
 				{
 					id: 'montaza-ograde-vrata',
 					image: 'usluge',
 					icon: 'installation',
-					title: 'Montaža ograde i vratiju',
-					text:
-						'Ukoliko iz bilo kojeg razloga dođe do oštećenja ograde (udar autom, provala, …), našim klijentima kojima smo izvršili montžu nudimo popravak oštećenja u najkraćem mogućem roku.'
+					title: this.$t('services.installation.title'),
+					text: this.$t('services.installation.desc')
 				},
 				{
 					id: 'automatizacija-vrata',
 					image: 'usluge',
 					icon: 'automation',
-					title: 'Automatizacija vratiju',
-					text:
-						'Ukoliko iz bilo kojeg razloga dođe do oštećenja ograde (udar autom, provala, …), našim klijentima kojima smo izvršili montžu nudimo popravak oštećenja u najkraćem mogućem roku.'
+					title: this.$t('services.automation.title'),
+					text: this.$t('services.automation.desc')
 				},
 				{
 					id: 'servisiranje',
 					image: 'usluge',
 					icon: 'service',
-					title: 'Servisiranje na terenu',
-					text:
-						'Ukoliko iz bilo kojeg razloga dođe do oštećenja ograde (udar autom, provala, …), našim klijentima kojima smo izvršili montžu nudimo popravak oštećenja u najkraćem mogućem roku.'
+					title: this.$t('services.service.title'),
+					text: this.$t('services.service.desc')
 				}
 			]
 		};

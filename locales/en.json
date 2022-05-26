@@ -1,5 +1,221 @@
 {
-	"home": "text eng",
+	"header": {
+		"products": "Products",
+		"services": "Serivces",
+		"gallery": "Gallery",
+		"contact": "Contact"
+	},
+	"mobileMenu": {
+		"knit_title": "Knit",
+		"knit_submenu": {
+			"uni_knit": "Universal knit",
+			"plast_knit": "Plasticized knit",
+			"farm_knit": "Farmer knit",
+			"boiled_knit": "Boiled plasticized knit",
+			"acc_knit": "Equipment",
+			"mesh_knit": "Mesh and other equipment for sports facilities"
+		},
+		"mesh_title": "Corrugated (vibro) mesh",
+		"pillars_title": "Pillars (beehives, brackets, rungs)",
+		"panel_title": "Panel system",
+		"panel_submenu": {
+			"panel_sub1": "Panel M3 5mm",
+			"panel_sub2": "Panel M3 4mm",
+			"panel_sub3": "Panel M2 6-5-6 mm",
+			"panel_sub4": "Panel M2 8-6-8 mm",
+			"panel_sub5": "Pillar Metallum",
+			"panel_sub6": "Pillar omega",
+			"panel_sub7": "Pillar sport",
+			"panel_sub8": "Eyeshadows for privacy"
+		},
+		"rail_title": "Rail systems",
+		"gabions_title": "Fence gabions",
+		"door_title": "Door",
+		"door_submenu": {
+			"door_sub1": "Pedestrian door",
+			"door_sub2": "Swing doors",
+			"door_sub3": "Slide door",
+			"door_sub4": "Self-supporting door",
+			"door_sub5": "Door accessories"
+		},
+		"drafting_title": "Drafting",
+		"drafting_submenu": {
+			"drafting_sub1": "Protective pedestrian fence",
+			"drafting_sub2": "Non-standard fence"
+		}
+	},
+	"footer": {
+		"subtitle": "30 years of experience",
+		"products_title": "Products",
+		"services_title": "Services",
+		"gallery_title": "Gallery",
+		"contact_title": "Contact",
+		"address": {
+			"title": "Address",
+			"street": "Most Pićan 2d",
+			"city": "52332 Pićan",
+			"cntry": "Croatia"
+		},
+		"time": {
+			"title": "Working hours",
+			"day1": "Mon - Fri",
+			"hour": "07:00 - 15:00",
+			"day2": "Sat - Sun",
+			"hour2": "closed"
+		},
+		"catalog": "DOWNLOAD CATALOG",
+		"mail": {
+			"title": "E-mail",
+			"email": "metallum@metallum.hr"
+		},
+		"phone": {
+			"title": "Phone",
+			"numb": "+385 52 869 006"
+		},
+		"metallum": "© 2021, Metallum, all rights reserved."
+	},
+	"home": {
+		"title": "Set boundaries",
+		"title2": "Leave the door",
+		"fences_title": "Fences and fencing system",
+		"fences_desc": "It is not only important to fence the workspace or save the space from intruders, but the fence must fit into the environment and make it more attractive. This is possible by choosing our fences that are strong, durable and eye-catching. Choose a fence that emphasizes your style!",
+		"pletivo_title": "Knit",
+		"button_more": "FIND OUT MORE",
+		"mesh_title": "Corrugated (vibro) mesh",
+		"door_title": "Door",
+		"panel_title": "Panel system",
+		"rail_title": "Rail system",
+		"products_desc": "Our products are used in the construction of load-bearing structures and in all types of fences. Both in the industrial and private sectors.",
+		"services_title": "Services",
+		"services_field": "Field survey",
+		"services_docs": "Preparation of draft documentation for design fences according to the client's wishes",
+		"services_fence_door": "Manufacture of fences and doors",
+		"services_protection": "Anti-corrosion protection of elements",
+		"services_drilling": "Diamond drilling of reinforced concrete",
+		"services_installation": "Installation of fences and doors",
+		"services_automation": "Door automation",
+		"services_service": "Field service",
+		"contact_title": "Contact us for more information",
+		"contact_button": "CONTACT US"
+	},
+	"products": {
+		"knit": {
+			"title": "Knit",
+			"desc": "Universal knits, made of galvanized or galvanized and plasticized wire, are intended for fencing sports areas, residential areas, gardens, parks, and agricultural and similar areas."
+		},
+		"mesh": {
+			"title": "Corrugated (vibro) mesh",
+			"desc": "Vibrating mesh is the basis for making solid fences or doors, and is also used in construction."
+		},
+		"pillars": {
+			"title": "Pillars (beehives, brackets, rungs)",
+			"desc": "Depending on the requirements of the project, we offer different profiles and dimensions of columns (round, square, rectangular, oval, semi-oval, ellipse)."
+		},
+		"panel": {
+			"title": "Panel systems",
+			"desc": "Panel fencing systems provide maximum functionality, protection and aesthetics to our customers. Each element is carefully tested at each production stage to ensure maximum quality."
+		},
+		"rail": {
+			"title": "Rail systems",
+			"desc": "Wisniowski's rail systems are intended for residential as well as public buildings. Complete with a fence, it is possible to produce a door in the corresponding design."
+		},
+		"gabions": {
+			"title": "Fence gabions",
+			"desc": "In addition to the modern look, quick installation is the reason why fence gabions are becoming an increasingly common choice when choosing a way to protect your garden."
+		},
+		"doors": {
+			"title": "Door",
+			"desc": "We offer pedestrian, swing, sliding and self-supporting doors, dimensions and designs according to customer requirements."
+		},
+		"drafting": {
+			"title": "Drafting",
+			"desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+		}
+	},
+
+	"services": {
+		"field": {
+			"title": "Field survey",
+			"desc": "Upon acceptance of the offer, our site engineer goes to the final site survey to prepare the draft, before production begins."
+		},
+		"docs": {
+			"title": "Preparation of design documentation for doors and railings of design according to the client's wishes",
+			"desc": "We make workshop plans for all clients who buy doors, and for all non-standard fences and doors we make plans from idea to execution."
+		},
+		"fence_door": {
+			"title": "Manufacture of fences and doors",
+			"desc": "For all products from the production program, we offer a complete service of delivery, preparatory construction work, and installation and finishing before handing over the facility according to the agreed volume of work. Services include:",
+			"items": {
+				"item1": "Going out to the field to get an insight into the scope of work and plan the necessary material",
+				"item2": "Preparation of materials according to the agreement in the field",
+				"item3": "'Transport of materials to the construction site",
+				"item4": "Preparatory and construction works",
+				"item5": "Installation of posts, fence elements and doors",
+				"item6": "Finishing the fence and cleaning the terrain before handing over the finished object",
+				"item7": "Handing over the object to the user"
+			}
+		},
+		"protection": {
+			"title": "Anti-corrosion protection of elements",
+			"desc": "Products from our product range are protected against corrosion by applying modern galvanizing and plasticizing technologies. In our own plasticizing plant, we plasticize the fence elements in RAL color according to the client's choice"
+		},
+		"drilling": {
+			"title": "Diamond drilling of reinforced concrete",
+			"desc": "We perform diamond drilling services of reinforced concrete with the most modern equipment. We are able to drill holes with a diameter of 25 mm - 162 mm to a depth of 400 mm."
+		},
+		"installation": {
+			"title": "Installation of fences and doors",
+			"desc": "If for any reason the fence is damaged (car crash, burglary,…), we offer our clients to whom we performed the installation to repair the damage as soon as possible."
+		},
+		"automation": {
+			"title": "Door automation",
+			"desc": "If for any reason the fence is damaged (car crash, burglary,…), we offer our clients to whom we performed the installation to repair the damage as soon as possible."
+		},
+		"service": {
+			"title": "Field service",
+			"desc": "If for any reason the fence is damaged (car crash, burglary,…), we offer our clients to whom we performed the installation to repair the damage as soon as possible."
+		},
+		"menu": {
+			"title": "Services",
+			"submenu": {
+				"field": "Field survey",
+				"docs": "Preparation of draft documentation for design fences according to the client's wishes",
+				"fence_door": "Manufacture of fences and doors",
+				"protection": "Anti-corrosion protection of elements",
+				"drilling": "Diamond drilling of reinforced concrete",
+				"installation": "Installation of fences and doors",
+				"automation": "Door automation",
+				"service": "Field service"
+			}
+		}
+	},
+	"gallery": {
+		"knit_title": "Knit",
+		"mesh_title": "Corrugated (vibro) mesh",
+		"pillars_title": "Pillars (beehives, brackets, rungs)",
+		"catalog": "DOWNLOAD CATALOG",
+		"contact_desc": "Contact us for more information",
+		"contact_button": "CONTACT US",
+		"menu": {
+			"products": {
+				"title": "Products",
+				"sub_knit": "Knit",
+				"sub_mesh": "Corrugated (vibro) mesh",
+				"sub_pillars": "Pillars (beehives, brackets, rungs)",
+				"sub-panel": "Panelni system",
+				"sub-rail": "Rail systems",
+				"sub-gabions": "Fence gabions",
+				"sub_doors": "Doors",
+				"sub_draft": "Drafting"
+			},
+			"property": {
+				"title": "Types of real estate",
+				"sub_ville": "Ville",
+				"sub_const": "New construction",
+				"sub_industry": "Industry"
+			}
+		}
+	},
 	"gdpr": {
 		"title_main": "PERSONAL DATA PRIVACY POLICY",
 		"title1": "1. Introduction",

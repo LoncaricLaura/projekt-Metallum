@@ -14,11 +14,12 @@
 
 		<div class="u-flex u-flex--if u-flex-ai--fe mb-sm header__top">
 			<div class="nav fs-base">
-				<NuxtLink :to="localePath('/Proizvodi')" class="menuItem">Proizvodi</NuxtLink>
-				<NuxtLink :to="localePath('/Usluge')" class="menuItem ml-lg">Usluge</NuxtLink>
-				<NuxtLink :to="localePath('/Galerija')" class="menuItem ml-lg">Galerija</NuxtLink>
-				<NuxtLink :to="localePath('/Kontakt')" class="menuItem ml-lg">Kontakt</NuxtLink>
-				<a href="" class="menuItem ml-6xl">HR | EN</a>
+				<NuxtLink :to="localePath('/proizvodi')" class="menuItem">{{ $t('header.products') }}</NuxtLink>
+				<NuxtLink :to="localePath('/usluge')" class="menuItem ml-lg">{{ $t('header.services') }}</NuxtLink>
+				<NuxtLink :to="localePath('/galerija')" class="menuItem ml-lg">{{ $t('header.gallery') }}</NuxtLink>
+				<NuxtLink :to="localePath('/kontakt')" class="menuItem ml-lg">{{ $t('header.contact') }}</NuxtLink>
+				<NuxtLink :to="switchLocalePath('hr')" class="mr-sm ml-6xl">HR </NuxtLink> |
+				<NuxtLink :to="switchLocalePath('en')" class="ml-sm">EN </NuxtLink>
 			</div>
 		</div>
 
@@ -102,10 +103,6 @@ export default Vue.extend({
 			display: none;
 		}
 	}
-}
-
-.menuItem:hover {
-	text-decoration: underline;
 }
 
 .hamburger {

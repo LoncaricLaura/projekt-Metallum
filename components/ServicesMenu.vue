@@ -1,26 +1,34 @@
 <template>
 	<div class="menu u-flex u-flex-fd--c mtb-xl">
 		<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
-			<NuxtLink :to="localePath('/Usluge')" class="menu--item fs-lg mtb-3xl">Usluge</NuxtLink>
+			<NuxtLink :to="localePath('/Usluge')" class="menu--item fs-lg mtb-3xl">{{ $t('services.menu.title') }}</NuxtLink>
 		</div>
 
 		<div class="sub-menu u-flex u-flex-fd--c">
 			<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb menu--line mb-sm fs-md">
-				<NuxtLink :to="localePath('/Usluge/#izvid-terena')">Izvid terena</NuxtLink>
+				<NuxtLink :to="localePath('/Usluge/#izvid-terena')">{{ $t('services.menu.submenu.field') }}</NuxtLink>
 			</div>
 			<div class="sub-menu mb-xxs mt-xs menu--line fs-md">
-				<NuxtLink :to="localePath('/Usluge/#izrada-nacrtne')">Izrada nacrtne dokumentacije za vrata i ograde dizajna po želji klijenta</NuxtLink>
-			</div>
-			<div class="sub-menu mtb-sm menu--line fs-md"><NuxtLink :to="localePath('/Usluge/#prozivodnja-ograde-vrata')">Proizvodnja ograda i vrata</NuxtLink></div>
-			<div class="sub-menu mtb-sm menu--line fs-md">
-				<NuxtLink :to="localePath('/usluge/#antikorozivna-zastita')">Antikorozivna zaštita elemenata</NuxtLink>
+				<NuxtLink :to="localePath('/Usluge/#izrada-nacrtne')">{{ $t('services.menu.submenu.docs') }}</NuxtLink>
 			</div>
 			<div class="sub-menu mtb-sm menu--line fs-md">
-				<NuxtLink :to="localePath('/usluge/#dijamantno-busenje')">Dijamantno bušenje armiranog betona</NuxtLink>
+				<NuxtLink :to="localePath('/Usluge/#prozivodnja-ograde-vrata')">{{ $t('services.menu.submenu.fence_door') }}</NuxtLink>
 			</div>
-			<div class="sub-menu mtb-sm menu--line fs-md"><NuxtLink :to="localePath('/usluge/#montaza-ograde-vrata')">Montaža ograde i vratiju</NuxtLink></div>
-			<div class="sub-menu mtb-sm menu--line fs-md"><NuxtLink :to="localePath('/usluge/#automatizacija-vrata')">Automatizacija vratiju</NuxtLink></div>
-			<div class="sub-menu mtb-xs menu--bline fs-md"><NuxtLink :to="localePath('/usluge/#servisiranje')">Servisiranje na terenu</NuxtLink></div>
+			<div class="sub-menu mtb-sm menu--line fs-md">
+				<NuxtLink :to="localePath('/usluge/#antikorozivna-zastita')">{{ $t('services.menu.submenu.protection') }}</NuxtLink>
+			</div>
+			<div class="sub-menu mtb-sm menu--line fs-md">
+				<NuxtLink :to="localePath('/usluge/#dijamantno-busenje')">{{ $t('services.menu.submenu.drilling') }}</NuxtLink>
+			</div>
+			<div class="sub-menu mtb-sm menu--line fs-md">
+				<NuxtLink :to="localePath('/usluge/#montaza-ograde-vrata')">{{ $t('services.menu.submenu.installation') }}</NuxtLink>
+			</div>
+			<div class="sub-menu mtb-sm menu--line fs-md">
+				<NuxtLink :to="localePath('/usluge/#automatizacija-vrata')">{{ $t('services.menu.submenu.automation') }}</NuxtLink>
+			</div>
+			<div class="sub-menu mtb-xs menu--bline fs-md">
+				<NuxtLink :to="localePath('/usluge/#servisiranje')">{{ $t('services.menu.submenu.service') }}</NuxtLink>
+			</div>
 		</div>
 	</div>
 </template>

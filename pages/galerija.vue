@@ -3,7 +3,7 @@
 		<div class="menu"><GalleryMenu /></div>
 		<div class="box u-flex">
 			<div class="u-grid">
-				<div class="fs-lg mb-md pt-lg" id="pletivo">Pletivo</div>
+				<div class="fs-lg mb-md pt-lg" id="pletivo">{{ $t('gallery.knit_title') }}</div>
 				<div class="box--pletivo u-grid u-grid-3 mb-2xl">
 					<img src="~/assets/img/gallery/pletivo-1.png" />
 					<img src="~/assets/img/gallery/pletivo-2.png" />
@@ -14,7 +14,7 @@
 					<div class="box--pletivo--katalog u-flex u-flex-fd--c u-flex-ai--c u-flex-jc--c">
 						<img class="katalog" src="~/assets/img/gallery/katalog.png" />
 						<p class="fs-base mt-5xl">
-							SKINI KATALOG
+							{{ $t('gallery.catalog') }}
 							<img src="~/assets/img/nofollow/mdi-light_download.png" class="ml-sm" />
 						</p>
 					</div>
@@ -24,9 +24,9 @@
 					<img src="~/assets/img/gallery/pletivo-10.png" class="box--pletivo--item10" />
 					<div class="box--pletivo--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl">
 						<div class="fs-lg">
-							Kontaktirajte nas za više informacija
+							{{ $t('gallery.contact_desc') }}
 							<div class="fs-base mt-6xl">
-								KONTAKTIRAJTE NAS
+								{{ $t('gallery.contact_button') }}
 								<img src="~/assets/img/gallery/kont.png" class="ml-sm" />
 							</div>
 						</div>
@@ -35,7 +35,7 @@
 					<img src="~/assets/img/gallery/pletivo-11.png" class="box--pletivo--item11" />
 				</div>
 
-				<div class="fs-lg mb-md pt-lg" id="valovit-mreza">Valovita (vibro) mreža</div>
+				<div class="fs-lg mb-md pt-lg" id="valovit-mreza">{{ $t('gallery.mesh_title') }}</div>
 				<div class="box--pletivo u-grid u-grid-3 mb-2xl">
 					<img src="~/assets/img/gallery/pletivo-1.png" />
 					<img src="~/assets/img/gallery/pletivo-2.png" />
@@ -46,7 +46,7 @@
 					<div class="box--pletivo--katalog u-flex u-flex-fd--c u-flex-ai--c u-flex-jc--c">
 						<img class="katalog" src="~/assets/img/gallery/katalog.png" />
 						<p class="fs-base mt-5xl">
-							SKINI KATALOG
+							{{ $t('gallery.catalog') }}
 							<img src="~/assets/img/nofollow/mdi-light_download.png" class="ml-sm" />
 						</p>
 					</div>
@@ -56,16 +56,16 @@
 					<img src="~/assets/img/gallery/pletivo-10.png" class="box--pletivo--item10" />
 				</div>
 
-				<div class="fs-lg mb-md pt-lg" id="stupovi">Stupovi (kosnici, konzole, prečke)</div>
+				<div class="fs-lg mb-md pt-lg" id="stupovi">{{ $t('gallery.pillars_title') }}</div>
 				<div class="box--stupovi u-grid u-grid-3 mb-2xl">
 					<img src="~/assets/img/gallery/stupovi-1.png" class="box--stupovi--item1" />
 					<img src="~/assets/img/gallery/stupovi-2.png" class="box--stupovi--item2" />
 					<img src="~/assets/img/gallery/pletivo-1.png" class="box-stupovi--item3" />
 					<div class="box--stupovi--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl">
 						<div class="fs-lg">
-							Kontaktirajte nas za više informacija
+							{{ $t('gallery.contact_desc') }}
 							<div class="fs-base mt-6xl">
-								KONTAKTIRAJTE NAS
+								{{ $t('gallery.contact_button') }}
 								<img src="~/assets/img/gallery/kont.png" class="ml-sm" />
 							</div>
 						</div>
@@ -81,9 +81,9 @@
 					<img src="~/assets/img/gallery/pletivo-10.png" class="box--stupovi--item10" />
 					<div class="box--pletivo--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl ptb-6xl">
 						<div class="fs-lg">
-							Kontaktirajte nas za više informacija
+							{{ $t('gallery.contact_desc') }}
 							<div class="fs-base mt-6xl">
-								KONTAKTIRAJTE NAS
+								{{ $t('gallery.contact_button') }}
 								<img src="~/assets/img/gallery/kont.png" class="ml-sm" />
 							</div>
 						</div>
@@ -92,7 +92,7 @@
 					<div class="box--stupovi--katalog u-flex u-flex-fd--c u-flex-ai--c u-flex-jc--c">
 						<img class="katalog" src="~/assets/img/gallery/katalog.png" />
 						<p class="fs-base mt-5xl">
-							SKINI KATALOG
+							{{ $t('gallery.catalog') }}
 							<img src="~/assets/img/nofollow/mdi-light_download.png" class="ml-sm" />
 						</p>
 					</div>
@@ -383,6 +383,9 @@
 }
 
 @media (max-width: 500px) {
+	.gallery {
+		padding-top: 137px;
+	}
 	.box {
 		&--pletivo {
 			&--kontakt {
