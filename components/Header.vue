@@ -3,7 +3,11 @@
 		class="header u-flex u-flex-fw--w u-flex-jc--sb u-flex-fd--r plr-6xl pt-md pl-3xl"
 		:class="{
 			fixed: $store.state.openMenu,
-			'header--dark': ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge') || ($route.name || '').includes('galerija')
+			'header--dark':
+				($route.name || '').includes('proizvodi__') ||
+				($route.name || '').includes('usluge') ||
+				($route.name || '').includes('galerija') ||
+				($route.name || '').includes('contact')
 		}"
 	>
 		<NuxtLink :to="localePath('/')" class="light"><img src="~/assets/img/nofollow/logo-metallum.png" class="header--logo" /> </NuxtLink>
@@ -17,8 +21,8 @@
 				<NuxtLink :to="localePath('/proizvodi')" class="menuItem">{{ $t('header.products') }}</NuxtLink>
 				<NuxtLink :to="localePath('/usluge')" class="menuItem ml-lg">{{ $t('header.services') }}</NuxtLink>
 				<NuxtLink :to="localePath('/galerija')" class="menuItem ml-lg">{{ $t('header.gallery') }}</NuxtLink>
-				<NuxtLink :to="localePath('/kontakt')" class="menuItem ml-lg">{{ $t('header.contact') }}</NuxtLink>
-				<NuxtLink :to="switchLocalePath('hr')" class="mr-sm ml-6xl">HR </NuxtLink> |
+				<NuxtLink :to="localePath('/contact')" class="menuItem ml-lg">{{ $t('header.contact') }}</NuxtLink>
+				<NuxtLink :to="switchLocalePath('hr')" class="header--language mr-sm ml-6xl">HR </NuxtLink>
 				<NuxtLink :to="switchLocalePath('en')" class="ml-sm">EN </NuxtLink>
 			</div>
 		</div>
@@ -102,6 +106,10 @@ export default Vue.extend({
 		.light {
 			display: none;
 		}
+	}
+	&--language {
+		border-right: 1px;
+		border-color: white;
 	}
 }
 

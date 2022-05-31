@@ -12,7 +12,7 @@
 			"plast_knit": "Plasticized knit",
 			"farm_knit": "Farmer knit",
 			"boiled_knit": "Boiled plasticized knit",
-			"acc_knit": "Equipment",
+			"acc_knit": "Accessories",
 			"mesh_knit": "Mesh and other equipment for sports facilities"
 		},
 		"mesh_title": "Corrugated (vibro) mesh",
@@ -132,7 +132,83 @@
 			"desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 		}
 	},
-
+	"products_knit": {
+		"title": "Knits in a roll",
+		"pdf_btn": "DOWNLOAD PDF",
+		"gallery": "See the gallery (14)",
+		"uni_knit": {
+			"subtitle": "Universal knit",
+			"desc": "Universal knits, made of galvanized or galvanized and plasticized wire, are intended for fencing sports areas, residential areas, gardens, parks, and agricultural and similar areas.",
+			"desc2": "In combination with ZN / ZN + PVC poles, UNIVERZAL KNITTING is a fast, economical and simple fencing system, which is the most adaptable to the terrain configuration during installation.",
+			"table1": {
+				"title": "Universal galvanized knit",
+				"sub1": "Wire diameter (mm)",
+				"sub2": "Eye opening (mm)",
+				"sub3": "Mesh heigh (m)",
+				"sub4": "Roll length (m)",
+				"desc": "According to the customer's needs, we also make non-standard net heights, with a total height of up to 5.00 m."
+			},
+			"table2": {
+				"title": "Univerzal plastificirano pocinčano pletivo",
+				"sub1": "Wire diameter (mm)",
+				"sub2": "Eye opening (mm)",
+				"sub3": "Mesh height (m)",
+				"sub4": "Roll length (m)",
+				"desc": "According to the customer's needs, we also make non-standard net heights, with a total height of up to 5.00 m."
+			}
+		},
+		"farmer": {
+			"title": "Farmer knit",
+			"desc": "Farmer's knit is used for fencing pastures, agricultural plots, game, domestic animals.",
+			"desc2": "All parts of the fence system are hot-dip galvanized.",
+			"desc3": "We offer farmer mesh height from 1.0 m to 2.0 m.",
+			"desc4": "Installing Farmer knits is easy without the use of tension wires."
+		},
+		"boiled": {
+			"title": "Boiled plasticized knit",
+			"desc": "PVC welded mesh is an electro-welded mesh used for fencing backyards, gardens, agricultural plots. Horizontal strings are corrugated, which makes this knit attractive and robust.",
+			"desc2": "All parts of the fence system are hot-dip galvanized and plasticized in green (RAL 6005)."
+		},
+		"acc_knit": {
+			"title": "Accessories",
+			"desc": "We offer all the accessories needed for the installation of nets and special fences, including pliers, tensioners, connectors, various types of wires (tension wires, fastening wires, barbed wires) and other accessories.",
+			"desc2": "All accessories are protected against corrosion by galvanizing and / or plasticizing.",
+			"table3": {
+				"title": "Galvanized wire",
+				"sub1": "Wire diameter (mm)",
+				"sub2": "Tolerance according to",
+				"sub3": "Zinc coating thickness according to ",
+				"sub4": "Tensile strength (N/mm2)",
+				"desc": "According to the customer's needs, we also make non-standard net heights, with a total height of up to 5.00 m."
+			},
+			"table4": {
+				"title": "Plasticized galvanized wire",
+				"sub1": "Inner diameter (mm)",
+				"sub2": "Outer diameter (mm)",
+				"sub3": "ZN wire tolerance according to UNE-EN 102 18-2(mm)",
+				"sub4": "Diameter tolerance of organically plasticized wire (mm)",
+				"sub5": "Minimum thickness of zinc coating according to UNE-EN 10244-2 (g/m2)",
+				"sub6": "Tensile strength (N/mm2)"
+			},
+			"table5": {
+				"title": "Barb Wire",
+				"sub1": "Line wire diameter (mm)",
+				"sub2": "Thorn diameter (mm)",
+				"sub3": "Minimum thickness of galvanized line wire coating according to UNE-EN 10244-2 (g/m2)",
+				"sub4": "Minimum thickness of galvanized barbed coating according to UNE-EN 10244-2 (g/m2)",
+				"sub5": "Minimum tensile strength of the line wire (N/mm2)",
+				"sub6": "Minimum tensile strength of spikes (N/mm2"
+			}
+		},
+		"aux_acc": {
+			"title": "Auxiliary accessories",
+			"desc": "Auxiliary accessories include pliers, tensioners, galvanized and plastic-coated, and couplings."
+		},
+		"mesh": {
+			"title": "Nets and other equipment for sports facilities",
+			"desc": "For the needs of the project, we are able to supply and install various types of nets and other equipment needed to equip sports fields, playgrounds, kindergartens and schools."
+		}
+	},
 	"services": {
 		"field": {
 			"title": "Field survey",

@@ -154,7 +154,7 @@
 				"sub2": "Otvor oka (mm)",
 				"sub3": "Visina mreže (m)",
 				"sub4": "Duljina role (m)",
-				"desc": ">Prema potrebi naručitelja izrađujemo i nestandardne visine mreža, ukupne visine do 5.00 m."
+				"desc": "Prema potrebi naručitelja izrađujemo i nestandardne visine mreža, ukupne visine do 5.00 m."
 			}
 		},
 		"farmer": {
@@ -176,8 +176,8 @@
 			"table3": {
 				"title": "Pocinčana žica",
 				"sub1": "Promjer žice (mm)",
-				"sub2": "Tolerancija prema UNE-EN 102 18-2 (mm)",
-				"sub3": "Debljina cinčane presvlake prema UNE-EN 10244-2 (g/m2)",
+				"sub2": "Tolerancija prema",
+				"sub3": "Debljina cinčane presvlake prema ",
 				"sub4": "Zatezna čvrstoća (N/mm2)",
 				"desc": "Prema potrebi naručitelja izrađujemo i nestandardne visine mreža, ukupne visine do 5.00 m."
 			},
@@ -185,10 +185,10 @@
 				"title": "Plastificirana pocinčana žica",
 				"sub1": "Unutarnji promjer (mm)",
 				"sub2": "Vanjski promjer (mm)",
-				"sub3": "Tolerancija ZN žice prema UNE-EN 102 18-2 (mm)",
+				"sub3": "Tolerancija ZN žice prema",
 				"sub4": "Tolerancija promjera organski plastificirane žice (mm)",
 				"sub5": "Minimalna debljina cinčane presvlake prema UNE-EN 10244-2 (g/m2)",
-				"sub6": "Zatezna čvrstoća (N/mm2)"
+				"sub6": "Zatezna čvrstoća "
 			},
 			"table5": {
 				"title": "Bodljikava žica",

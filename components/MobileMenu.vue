@@ -4,7 +4,7 @@
 			<div class="mobile-menu--text u-flex u-flex-fd--c">
 				<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
 					<NuxtLink :to="localePath('/Proizvodi')" class="mobile-menu--item mb-xs">{{ $t('header.products') }}</NuxtLink>
-					<div class="u-flex u-flex-ai--c hamburger" @click="productsMenu = !productsMenu">
+					<div class="u-flex u-flex-ai--c hamburger" @click="productsMenu = !productsMenu" :class="{ active: productsMenu }">
 						<div class="hamb-btn">
 							<div class="hamb-line" />
 							<div class="hamb-line" />
