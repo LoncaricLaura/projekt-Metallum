@@ -2,8 +2,8 @@
 	<div class="box u-flex u-flex-fd--c u-flex-ai--fe mb-card">
 		<div class="box-item u-flex u-flex-fd--c u-flex-jc--fe pt-xl" v-for="(service, i) in services" :key="i" :id="`${service.id}`">
 			<div class="u-flex u-flex-fd--r">
-				<div class="">
-					<img :src="require(`~/assets/img/services/${service.icon}.png`)" class="box-item--card" />
+				<div class="box-item--card u-flex u-flex-jc--c">
+					<img :src="require(`~/assets/img/services/${service.icon}.png`)" class="box-item--card_img" />
 				</div>
 				<div>
 					<img :src="require(`~/assets/img/services/${service.image}.jpg`)" class="box-item--img" />
@@ -72,6 +72,9 @@ export default {
 		height: 372px;
 		background-color: $coral;
 		object-fit: none;
+	}
+	&--card_img {
+		padding: 100px;
 	}
 	&--img {
 		height: 372px;
@@ -144,8 +147,23 @@ export default {
 			margin-left: 0;
 			padding-top: 24px;
 		}
+		&--card {
+			width: auto;
+		}
+		&--card_img {
+			padding: 80px;
+		}
 		img {
 			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.box-item {
+		&--card_img {
+			padding: 0;
+			margin: 100px;
 		}
 	}
 }

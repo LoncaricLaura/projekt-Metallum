@@ -89,6 +89,7 @@ export default {
 		'@/plugins/cms-helpers',
 		'@/plugins/fontawesome.js',
 		'@/plugins/responsive-images',
+		'@/plugins/google-map',
 		// { src: '@/plugins/google-analytics', mode: 'client' },
 		{
 			src: '@/plugins/accessibility-tab-handler',
@@ -116,7 +117,8 @@ export default {
 					]
 				];
 			}
-		}
+		},
+		transpile: [/^vue2-google-maps($|\/)/]
 	},
 
 	optimizedImages: {

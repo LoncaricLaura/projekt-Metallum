@@ -7,10 +7,10 @@
 		<div class="footer--row u-grid ptb-2xl">
 			<div class="u-flex u-flex-fd--c">
 				<div class="footer--menu fs-base u-flex u-flex-fd--r pt-footer">
-					<a href="#" class="">{{ $t('footer.products_title') }}</a>
-					<a href="#" class="">{{ $t('footer.services_title') }}</a>
-					<a href="#" class="">{{ $t('footer.gallery_title') }}</a>
-					<a href="#" class="">{{ $t('footer.contact_title') }}</a>
+					<NuxtLink :to="localePath('/proizvodi')">{{ $t('footer.products_title') }}</NuxtLink>
+					<NuxtLink :to="localePath('/usluge')">{{ $t('footer.services_title') }}</NuxtLink>
+					<NuxtLink :to="localePath('/galerija')">{{ $t('footer.gallery_title') }}</NuxtLink>
+					<NuxtLink :to="localePath('/contact')">{{ $t('footer.contact_title') }}</NuxtLink>
 				</div>
 			</div>
 			<div class="footer--text2 fs-base pt-4xl">

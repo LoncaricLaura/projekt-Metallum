@@ -119,7 +119,7 @@
 			<NuxtLink :to="localePath('/galerija')" class="mobile-menu--text mtb-md"
 				><div class="mobile-menu--item">{{ $t('header.gallery') }}</div></NuxtLink
 			>
-			<NuxtLink :to="localePath('/kontakt')" class="mobile-menu--text mtb-md"
+			<NuxtLink :to="localePath('/contact')" class="mobile-menu--text mtb-md"
 				><div class="mobile-menu--item">{{ $t('header.contact') }}</div></NuxtLink
 			>
 			<div class="mt-md">

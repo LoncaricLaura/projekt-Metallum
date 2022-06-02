@@ -224,14 +224,14 @@
 							<table>
 								<thead>
 									<tr class="fs-sm">
-										<th class="ptb-lg plr-md">
+										<th class="ptb-md plr-md">
 											{{ $t('products_knit.acc_knit.table4.sub1') }}
 										</th>
 										<th class="plr-md">
 											{{ $t('products_knit.acc_knit.table4.sub2') }}
 										</th>
 										<th class="plr-md ptb-md">
-											T{{ $t('products_knit.acc_knit.table4.sub3') }}<br />
+											{{ $t('products_knit.acc_knit.table4.sub3') }}<br />
 											UNE-EN 102 18-2 (mm)
 										</th>
 										<th class="plr-md">
