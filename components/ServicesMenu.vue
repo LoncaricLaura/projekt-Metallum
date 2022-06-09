@@ -70,7 +70,7 @@ export default Vue.extend({
 	position: relative;
 	font-family: $ff-serif;
 	color: $iron;
-	width: 70%;
+	width: 65%;
 	height: 100%;
 	//z-index: 50;
 	top: 150px;

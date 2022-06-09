@@ -23,7 +23,11 @@
 				<NuxtLink :to="localePath('/galerija')" class="menuItem ml-lg">{{ $t('header.gallery') }}</NuxtLink>
 				<NuxtLink :to="localePath('/contact')" class="menuItem ml-lg">{{ $t('header.contact') }}</NuxtLink>
 				<NuxtLink :to="switchLocalePath('hr')" class="header--language mr-sm ml-6xl">HR </NuxtLink>
-				<NuxtLink :to="switchLocalePath('en')" class="ml-sm">EN </NuxtLink>
+
+				<img src="~/assets/img/nofollow/line.png" class="light" />
+				<img src="~/assets/img/nofollow/line_dark.png" class="dark" />
+
+				<NuxtLink :to="switchLocalePath('en')" class="header--language ml-sm">EN </NuxtLink>
 			</div>
 		</div>
 
@@ -31,7 +35,11 @@
 			class="u-flex u-flex-ai--c hamburger"
 			:class="{
 				active: $store.state.openMenu,
-				'hamburger--dark': ($route.name || '').includes('proizvodi__') || ($route.name || '').includes('usluge') || ($route.name || '').includes('galerija')
+				'hamburger--dark':
+					($route.name || '').includes('proizvodi__') ||
+					($route.name || '').includes('usluge') ||
+					($route.name || '').includes('galerija') ||
+					($route.name || '').includes('contact')
 			}"
 			@click="$store.commit('toggleField', 'openMenu')"
 		>
@@ -98,19 +106,37 @@ export default Vue.extend({
 	}
 	&--dark {
 		a {
-			color: $oxfordBlue;
+			font-family: $ff-sans;
+
+			color: $metallum;
 		}
 		.dark {
-			display: block;
+			display: inline;
 		}
 		.light {
 			display: none;
 		}
 	}
-	&--language {
-		border-right: 1px;
-		border-color: white;
+	&--language.nuxt-link-exact-active {
+		font-weight: 600;
 	}
+
+	&--line_light,
+	&--line_dark {
+		position: absolute;
+	}
+	&__top {
+		a {
+			font-family: $ff-sans;
+		}
+		img {
+			position: absolute;
+		}
+	}
+}
+
+.menuItem.nuxt-link-exact-active {
+	text-decoration: underline;
 }
 
 .hamburger {
@@ -139,7 +165,8 @@ export default Vue.extend({
 	}
 	.hamburger {
 		display: flex;
-		padding: 20px 0;
+		//padding: 20px 0;
+		margin-top: 25px;
 		z-index: 60;
 		cursor: pointer;
 		.hamb-line {
@@ -184,6 +211,9 @@ export default Vue.extend({
 		&--logo {
 			height: 50px;
 		}
+	}
+	.hamburger {
+		margin-top: 0;
 	}
 }
 </style>

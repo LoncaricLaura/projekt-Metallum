@@ -1,5 +1,5 @@
 <template>
-	<div class="gallery u-flex ptb-gallery mlr-7xl">
+	<div class="gallery u-flex u-flex-fd--r u-flex-jc--sb ptb-gallery mlr-7xl">
 		<div class="menu"><GalleryMenu /></div>
 		<div class="box u-flex">
 			<div class="u-grid">
@@ -13,7 +13,7 @@
 					<img src="~/assets/img/gallery/pletivo-6.png" class="box--pletivo--item6" />
 					<div class="box--pletivo--katalog u-flex u-flex-fd--c u-flex-ai--c u-flex-jc--c">
 						<img class="katalog" src="~/assets/img/gallery/katalog.png" />
-						<p class="fs-base mt-5xl">
+						<p class="mt-5xl">
 							{{ $t('gallery.catalog') }}
 							<img src="~/assets/img/nofollow/mdi-light_download.png" class="ml-sm" />
 						</p>
@@ -25,7 +25,7 @@
 					<div class="box--pletivo--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl">
 						<div class="fs-lg">
 							{{ $t('gallery.contact_desc') }}
-							<div class="fs-base mt-6xl">
+							<div class="box--pletivo--kontakt--btn mt-6xl">
 								{{ $t('gallery.contact_button') }}
 								<img src="~/assets/img/gallery/kont.png" class="ml-sm" />
 							</div>
@@ -45,7 +45,7 @@
 					<img src="~/assets/img/gallery/pletivo-6.png" class="box--pletivo--item6" />
 					<div class="box--pletivo--katalog u-flex u-flex-fd--c u-flex-ai--c u-flex-jc--c">
 						<img class="katalog" src="~/assets/img/gallery/katalog.png" />
-						<p class="fs-base mt-5xl">
+						<p class="mt-5xl">
 							{{ $t('gallery.catalog') }}
 							<img src="~/assets/img/nofollow/mdi-light_download.png" class="ml-sm" />
 						</p>
@@ -64,7 +64,7 @@
 					<div class="box--stupovi--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl">
 						<div class="fs-lg">
 							{{ $t('gallery.contact_desc') }}
-							<div class="fs-base mt-6xl">
+							<div class="box--pletivo--kontakt--btn mt-6xl">
 								{{ $t('gallery.contact_button') }}
 								<img src="~/assets/img/gallery/kont.png" class="ml-sm" />
 							</div>
@@ -82,7 +82,7 @@
 					<div class="box--pletivo--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl ptb-6xl">
 						<div class="fs-lg">
 							{{ $t('gallery.contact_desc') }}
-							<div class="fs-base mt-6xl">
+							<div class="box--pletivo--kontakt--btn mt-6xl">
 								{{ $t('gallery.contact_button') }}
 								<img src="~/assets/img/gallery/kont.png" class="ml-sm" />
 							</div>
@@ -91,7 +91,7 @@
 					</div>
 					<div class="box--stupovi--katalog u-flex u-flex-fd--c u-flex-ai--c u-flex-jc--c">
 						<img class="katalog" src="~/assets/img/gallery/katalog.png" />
-						<p class="fs-base mt-5xl">
+						<p class="mt-5xl">
 							{{ $t('gallery.catalog') }}
 							<img src="~/assets/img/nofollow/mdi-light_download.png" class="ml-sm" />
 						</p>
@@ -107,10 +107,9 @@
 	width: 100%;
 }
 .box {
-	//width: 100%;
+	width: 70%;
 	//height: 100%;
 	margin-left: 100px;
-
 	&--pletivo {
 		grid-template-rows: repeat(6);
 		&--item4 {
@@ -128,6 +127,7 @@
 			height: 100%;
 			font-family: $ff-serif;
 			color: $secondary-color;
+			font-size: 14px;
 		}
 		&--item7 {
 			grid-column: 1 / span 2;
@@ -144,6 +144,9 @@
 			background-color: $coral;
 			font-family: $ff-serif;
 			color: $secondary-color;
+			&--btn {
+				font-size: 14px;
+			}
 		}
 	}
 
@@ -361,8 +364,8 @@
 				}
 			}
 			&--kontakt {
-				padding-left: 15px;
-				padding-right: 15px;
+				padding-left: 30px;
+				padding-right: 30px;
 				img {
 					width: auto;
 					height: auto;
@@ -389,7 +392,7 @@
 	.box {
 		&--pletivo {
 			&--kontakt {
-				img {
+				&--img {
 					display: none;
 				}
 			}
@@ -402,7 +405,7 @@
 		}
 		&--stupovi {
 			&--kontakt {
-				img {
+				&--img {
 					display: none;
 				}
 			}

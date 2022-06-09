@@ -224,7 +224,7 @@
 			"items": {
 				"item1": "Izlazak na teren radi uvida u obujam posla i planiranja potrebnog materijala",
 				"item2": "Pripremu materijala prema dogovoru na terenu",
-				"item3": "'Prijevoz materijala na gradilište",
+				"item3": "Prijevoz materijala na gradilište",
 				"item4": "Pripremne i građevinske radove",
 				"item5": "Montažu stupova, elemenata ograde i vratiju",
 				"item6": "Završnu obradu ograde i čišćenje terena prije predaje gotovog objekta",
@@ -278,9 +278,9 @@
 				"sub_knit": "Pletivo",
 				"sub_mesh": "Valovita (vibro) mreža",
 				"sub_pillars": "Stupovi (kosnici, konzole, prečke)",
-				"sub-panel": "Panelni sustav",
-				"sub-rail": "Pružni sustavi",
-				"sub-gabions": "Ogradni gabioni",
+				"sub_panel": "Panelni sustav",
+				"sub_rail": "Pružni sustavi",
+				"sub_gabions": "Ogradni gabioni",
 				"sub_doors": "Vrata",
 				"sub_draft": "Izrada po nacrtu"
 			},
@@ -291,6 +291,15 @@
 				"sub_industry": "Industrija"
 			}
 		}
+	},
+	"contact": {
+		"input_name": "Ime i prezime",
+		"input_company": "naziv tvrtke",
+		"input_email": "mail",
+		"input_tel": "telefon (nije obavezno)",
+		"input_mess": "Poruka opis terena i specifikacije",
+		"checkbox": "Pročitao/la sam i prihvaćam pravila o zaštiti osobnih podataka",
+		"send": "POŠALJI"
 	},
 	"gdpr": {
 		"title_main": "POLITIKA ZAŠTITE PRIVATNOSTI OSOBNIH PODATAKA",

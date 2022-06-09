@@ -2,7 +2,7 @@
 	<div class="mobile-menu" :class="{ open: $store.state.openMenu }">
 		<div class="mobile-menu--nav u-flex u-flex-fd--c">
 			<div class="mobile-menu--text u-flex u-flex-fd--c">
-				<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
+				<div class="test u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
 					<NuxtLink :to="localePath('/Proizvodi')" class="mobile-menu--item mb-xs">{{ $t('header.products') }}</NuxtLink>
 					<div class="u-flex u-flex-ai--c hamburger" @click="productsMenu = !productsMenu" :class="{ active: productsMenu }">
 						<div class="hamb-btn">
@@ -122,8 +122,9 @@
 			<NuxtLink :to="localePath('/contact')" class="mobile-menu--text mtb-md"
 				><div class="mobile-menu--item">{{ $t('header.contact') }}</div></NuxtLink
 			>
-			<div class="mt-md">
-				<NuxtLink :to="switchLocalePath('hr')" class="mr-sm">HR </NuxtLink> | <NuxtLink :to="switchLocalePath('en')" class="ml-sm">EN </NuxtLink>
+			<div class="mobile-menu--lng mt-md">
+				<NuxtLink :to="switchLocalePath('hr')" class="mobile-menu--lng fs-base mr-sm">HR </NuxtLink> |
+				<NuxtLink :to="switchLocalePath('en')" class="mobile-menu--lng fs-base ml-sm">EN </NuxtLink>
 			</div>
 		</div>
 	</div>
@@ -178,6 +179,17 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .mobile-menu {
 	display: none;
+	&--item.nuxt-link-exact-active {
+		text-decoration: underline;
+	}
+	&--lng {
+		a {
+			font-family: $ff-sans;
+		}
+	}
+	&--lng.nuxt-link-exact-active {
+		font-weight: 600;
+	}
 }
 
 @media (max-width: 1080px) {

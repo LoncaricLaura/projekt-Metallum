@@ -11,11 +11,13 @@
 			<div class="menu"><ProductMenu /></div>
 			<div class="pletivo u-flex u-flex-fd--c u-flex-ai--fe mtb-6xl plr-main">
 				<div class="galery u-flex u-flex-ai--fe u-flex-jc--fe mt-md mb-6xl">
-					<div class="btn btn--primary u-flex u-flex-ai--c" :class="{ active: $store.state.openMenu }" @click="galery = !galery">
+					<div class="btn btn--primary u-flex u-flex-ai--c" @click="isOpen = !isOpen">
 						<img src="~/assets/img/nofollow/mdi-light_picture.png" class="mr-md" />
 						{{ $t('products_knit.gallery') }}
 					</div>
-					<SliderProducts :imgs="['6']" v-if="galery" />
+					<div v-if="isOpen">
+						<SliderProducts :imgs="['6']" />
+					</div>
 				</div>
 				<div class="slider-mobile"><SliderProductMobile :imgs="['6']" /></div>
 				<div class="pletivo--box u-flex u-flex-fd--c u-flex-ai--fs">
@@ -141,7 +143,7 @@
 					</p>
 					<p class="fs-base">{{ $t('products_knit.boiled.desc2') }}</p>
 					<div class="pletivo--vareno mt-3xl u-flex u-flex-fd--r u-flex-as--fs">
-						<div class="mr-xl">
+						<div class="pletivo--vareno--img mr-xl">
 							<img src="~/assets/img/products/pletivo/50-100-mm.png" />
 							<div class="mt-sm">100/50 mm</div>
 						</div>
@@ -332,7 +334,7 @@ export default Vue.extend({
 	data() {
 		return {
 			visible: false,
-			galery: false
+			isOpen: false
 		};
 	},
 	methods: {
@@ -360,7 +362,7 @@ export default Vue.extend({
 
 .title {
 	font-family: $ff-serif;
-	color: $secondary-color;
+	color: $metallum0;
 	line-height: 131.5%;
 	place-self: center;
 }
@@ -510,6 +512,7 @@ tbody {
 
 @media (max-width: 650px) {
 	.pletivo {
+		margin-top: 50px;
 		&--box {
 			align-items: flex-start;
 			padding-left: 0;
@@ -519,11 +522,17 @@ tbody {
 		&--subtitle,
 		&--vareno {
 			padding-left: 20px;
-			padding-right: 30px;
+			padding-right: 20px;
 		}
 		&--vareno {
 			display: flex;
-			flex-direction: column;
+			//flex-direction: column;
+			&--img {
+				margin-right: 10px;
+			}
+			img {
+				width: 140px;
+			}
 		}
 	}
 }

@@ -110,7 +110,7 @@ export default Vue.extend({
 	position: relative;
 	font-family: $ff-serif;
 	color: $iron;
-	width: 70%;
+	width: 100%;
 	height: 100%;
 
 	&--nav {
@@ -144,6 +144,10 @@ export default Vue.extend({
 		font-size: 18px;
 		line-height: 21.6px;
 		letter-spacing: 0.1em;
+		color: $iron80;
+	}
+	a {
+		font-family: $ff-sans;
 		color: $iron80;
 	}
 }
@@ -191,6 +195,7 @@ export default Vue.extend({
 @media (max-width: 1650px) {
 	.menu {
 		display: flex;
+		width: 100%;
 	}
 }
 </style>

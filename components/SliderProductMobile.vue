@@ -1,5 +1,5 @@
 <template>
-	<section v-if="imgs" class="product-slider-mobile ptb-2xl">
+	<section v-if="imgs" class="product-slider-mobile pb-2xl">
 		<div class="u-flex slider-image">
 			<splide :options="slider" class="main__slider">
 				<splide-slide v-for="(img, i) in imgs" :key="i" class="slide__track">

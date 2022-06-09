@@ -1,7 +1,9 @@
 <template>
 	<div class="contact u-flex u-flex-fd--r pr-6xl">
 		<div class="contact__map u-flex">
-			<GmapMap :center="{ lat: 45.19993, lng: 14.05346 }" :zoom="12" style="width: 100%; height: 877px"> </GmapMap>
+			<GmapMap :center="{ lat: 45.19993, lng: 14.05346 }" :zoom="12" :options="{ styles }" style="width: 100%; height: 877px">
+				<GmapMarker :position="{ lat: 45.19993, lng: 14.05346 }" />
+			</GmapMap>
 		</div>
 		<!--<img src="~/assets/img/contact/map.png" class="contact__map u-flex" />-->
 		<div class="contact__box u-flex u-flex-fd--r u-flex-ai--fs">
@@ -30,23 +32,23 @@
 				</div>
 			</div>
 			<form @submit.prevent="sendMail" class="contact__form u-flex u-flex-fd--c">
-				<input id="name" v-model="name" type="text" required maxlength="50" placeholder="Ime i prezime" class="fs-base pb-xs" />
+				<input id="name" v-model="name" type="text" required maxlength="50" :placeholder="$t('contact.input_name')" class="fs-base pb-xs" />
 
-				<input id="name" v-model="company" type="text" required maxlength="50" placeholder="naziv tvrtke" class="fs-base pb-xs" />
+				<input id="name" v-model="company" type="text" required maxlength="50" :placeholder="$t('contact.input_company')" class="fs-base pb-xs" />
 
-				<input id="email" v-model="email" type="email" required maxlength="50" placeholder="mail" class="fs-base ptb-xs" />
+				<input id="email" v-model="email" type="email" required maxlength="50" :placeholder="$t('contact.input_email')" class="fs-base ptb-xs" />
 
-				<input id="email" v-model="telephone" type="text" required maxlength="50" placeholder="telefon (nije obavezno)" class="fs-base ptb-xs" />
+				<input id="email" v-model="telephone" type="text" required maxlength="50" :placeholder="$t('contact.input_tel')" class="fs-base ptb-xs" />
 
 				<!--<label for="message">Poruka opis terena i specifikacije</label> -->
-				<textarea id="message" v-model="message" required rows="4" placeholder="Poruka opis terena i specifikacije" class="fs-base ptb-xs" />
+				<textarea id="message" v-model="message" required rows="4" :placeholder="$t('contact.input_mess')" class="fs-base ptb-xs" />
 
 				<label class="contact__checkbox u-flex">
 					<input type="checkbox" required class="mr-md mt-xxs" />
-					Pročitao/la sam i prihvaćam pravila o zaštiti osobnih podataka
+					{{ $t('contact.checkbox') }}
 				</label>
 
-				<button type="submit" class="btn btn--primary">POŠALJI</button>
+				<button type="submit" class="btn btn--primary">{{ $t('contact.send') }}</button>
 			</form>
 		</div>
 	</div>
@@ -59,7 +61,294 @@ export default {
 		company: '',
 		email: '',
 		telephone: '',
-		message: ''
+		message: '',
+		styles: [
+			{
+				featureType: 'all',
+				elementType: 'geometry',
+				stylers: [
+					{
+						visibility: 'on'
+					}
+				]
+			},
+			{
+				featureType: 'all',
+				elementType: 'labels',
+				stylers: [
+					{
+						visibility: 'off'
+					},
+					{
+						color: '#173a64'
+					}
+				]
+			},
+			{
+				featureType: 'all',
+				elementType: 'labels.text',
+				stylers: [
+					{
+						visibility: 'on'
+					}
+				]
+			},
+			{
+				featureType: 'all',
+				elementType: 'labels.text.fill',
+				stylers: [
+					{
+						visibility: 'on'
+					},
+					{
+						color: '#151515'
+					}
+				]
+			},
+			{
+				featureType: 'all',
+				elementType: 'labels.text.stroke',
+				stylers: [
+					{
+						visibility: 'simplified'
+					},
+					{
+						color: '#ffffff'
+					}
+				]
+			},
+			{
+				featureType: 'administrative',
+				elementType: 'all',
+				stylers: [
+					{
+						visibility: 'on'
+					}
+				]
+			},
+			{
+				featureType: 'landscape',
+				elementType: 'all',
+				stylers: [
+					{
+						color: '#d1d8e0'
+					},
+					{
+						lightness: -7
+					}
+				]
+			},
+			{
+				featureType: 'poi',
+				elementType: 'all',
+				stylers: [
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'poi.business',
+				elementType: 'all',
+				stylers: [
+					{
+						color: '#fae122'
+					},
+					{
+						lightness: 38
+					},
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'poi.government',
+				elementType: 'all',
+				stylers: [
+					{
+						color: '#9e5916'
+					},
+					{
+						lightness: 46
+					},
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'poi.medical',
+				elementType: 'all',
+				stylers: [
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'poi.medical',
+				elementType: 'geometry.fill',
+				stylers: [
+					{
+						color: '#813033'
+					},
+					{
+						lightness: 38
+					},
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'poi.park',
+				elementType: 'all',
+				stylers: [
+					{
+						color: '#645c20'
+					},
+					{
+						lightness: 39
+					},
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'poi.school',
+				elementType: 'all',
+				stylers: [
+					{
+						color: '#a95521'
+					},
+					{
+						lightness: 35
+					},
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'poi.sports_complex',
+				elementType: 'all',
+				stylers: [
+					{
+						color: '#9e5916'
+					},
+					{
+						lightness: 32
+					},
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'road',
+				elementType: 'all',
+				stylers: [
+					{
+						color: '#173a64'
+					},
+					{
+						lightness: '0'
+					}
+				]
+			},
+			{
+				featureType: 'road.local',
+				elementType: 'geometry.fill',
+				stylers: [
+					{
+						color: '#173a64'
+					},
+					{
+						weight: 1.3
+					},
+					{
+						visibility: 'on'
+					},
+					{
+						lightness: '0'
+					}
+				]
+			},
+			{
+				featureType: 'road.local',
+				elementType: 'geometry.stroke',
+				stylers: [
+					{
+						color: '#f19f53'
+					},
+					{
+						lightness: -10
+					},
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'transit',
+				elementType: 'all',
+				stylers: [
+					{
+						lightness: 38
+					},
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'transit.line',
+				elementType: 'all',
+				stylers: [
+					{
+						color: '#813033'
+					},
+					{
+						lightness: 22
+					},
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'transit.station',
+				elementType: 'all',
+				stylers: [
+					{
+						visibility: 'off'
+					}
+				]
+			},
+			{
+				featureType: 'water',
+				elementType: 'all',
+				stylers: [
+					{
+						saturation: '0'
+					},
+					{
+						gamma: '1.35'
+					},
+					{
+						lightness: '0'
+					},
+					{
+						visibility: 'on'
+					},
+					{
+						color: '#3377a3'
+					}
+				]
+			}
+		]
 	}),
 
 	mounted() {
@@ -149,7 +438,7 @@ export default {
 
 	&__box {
 		padding-top: 110px;
-		margin-left: 125px;
+		margin-left: 130px;
 		justify-content: end;
 		width: 100%;
 	}
@@ -213,6 +502,7 @@ export default {
 			flex-direction: column;
 			padding-right: 24px;
 			padding-left: 24px;
+			padding-top: 80px;
 		}
 		&__form {
 			padding-top: 60px;

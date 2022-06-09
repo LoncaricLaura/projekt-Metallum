@@ -15,7 +15,7 @@
 					{{ service.text }}
 					<ul class="service-list">
 						<li v-for="(item, i) in service.servicesItems" :key="i" class="mt-md fs-base service-list__item pr-lg u-flex u-flex-ai--fs">
-							<!-- <div class="red-dot"></div> -->
+							<div class="red-dot u-flex u-flex-as--fs mt-sm mr-sm"><img src="~/assets/img/nofollow/red-dot.png" /></div>
 							<p>{{ item }}</p>
 						</li>
 					</ul>
@@ -60,6 +60,7 @@ export default {
 .box-item {
 	&--title {
 		width: 346px;
+		color: $iron;
 	}
 	&--text {
 		width: 724px;

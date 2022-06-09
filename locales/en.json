@@ -80,7 +80,7 @@
 		"fences_title": "Fences and fencing system",
 		"fences_desc": "It is not only important to fence the workspace or save the space from intruders, but the fence must fit into the environment and make it more attractive. This is possible by choosing our fences that are strong, durable and eye-catching. Choose a fence that emphasizes your style!",
 		"pletivo_title": "Knit",
-		"button_more": "FIND OUT MORE",
+		"button_more": "LEARN MORE",
 		"mesh_title": "Corrugated (vibro) mesh",
 		"door_title": "Door",
 		"panel_title": "Panel system",
@@ -224,7 +224,7 @@
 			"items": {
 				"item1": "Going out to the field to get an insight into the scope of work and plan the necessary material",
 				"item2": "Preparation of materials according to the agreement in the field",
-				"item3": "'Transport of materials to the construction site",
+				"item3": "Transport of materials to the construction site",
 				"item4": "Preparatory and construction works",
 				"item5": "Installation of posts, fence elements and doors",
 				"item6": "Finishing the fence and cleaning the terrain before handing over the finished object",
@@ -278,9 +278,9 @@
 				"sub_knit": "Knit",
 				"sub_mesh": "Corrugated (vibro) mesh",
 				"sub_pillars": "Pillars (beehives, brackets, rungs)",
-				"sub-panel": "Panelni system",
-				"sub-rail": "Rail systems",
-				"sub-gabions": "Fence gabions",
+				"sub_panel": "Panelni system",
+				"sub_rail": "Rail systems",
+				"sub_gabions": "Fence gabions",
 				"sub_doors": "Doors",
 				"sub_draft": "Drafting"
 			},
@@ -291,6 +291,15 @@
 				"sub_industry": "Industry"
 			}
 		}
+	},
+	"contact": {
+		"input_name": "Name and surname",
+		"input_company": "company name",
+		"input_email": "mail",
+		"input_tel": "phone (optional)",
+		"input_mess": "Terrain description and specification message",
+		"checkbox": "I have read and accept the privacy policy",
+		"send": "SEND"
 	},
 	"gdpr": {
 		"title_main": "PERSONAL DATA PRIVACY POLICY",

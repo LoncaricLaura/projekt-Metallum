@@ -190,6 +190,9 @@ export default Vue.extend({
 		line-height: 21.6px;
 		letter-spacing: 0.1em;
 		color: $iron80;
+		a {
+			font-family: $ff-sans;
+		}
 	}
 }
 .hamburger {

@@ -21,7 +21,7 @@
 			</div>
 
 			<div class="footer--text2 pt-4xl fs-base">
-				<div class="pb-md">{{ $t('footer.time.title') }}</div>
+				<div class="footer--text2--title pb-md">{{ $t('footer.time.title') }}</div>
 				<div>{{ $t('footer.time.day1') }}</div>
 				<div>{{ $t('footer.time.hour') }}</div>
 				<div>{{ $t('footer.time.day2') }}</div>
@@ -45,7 +45,7 @@
 			</div>
 			<div class="footer--number u-grid u-grid-2 center ptb-4xl">
 				<div class="footer--text3 pl-xl fs-md">{{ $t('footer.phone.title') }}</div>
-				<div class="footer--text4 u-flex u-flex-jc--fe pl-footer fs-lg">{{ $t('footer.phone.numb') }}</div>
+				<div class="footer--text4 u-flex u-flex-jc--fe fs-lg">{{ $t('footer.phone.numb') }}</div>
 			</div>
 		</div>
 
@@ -79,6 +79,9 @@
 		line-height: 100%;
 		color: $metallum0;
 		gap: 30px;
+		a {
+			font-family: $ff-sans;
+		}
 	}
 	&--catalog {
 		background-color: $coral;
@@ -96,13 +99,16 @@
 		letter-spacing: 1px;
 	}
 	&--info {
-		justify-self: end;
+		justify-self: flex-end;
 	}
 	&--text2 {
 		font-family: $ff-sans;
 		font-weight: 300;
 		line-height: 180%;
 		justify-self: center;
+		&--title {
+			font-weight: 400;
+		}
 	}
 	&--row2 {
 		border-style: solid;
@@ -123,6 +129,7 @@
 	&--text4 {
 		font-family: $ff-serif;
 		font-weight: 400;
+		padding-left: 112px;
 	}
 }
 
@@ -132,7 +139,6 @@
 		&--row {
 			grid-template-columns: auto auto auto auto;
 		}
-
 		&--text4 {
 			padding-left: 10px;
 		}
@@ -145,7 +151,6 @@
 			padding-left: 0;
 		}
 		&--text4 {
-			padding-left: 0;
 			padding-left: 0;
 		}
 	}
@@ -169,14 +174,14 @@
 			padding-top: 184px;
 		}
 		&--catalog {
-			justify-self: start;
+			justify-self: flex-start;
 			margin-top: 40px;
 		}
 		&--text2 {
 			display: flex;
 			flex-direction: column;
-			justify-self: start;
-			align-self: start;
+			justify-self: flex-start;
+			align-self: flex-start;
 			order: -9999;
 			padding-top: 184px;
 		}
@@ -194,14 +199,14 @@
 		&--menu {
 			display: grid;
 			grid-template-rows: repeat(2, minmax(0, 1fr));
-			align-self: start;
+			align-self: flex-start;
 			padding-top: 0;
 			margin-top: 40px;
 		}
 		&--row2 {
 			display: flex;
 			flex-direction: column;
-			align-items: start;
+			align-items: flex-start;
 			border-style: none;
 		}
 		&--email {
@@ -230,7 +235,7 @@
 			grid-template-rows: repeat(2, 1fr);
 		}
 		&--catalog {
-			justify-self: start;
+			justify-self: flex-start;
 			margin-top: 40px;
 			width: 170px;
 			height: 170px;

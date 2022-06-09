@@ -18,7 +18,7 @@
 			<div class="box-item u-flex u-flex-ai--c">
 				<div class="box-item--title ml-boxWrap fs-md">
 					<h2>{{ $t('home.pletivo_title') }}</h2>
-					<NuxtLink :to="localePath('/proizvodi/pletivo')" class="btn btn--primary mt-4xl fs-base">{{ $t('home.button_more') }} </NuxtLink>
+					<NuxtLink :to="localePath('/proizvodi/pletivo')" class="btn btn--primary mt-3xl">{{ $t('home.button_more') }} </NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 					<img src="~/assets/img/index/fence_blue_1.png" />
@@ -30,7 +30,7 @@
 				<div class="box-item u-flex u-flex-ai--c">
 					<div class="box-item--title ml-boxWrap fs-md">
 						<h2>{{ $t('home.mesh_title') }}</h2>
-						<NuxtLink :to="localePath('/proizvodi/valovita-mreza')" class="btn btn--primary mt-4xl fs-base">{{ $t('home.button_more') }}</NuxtLink>
+						<NuxtLink :to="localePath('/proizvodi/valovita-mreza')" class="btn btn--primary mt-3xl">{{ $t('home.button_more') }}</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 						<img class="box-item--img" src="~/assets/img//index/Fence-Knits.png" />
@@ -42,7 +42,7 @@
 				<div class="box-item u-flex u-flex-ai--c">
 					<div class="box-item--title ml-boxWrap fs-md">
 						<h2>{{ $t('home.door_title') }}</h2>
-						<NuxtLink :to="localePath('/proizvodi/vrata')" class="btn btn--primary mt-4xl fs-base">{{ $t('home.button_more') }}</NuxtLink>
+						<NuxtLink :to="localePath('/proizvodi/vrata')" class="btn btn--primary mt-3xl">{{ $t('home.button_more') }}</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 						<img class="box-item--img" src="~/assets/img/index/Garden-Door.J03.png" />
@@ -55,7 +55,7 @@
 			<div class="box-item u-flex u-flex-ai--c mt-lg">
 				<div class="box-item--title ml-boxWrap fs-md">
 					<h2>{{ $t('home.panel_title') }}</h2>
-					<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="btn btn--primary mt-4xl fs-base">{{ $t('home.button_more') }}</NuxtLink>
+					<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="btn btn--primary mt-3xl">{{ $t('home.button_more') }}</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 					<img src="~/assets/img/index/Barbed-Wire-Fence.G03.png" />
@@ -66,7 +66,7 @@
 			<div class="box-item u-flex u-flex-ai--c mtb-lg">
 				<div class="box-item--title ml-boxWrap fs-md">
 					<h2>{{ $t('home.rail_title') }}</h2>
-					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')" class="btn btn--primary mt-4xl fs-base">{{ $t('home.button_more') }}</NuxtLink>
+					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')" class="btn btn--primary mt-3xl">{{ $t('home.button_more') }}</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 					<img src="~/assets/img/index/fence_blue_1.png" />
@@ -230,6 +230,7 @@ h2 {
 	}
 	&--title {
 		z-index: 2;
+		color: $iron;
 	}
 	&--img-mobile {
 		display: none;
@@ -300,8 +301,8 @@ h2 {
 				}
 			}
 			&--title {
-				margin-top: 140px;
-				margin-left: 100px;
+				margin-top: 165px;
+				margin-left: 125px;
 			}
 		}
 	}
@@ -354,8 +355,8 @@ h2 {
 		margin: 0;
 	}
 	.box {
-		margin-left: 20px;
-		margin-right: 20px;
+		margin-left: 30px;
+		margin-right: 30px;
 		.box-item {
 			align-items: flex-start;
 			&--image {
@@ -391,13 +392,13 @@ h2 {
 
 @media (max-width: 420px) {
 	.group {
-		padding: 60px 20px;
+		padding: 60px 24px;
 	}
 	.box {
 		.box-item {
 			&--title {
-				margin-top: 22px;
-				margin-left: 22px;
+				margin-top: 60px;
+				margin-left: 24px;
 			}
 		}
 	}

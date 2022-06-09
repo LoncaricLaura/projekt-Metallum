@@ -1,10 +1,10 @@
 <template>
 	<div class="box u-grid mb-card plr-main">
 		<div class="box-item u-flex u-flex-ai--c" v-for="(product, i) in products" :key="i">
-			<div class="box-item--title ml-6xl fs-md">
+			<div class="box-item--title ml-5xl fs-md">
 				<h2 class="mb-lg">{{ product.title }}</h2>
 				<p class="fs-base">{{ product.text }}</p>
-				<NuxtLink :to="localePath(`/proizvodi${product.button}`)" class="btn btn--primary fs-base mt-4xl">{{ $t('home.button_more') }}</NuxtLink>
+				<NuxtLink :to="localePath(`/proizvodi${product.button}`)" class="btn btn--primary mt-2xl">{{ $t('home.button_more') }}</NuxtLink>
 			</div>
 			<div class="pos-a box-item--image u-flex u-flex-jc--fe">
 				<img :src="require(`~/assets/img/products/${product.img}.png`)" />
@@ -32,6 +32,7 @@ export default {
 
 p {
 	font-family: $ff-sans;
+	color: $iron80;
 }
 
 h2 {
@@ -42,7 +43,7 @@ h2 {
 .box-item {
 	background-color: $metallum0;
 	width: 100%;
-	height: 493px;
+	height: 400px;
 	position: relative;
 	&--title {
 		width: 600px;
@@ -113,7 +114,7 @@ h2 {
 @media (max-width: 1150px) {
 	.box {
 		.box-item {
-			height: 650px;
+			height: 600px;
 			align-items: flex-start;
 			margin-bottom: 30px;
 
@@ -155,6 +156,7 @@ h2 {
 
 @media (max-width: 400px) {
 	.box {
+		margin-bottom: 150px;
 		.box-item {
 			&--title {
 				margin-left: 15px;

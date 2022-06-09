@@ -13,6 +13,7 @@
 				</splide-slide>
 			</splide>
 		</div>
+		<img src="~/assets/img/nofollow/close.png" class="close mr-xl mt-xl" />
 	</section>
 </template>
 
@@ -29,6 +30,7 @@ export default Vue.extend({
 	},
 	data() {
 		return {
+			isVisible: false,
 			slider: {
 				type: 'loop',
 				//lazyLoad: 'nearby',
@@ -63,6 +65,7 @@ export default Vue.extend({
 			}
 		};
 	},
+
 	mounted() {
 		(this as any).$refs.mainSlider.sync((this as any).$refs.sliderThumb.splide);
 	}
@@ -72,5 +75,12 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .slider-products {
 	padding-bottom: 80px;
+}
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 25px;
+	cursor: pointer;
 }
 </style>
