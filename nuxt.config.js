@@ -84,7 +84,7 @@ export default {
 		scss: ['@/assets/scss/var.colors.scss', '@/assets/scss/var.typo.scss']
 	},
 
-	buildModules: ['@nuxt/typescript-build', '@aceforth/nuxt-optimized-images'],
+	buildModules: ['@nuxt/typescript-build'],
 
 	plugins: [
 		'@/plugins/cms-helpers',
@@ -121,22 +121,6 @@ export default {
 		},
 		// eslint-disable-next-line require-unicode-regexp
 		transpile: [/^vue2-google-maps($|\/)/]
-	},
-
-	optimizedImages: {
-		optimizeImages: true,
-		imagesName: ({ isDev }) => isDev ? '[path][name][hash:optimized].[ext]' : '[path][name][hash:7].[ext]',
-		responsive: {
-			sizes: [500, 1024, 1367, 1601, 1921],
-			placeholder: true,
-			placeholderSize: 50
-		},
-		mozjpeg: {
-			quality: 86
-		},
-		pngquant: {
-			quality: [0.85, 0.9]
-		}
 	},
 
 	modules: ['@nuxtjs/style-resources', '@nuxtjs/axios', '@nuxtjs/recaptcha', '@nuxtjs/sitemap', '@nuxtjs/i18n', '@nuxtjs/redirect-module', 'nuxt-mail'],
