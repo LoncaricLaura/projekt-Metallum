@@ -3,11 +3,11 @@
 		<div class="bg u-flex u-flex-ai--c center">
 			<p class="fs-xxl title txt-align-c">
 				{{ $t('home.title') }} <br />
-				{{ $t('home.title2') }} <br />
+				{{ $t('home.title2') }}
 			</p>
 		</div>
 		<div class="group u-flex u-flex-fd--c hor-center txt-align-c ptb-main">
-			<h2 class="fs-lg mb-md">{{ $t('home.fences_title') }}</h2>
+			<p class="fs-lg mb-md">{{ $t('home.fences_title') }}</p>
 			<p class="text fs-base">
 				{{ $t('home.fences_desc') }}
 			</p>
@@ -17,7 +17,7 @@
 		<div class="box u-flex u-flex-fd--c mlr-main">
 			<div class="box-item u-flex u-flex-ai--c">
 				<div class="box-item--title ml-boxWrap fs-md">
-					<h2>{{ $t('home.pletivo_title') }}</h2>
+					<p class="fs-lg">{{ $t('home.pletivo_title') }}</p>
 					<NuxtLink :to="localePath('/proizvodi/pletivo')" class="btn btn--primary mt-3xl">{{ $t('home.button_more') }} </NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
@@ -29,7 +29,7 @@
 			<div class="box-items u-grid u-grid-2 mt-lg">
 				<div class="box-item u-flex u-flex-ai--c">
 					<div class="box-item--title ml-boxWrap fs-md">
-						<h2>{{ $t('home.mesh_title') }}</h2>
+						<p class="fs-lg">{{ $t('home.mesh_title') }}</p>
 						<NuxtLink :to="localePath('/proizvodi/valovita-mreza')" class="btn btn--primary mt-3xl">{{ $t('home.button_more') }}</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
@@ -41,7 +41,7 @@
 				<!-- Vrata -->
 				<div class="box-item u-flex u-flex-ai--c">
 					<div class="box-item--title ml-boxWrap fs-md">
-						<h2>{{ $t('home.door_title') }}</h2>
+						<p class="fs-lg">{{ $t('home.door_title') }}</p>
 						<NuxtLink :to="localePath('/proizvodi/vrata')" class="btn btn--primary mt-3xl">{{ $t('home.button_more') }}</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
@@ -54,7 +54,7 @@
 			<!-- Panelni sustav -->
 			<div class="box-item u-flex u-flex-ai--c mt-lg">
 				<div class="box-item--title ml-boxWrap fs-md">
-					<h2>{{ $t('home.panel_title') }}</h2>
+					<p class="fs-lg">{{ $t('home.panel_title') }}</p>
 					<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="btn btn--primary mt-3xl">{{ $t('home.button_more') }}</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
@@ -65,7 +65,7 @@
 			<!-- Pruzni sustav -->
 			<div class="box-item u-flex u-flex-ai--c mtb-lg">
 				<div class="box-item--title ml-boxWrap fs-md">
-					<h2>{{ $t('home.rail_title') }}</h2>
+					<p class="fs-lg">{{ $t('home.rail_title') }}</p>
 					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')" class="btn btn--primary mt-3xl">{{ $t('home.button_more') }}</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
@@ -82,7 +82,7 @@
 
 		<!-- Usluge -->
 		<div class="u-flex center u-flex-ai--c">
-			<h2 class="fs-lg">{{ $t('home.services_title') }}</h2>
+			<p class="fs-lg">{{ $t('home.services_title') }}</p>
 		</div>
 
 		<div class="box-services u-grid u-grid-4 plr-main box-services--text fs-md txt-align-c ptb-main">
@@ -131,28 +131,16 @@
 
 		<Slider :imgs="['6']" />
 
-		<!-- <div class="u-flex center ptb-main">
-			<div>
-				<img src="/img/6.jpg" class="slider--img">
-			</div>
-		</div> -->
-
 		<div class="box-logos u-flex u-flex-fd--r u-flex-jc--sb u-flex-as--c center plr-main pb-box">
-			<div>
-				<img src="~/assets/img/index/ghiastaff.png" />
-			</div>
-			<div>
-				<img src="~/assets/img/index/maslinica.png" />
-			</div>
-			<div>
-				<img src="~/assets/img/index/kempinski-hotel.png" />
-			</div>
-			<div>
-				<img src="~/assets/img/index/valamar.png" />
-			</div>
-			<div>
-				<img src="~/assets/img/index/spina.png" />
-			</div>
+			<img src="~/assets/img/index/ghiastaff.png" />
+
+			<img src="~/assets/img/index/maslinica.png" />
+
+			<img src="~/assets/img/index/kempinski-hotel.png" />
+
+			<img src="~/assets/img/index/valamar.png" />
+
+			<img src="~/assets/img/index/spina.png" />
 		</div>
 	</div>
 </template>
@@ -393,6 +381,9 @@ h2 {
 @media (max-width: 420px) {
 	.group {
 		padding: 60px 24px;
+	}
+	.title {
+		padding: 20px;
 	}
 	.box {
 		.box-item {

@@ -13,7 +13,7 @@
 				</splide-slide>
 			</splide>
 		</div>
-		<img src="~/assets/img/nofollow/close.png" class="close mr-xl mt-xl" />
+		<img src="~/assets/img/nofollow/close.png" class="close mr-xl mt-xl" @click="$emit('close')" />
 	</section>
 </template>
 
@@ -24,13 +24,11 @@ export default Vue.extend({
 	name: 'Slider',
 	props: {
 		imgs: {
-			// type: Array,
-			// default: () => ['1']
+			type: Array
 		}
 	},
 	data() {
 		return {
-			isVisible: false,
 			slider: {
 				type: 'loop',
 				//lazyLoad: 'nearby',

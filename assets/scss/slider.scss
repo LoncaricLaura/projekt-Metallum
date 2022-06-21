@@ -406,7 +406,7 @@
 .product-slider-mobile {
 	display: none;
 
-	@media (max-width: 1250px) {
+	@media (max-width: 1150px) {
 		display: flex;
 		flex-direction: column;
 		.splide__slide {

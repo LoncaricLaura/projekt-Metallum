@@ -11,13 +11,11 @@
 			<div class="menu"><ProductMenu /></div>
 			<div class="pletivo u-flex u-flex-fd--c u-flex-ai--fe mtb-6xl plr-main">
 				<div class="galery u-flex u-flex-ai--fe u-flex-jc--fe mt-md mb-6xl">
-					<div class="btn btn--primary u-flex u-flex-ai--c" @click="isOpen = !isOpen">
+					<div class="btn btn--primary u-flex u-flex-ai--c" @click="isOpen = true">
 						<img src="~/assets/img/nofollow/mdi-light_picture.png" class="mr-md" />
 						{{ $t('products_knit.gallery') }}
 					</div>
-					<div v-if="isOpen">
-						<SliderProducts :imgs="['6']" />
-					</div>
+					<SliderProducts :imgs="['6']" v-if="isOpen" @close="isOpen = false" />
 				</div>
 				<div class="slider-mobile"><SliderProductMobile :imgs="['6']" /></div>
 				<div class="pletivo--box u-flex u-flex-fd--c u-flex-ai--fs">
@@ -333,7 +331,6 @@ import Vue from 'vue';
 export default Vue.extend({
 	data() {
 		return {
-			visible: false,
 			isOpen: false
 		};
 	},
@@ -457,7 +454,7 @@ tbody {
 	}
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1150px) {
 	.galery {
 		display: none;
 	}

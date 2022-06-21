@@ -237,9 +237,13 @@
 		&--catalog {
 			justify-self: flex-start;
 			margin-top: 40px;
-			width: 170px;
-			height: 170px;
+			width: 180px;
+			height: 180px;
+			&--img {
+				margin-bottom: 25px;
+			}
 		}
+
 		&--text4 {
 			font-size: 20px;
 		}
@@ -248,6 +252,14 @@
 			img {
 				height: 50px;
 			}
+		}
+	}
+	.btn {
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 10px;
+		img {
+			width: 15px;
 		}
 	}
 }
