@@ -10,24 +10,74 @@
 				($route.name || '').includes('contact')
 		}"
 	>
-		<NuxtLink :to="localePath('/')" class="light"><img src="~/assets/img/nofollow/logo-metallum.png" class="header--logo" /> </NuxtLink>
+		<NuxtLink
+			:to="localePath('/')"
+			class="light"
+		>
+			<img
+				src="~/assets/img/nofollow/logo-metallum.png"
+				class="header--logo"
+			>
+		</NuxtLink>
 
-		<NuxtLink :to="localePath('/')" class="dark">
-			<img src="~/assets/img/nofollow/logo-metallum-dark.png" class="header--logo" />
+		<NuxtLink
+			:to="localePath('/')"
+			class="dark"
+		>
+			<img
+				src="~/assets/img/nofollow/logo-metallum-dark.png"
+				class="header--logo"
+			>
 		</NuxtLink>
 
 		<div class="u-flex u-flex--if u-flex-ai--fe mb-sm header__top">
 			<div class="nav fs-base">
-				<NuxtLink :to="localePath('/proizvodi')" class="menuItem">{{ $t('header.products') }}</NuxtLink>
-				<NuxtLink :to="localePath('/usluge')" class="menuItem ml-lg">{{ $t('header.services') }}</NuxtLink>
-				<NuxtLink :to="localePath('/galerija')" class="menuItem ml-lg">{{ $t('header.gallery') }}</NuxtLink>
-				<NuxtLink :to="localePath('/contact')" class="menuItem ml-lg">{{ $t('header.contact') }}</NuxtLink>
-				<NuxtLink :to="switchLocalePath('hr')" class="header--language mr-sm ml-6xl">HR </NuxtLink>
+				<NuxtLink
+					:to="localePath('/proizvodi')"
+					class="menuItem"
+				>
+					{{ $t('header.products') }}
+				</NuxtLink>
+				<NuxtLink
+					:to="localePath('/usluge')"
+					class="menuItem ml-lg"
+				>
+					{{ $t('header.services') }}
+				</NuxtLink>
+				<NuxtLink
+					:to="localePath('/galerija')"
+					class="menuItem ml-lg"
+				>
+					{{ $t('header.gallery') }}
+				</NuxtLink>
+				<NuxtLink
+					:to="localePath('/contact')"
+					class="menuItem ml-lg"
+				>
+					{{ $t('header.contact') }}
+				</NuxtLink>
+				<NuxtLink
+					:to="switchLocalePath('hr')"
+					class="header--language mr-sm ml-6xl"
+				>
+					HR
+				</NuxtLink>
 
-				<img src="~/assets/img/nofollow/line.png" class="light" />
-				<img src="~/assets/img/nofollow/line_dark.png" class="dark" />
+				<img
+					src="~/assets/img/nofollow/line.png"
+					class="light"
+				>
+				<img
+					src="~/assets/img/nofollow/line_dark.png"
+					class="dark"
+				>
 
-				<NuxtLink :to="switchLocalePath('en')" class="header--language ml-sm">EN </NuxtLink>
+				<NuxtLink
+					:to="switchLocalePath('en')"
+					class="header--language ml-sm"
+				>
+					EN
+				</NuxtLink>
 			</div>
 		</div>
 
@@ -82,6 +132,7 @@ export default Vue.extend({
 	methods: {
 		toggleHam() {
 			this.$store.commit('toggleField', 'openMenu');
+
 			if (this.$store.state.openMenu) {
 				document.body.classList.add('noscroll');
 			} else {

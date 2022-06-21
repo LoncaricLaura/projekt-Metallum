@@ -1,13 +1,26 @@
 <template>
 	<div class="box u-grid mb-card plr-main">
-		<div class="box-item u-flex u-flex-ai--c" v-for="(product, i) in products" :key="i">
+		<div
+			v-for="(product, i) in products"
+			:key="i"
+			class="box-item u-flex u-flex-ai--c"
+		>
 			<div class="box-item--title ml-5xl fs-md">
-				<h2 class="mb-lg">{{ product.title }}</h2>
-				<p class="fs-base">{{ product.text }}</p>
-				<NuxtLink :to="localePath(`/proizvodi${product.button}`)" class="btn btn--primary mt-2xl">{{ $t('home.button_more') }}</NuxtLink>
+				<h2 class="mb-lg">
+					{{ product.title }}
+				</h2>
+				<p class="fs-base">
+					{{ product.text }}
+				</p>
+				<NuxtLink
+					:to="localePath(`/proizvodi${product.button}`)"
+					class="btn btn--primary mt-2xl"
+				>
+					{{ $t('home.button_more') }}
+				</NuxtLink>
 			</div>
 			<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-				<img :src="require(`~/assets/img/products/${product.img}.png`)" />
+				<img :src="require(`~/assets/img/products/${product.img}.png`)">
 			</div>
 		</div>
 	</div>

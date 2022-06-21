@@ -1,99 +1,233 @@
 <template>
 	<div class="gallery u-flex u-flex-fd--r u-flex-jc--sb ptb-gallery mlr-7xl">
-		<div class="menu"><GalleryMenu /></div>
+		<div class="menu">
+			<GalleryMenu />
+		</div>
 		<div class="box u-flex">
 			<div class="u-grid">
-				<div class="fs-lg mb-md pt-lg" id="pletivo">{{ $t('gallery.knit_title') }}</div>
+				<div
+					id="pletivo"
+					class="fs-lg mb-md pt-lg"
+				>
+					{{ $t('gallery.knit_title') }}
+				</div>
 				<div class="box--pletivo u-grid u-grid-3 mb-2xl">
-					<img src="~/assets/img/gallery/pletivo-1.png" />
-					<img src="~/assets/img/gallery/pletivo-2.png" />
-					<img src="~/assets/img/gallery/pletivo-3.png" class="box--pletivo--item3" />
-					<img src="~/assets/img/gallery/pletivo-4.png" class="box--pletivo--item4" />
-					<img src="~/assets/img/gallery/pletivo-5.png" class="box--pletivo--item5" />
-					<img src="~/assets/img/gallery/pletivo-6.png" class="box--pletivo--item6" />
+					<img src="~/assets/img/gallery/pletivo-1.png">
+					<img src="~/assets/img/gallery/pletivo-2.png">
+					<img
+						src="~/assets/img/gallery/pletivo-3.png"
+						class="box--pletivo--item3"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-4.png"
+						class="box--pletivo--item4"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-5.png"
+						class="box--pletivo--item5"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-6.png"
+						class="box--pletivo--item6"
+					>
 					<div class="box--pletivo--katalog u-flex u-flex-fd--c u-flex-ai--c u-flex-jc--c">
-						<img class="katalog" src="~/assets/img/gallery/katalog.png" />
+						<img
+							class="katalog"
+							src="~/assets/img/gallery/katalog.png"
+						>
 						<p class="mt-5xl">
 							{{ $t('gallery.catalog') }}
-							<img src="~/assets/img/nofollow/mdi-light_download.png" class="ml-sm" />
+							<img
+								src="~/assets/img/nofollow/mdi-light_download.png"
+								class="ml-sm"
+							>
 						</p>
 					</div>
-					<img src="~/assets/img/gallery/pletivo-7.png" class="box--pletivo--item7" />
-					<img src="~/assets/img/gallery/pletivo-8.png" class="box--pletivo--item8" />
-					<img src="~/assets/img/gallery/pletivo-9.png" class="box--pletivo--item9" />
-					<img src="~/assets/img/gallery/pletivo-10.png" class="box--pletivo--item10" />
+					<img
+						src="~/assets/img/gallery/pletivo-7.png"
+						class="box--pletivo--item7"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-8.png"
+						class="box--pletivo--item8"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-9.png"
+						class="box--pletivo--item9"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-10.png"
+						class="box--pletivo--item10"
+					>
 					<div class="box--pletivo--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl">
 						<div class="fs-lg">
 							{{ $t('gallery.contact_desc') }}
 							<div class="box--pletivo--kontakt--btn mt-6xl">
 								{{ $t('gallery.contact_button') }}
-								<img src="~/assets/img/gallery/kont.png" class="ml-sm" />
+								<img
+									src="~/assets/img/gallery/kont.png"
+									class="ml-sm"
+								>
 							</div>
 						</div>
-						<div class="box--pletivo--kontakt--img ml-6xl"><img src="~/assets/img/gallery/kontakt.png" /></div>
+						<div class="box--pletivo--kontakt--img ml-6xl">
+							<img src="~/assets/img/gallery/kontakt.png">
+						</div>
 					</div>
-					<img src="~/assets/img/gallery/pletivo-11.png" class="box--pletivo--item11" />
+					<img
+						src="~/assets/img/gallery/pletivo-11.png"
+						class="box--pletivo--item11"
+					>
 				</div>
 
-				<div class="fs-lg mb-md pt-lg" id="valovit-mreza">{{ $t('gallery.mesh_title') }}</div>
+				<div
+					id="valovit-mreza"
+					class="fs-lg mb-md pt-lg"
+				>
+					{{ $t('gallery.mesh_title') }}
+				</div>
 				<div class="box--pletivo u-grid u-grid-3 mb-2xl">
-					<img src="~/assets/img/gallery/pletivo-1.png" />
-					<img src="~/assets/img/gallery/pletivo-2.png" />
-					<img src="~/assets/img/gallery/pletivo-3.png" class="box--pletivo--item3" />
-					<img src="~/assets/img/gallery/pletivo-4.png" class="box--pletivo--item4" />
-					<img src="~/assets/img/gallery/pletivo-5.png" class="box--pletivo--item5" />
-					<img src="~/assets/img/gallery/pletivo-6.png" class="box--pletivo--item6" />
+					<img src="~/assets/img/gallery/pletivo-1.png">
+					<img src="~/assets/img/gallery/pletivo-2.png">
+					<img
+						src="~/assets/img/gallery/pletivo-3.png"
+						class="box--pletivo--item3"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-4.png"
+						class="box--pletivo--item4"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-5.png"
+						class="box--pletivo--item5"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-6.png"
+						class="box--pletivo--item6"
+					>
 					<div class="box--pletivo--katalog u-flex u-flex-fd--c u-flex-ai--c u-flex-jc--c">
-						<img class="katalog" src="~/assets/img/gallery/katalog.png" />
+						<img
+							class="katalog"
+							src="~/assets/img/gallery/katalog.png"
+						>
 						<p class="mt-5xl">
 							{{ $t('gallery.catalog') }}
-							<img src="~/assets/img/nofollow/mdi-light_download.png" class="ml-sm" />
+							<img
+								src="~/assets/img/nofollow/mdi-light_download.png"
+								class="ml-sm"
+							>
 						</p>
 					</div>
-					<img src="~/assets/img/gallery/pletivo-7.png" class="box--pletivo--item7" />
-					<img src="~/assets/img/gallery/pletivo-8.png" class="box--pletivo--item8" />
-					<img src="~/assets/img/gallery/pletivo-9.png" class="box--pletivo--item9" />
-					<img src="~/assets/img/gallery/pletivo-10.png" class="box--pletivo--item10" />
+					<img
+						src="~/assets/img/gallery/pletivo-7.png"
+						class="box--pletivo--item7"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-8.png"
+						class="box--pletivo--item8"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-9.png"
+						class="box--pletivo--item9"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-10.png"
+						class="box--pletivo--item10"
+					>
 				</div>
 
-				<div class="fs-lg mb-md pt-lg" id="stupovi">{{ $t('gallery.pillars_title') }}</div>
+				<div
+					id="stupovi"
+					class="fs-lg mb-md pt-lg"
+				>
+					{{ $t('gallery.pillars_title') }}
+				</div>
 				<div class="box--stupovi u-grid u-grid-3 mb-2xl">
-					<img src="~/assets/img/gallery/stupovi-1.png" class="box--stupovi--item1" />
-					<img src="~/assets/img/gallery/stupovi-2.png" class="box--stupovi--item2" />
-					<img src="~/assets/img/gallery/pletivo-1.png" class="box-stupovi--item3" />
+					<img
+						src="~/assets/img/gallery/stupovi-1.png"
+						class="box--stupovi--item1"
+					>
+					<img
+						src="~/assets/img/gallery/stupovi-2.png"
+						class="box--stupovi--item2"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-1.png"
+						class="box-stupovi--item3"
+					>
 					<div class="box--stupovi--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl">
 						<div class="fs-lg">
 							{{ $t('gallery.contact_desc') }}
 							<div class="box--pletivo--kontakt--btn mt-6xl">
 								{{ $t('gallery.contact_button') }}
-								<img src="~/assets/img/gallery/kont.png" class="ml-sm" />
+								<img
+									src="~/assets/img/gallery/kont.png"
+									class="ml-sm"
+								>
 							</div>
 						</div>
-						<div class="box--pletivo--kontakt--img ml-6xl"><img src="~/assets/img/gallery/kontakt.png" /></div>
+						<div class="box--pletivo--kontakt--img ml-6xl">
+							<img src="~/assets/img/gallery/kontakt.png">
+						</div>
 					</div>
-					<img src="~/assets/img/gallery/pletivo-4.png" class="box--stupovi--item4" />
-					<img src="~/assets/img/gallery/pletivo-5.png" class="box--pletivo--item5" />
-					<img src="~/assets/img/gallery/pletivo-6.png" class="box--pletivo--item6" />
-					<img src="~/assets/img/gallery/stupovi-2.png" class="box--stupovi--item" />
-					<img src="~/assets/img/gallery/pletivo-7.png" class="box--stupovi--item7" />
-					<img src="~/assets/img/gallery/pletivo-8.png" class="box--stupovi--item8" />
-					<img src="~/assets/img/gallery/pletivo-9.png" class="box--stupovi--item9" />
-					<img src="~/assets/img/gallery/pletivo-10.png" class="box--stupovi--item10" />
+					<img
+						src="~/assets/img/gallery/pletivo-4.png"
+						class="box--stupovi--item4"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-5.png"
+						class="box--pletivo--item5"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-6.png"
+						class="box--pletivo--item6"
+					>
+					<img
+						src="~/assets/img/gallery/stupovi-2.png"
+						class="box--stupovi--item"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-7.png"
+						class="box--stupovi--item7"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-8.png"
+						class="box--stupovi--item8"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-9.png"
+						class="box--stupovi--item9"
+					>
+					<img
+						src="~/assets/img/gallery/pletivo-10.png"
+						class="box--stupovi--item10"
+					>
 					<div class="box--pletivo--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl ptb-6xl">
 						<div class="fs-lg">
 							{{ $t('gallery.contact_desc') }}
 							<div class="box--pletivo--kontakt--btn mt-6xl">
 								{{ $t('gallery.contact_button') }}
-								<img src="~/assets/img/gallery/kont.png" class="ml-sm" />
+								<img
+									src="~/assets/img/gallery/kont.png"
+									class="ml-sm"
+								>
 							</div>
 						</div>
-						<div class="box--pletivo--kontakt--img ml-6xl"><img src="~/assets/img/gallery/kontakt.png" /></div>
+						<div class="box--pletivo--kontakt--img ml-6xl">
+							<img src="~/assets/img/gallery/kontakt.png">
+						</div>
 					</div>
 					<div class="box--stupovi--katalog u-flex u-flex-fd--c u-flex-ai--c u-flex-jc--c">
-						<img class="katalog" src="~/assets/img/gallery/katalog.png" />
+						<img
+							class="katalog"
+							src="~/assets/img/gallery/katalog.png"
+						>
 						<p class="mt-5xl">
 							{{ $t('gallery.catalog') }}
-							<img src="~/assets/img/nofollow/mdi-light_download.png" class="ml-sm" />
+							<img
+								src="~/assets/img/nofollow/mdi-light_download.png"
+								class="ml-sm"
+							>
 						</p>
 					</div>
 				</div>

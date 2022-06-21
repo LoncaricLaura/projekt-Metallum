@@ -123,7 +123,7 @@ export default {
 
 	optimizedImages: {
 		optimizeImages: true,
-		imagesName: ({ isDev }) => (isDev ? '[path][name][hash:optimized].[ext]' : '[path][name][hash:7].[ext]'),
+		imagesName: ({ isDev }) => isDev ? '[path][name][hash:optimized].[ext]' : '[path][name][hash:7].[ext]',
 		responsive: {
 			sizes: [500, 1024, 1367, 1601, 1921],
 			placeholder: true,
@@ -168,7 +168,7 @@ export default {
 	sitemap: {
 		hostname: BASE_APP_URL,
 		defaults: {
-			lastmod: new Date(),
+			lastmod: new Date,
 			changefreq: 'monthly',
 			priority: 0.9
 		}

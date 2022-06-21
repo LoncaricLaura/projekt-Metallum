@@ -1,7 +1,11 @@
 <template>
 	<div class="usluge u-flex u-flex-fd--r u-flex-jc--sb mlr-7xl">
-		<div class="menu"><ServicesMenu /></div>
-		<div class="content u-flex u-flex-ai--fe"><ServicesCard :services="services" /></div>
+		<div class="menu">
+			<ServicesMenu />
+		</div>
+		<div class="content u-flex u-flex-ai--fe">
+			<ServicesCard :services="services" />
+		</div>
 	</div>
 </template>
 

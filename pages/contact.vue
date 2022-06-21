@@ -1,7 +1,12 @@
 <template>
 	<div class="contact u-flex u-flex-fd--r pr-6xl">
 		<div class="contact__map u-flex">
-			<GmapMap :center="{ lat: 45.19993, lng: 14.05346 }" :zoom="12" :options="{ styles }" style="width: 100%; height: 877px">
+			<GmapMap
+				:center="{ lat: 45.19993, lng: 14.05346 }"
+				:zoom="12"
+				:options="{ styles }"
+				style="width: 100%; height: 877px"
+			>
 				<GmapMarker :position="{ lat: 45.19993, lng: 14.05346 }" />
 			</GmapMap>
 		</div>
@@ -9,46 +14,107 @@
 		<div class="contact__box u-flex u-flex-fd--r u-flex-ai--fs">
 			<div class="u-flex u-flex-fd--c u-flex-jc--sb">
 				<div class="contact__adress fs-base">
-					<div class="pb-md fs-md">{{ $t('footer.address.title') }}</div>
+					<div class="pb-md fs-md">
+						{{ $t('footer.address.title') }}
+					</div>
 					<p>{{ $t('footer.address.street') }}</p>
 					<p>{{ $t('footer.address.city') }}</p>
 					<p>{{ $t('footer.address.cntry') }}</p>
 				</div>
 
 				<div class="contact_time pt-4xl fs-base">
-					<div class="pb-md fs-md">{{ $t('footer.time.title') }}</div>
-					<p class="">{{ $t('footer.time.day1') }}</p>
+					<div class="pb-md fs-md">
+						{{ $t('footer.time.title') }}
+					</div>
+					<p class="">
+						{{ $t('footer.time.day1') }}
+					</p>
 					<p>{{ $t('footer.time.hour') }}</p>
 					<p>{{ $t('footer.time.day2') }}</p>
 					<p>{{ $t('footer.time.hour2') }}</p>
 				</div>
 				<div class="contact__mail fs-md pt-4xl">
 					{{ $t('footer.mail.title') }}
-					<p class="footer--text4 pr-3xl fs-base pt-md">{{ $t('footer.mail.email') }}</p>
+					<p class="footer--text4 pr-3xl fs-base pt-md">
+						{{ $t('footer.mail.email') }}
+					</p>
 				</div>
 				<div class="contact__tel fs-md pt-4xl">
 					{{ $t('footer.phone.title') }}
-					<p class="fs-base pt-md">{{ $t('footer.phone.numb') }}</p>
+					<p class="fs-base pt-md">
+						{{ $t('footer.phone.numb') }}
+					</p>
 				</div>
 			</div>
-			<form @submit.prevent="sendMail" class="contact__form u-flex u-flex-fd--c">
-				<input id="name" v-model="name" type="text" required maxlength="50" :placeholder="$t('contact.input_name')" class="fs-base pb-xs" />
+			<form
+				class="contact__form u-flex u-flex-fd--c"
+				@submit.prevent="sendMail"
+			>
+				<input
+					id="name"
+					v-model="name"
+					type="text"
+					required
+					maxlength="50"
+					:placeholder="$t('contact.input_name')"
+					class="fs-base pb-xs"
+				>
 
-				<input id="name" v-model="company" type="text" required maxlength="50" :placeholder="$t('contact.input_company')" class="fs-base pb-xs" />
+				<input
+					id="name"
+					v-model="company"
+					type="text"
+					required
+					maxlength="50"
+					:placeholder="$t('contact.input_company')"
+					class="fs-base pb-xs"
+				>
 
-				<input id="email" v-model="email" type="email" required maxlength="50" :placeholder="$t('contact.input_email')" class="fs-base ptb-xs" />
+				<input
+					id="email"
+					v-model="email"
+					type="email"
+					required
+					maxlength="50"
+					:placeholder="$t('contact.input_email')"
+					class="fs-base ptb-xs"
+				>
 
-				<input id="email" v-model="telephone" type="text" required maxlength="50" :placeholder="$t('contact.input_tel')" class="fs-base ptb-xs" />
+				<input
+					id="email"
+					v-model="telephone"
+					type="text"
+					required
+					maxlength="50"
+					:placeholder="$t('contact.input_tel')"
+					class="fs-base ptb-xs"
+				>
 
 				<!--<label for="message">Poruka opis terena i specifikacije</label> -->
-				<textarea id="message" v-model="message" required rows="4" :placeholder="$t('contact.input_mess')" class="fs-base ptb-xs" />
+				<textarea
+					id="message"
+					v-model="message"
+					required
+					rows="4"
+					:placeholder="$t('contact.input_mess')"
+					class="fs-base ptb-xs"
+				/>
 
 				<label class="contact__checkbox u-flex">
-					<input type="checkbox" required class="mr-md mt-xxs" />
+					<input
+						type="checkbox"
+						required
+						class="mr-md mt-xxs"
+					>
 					{{ $t('contact.checkbox') }}
 				</label>
 
-				<button type="submit" class="btn btn--primary">{{ $t('contact.send') }}</button>
+				<button
+					type="submit"
+					class="btn btn--primary"
+				>
+					{{ $t('contact.send') }}
+				</button>
 			</form>
 		</div>
 	</div>

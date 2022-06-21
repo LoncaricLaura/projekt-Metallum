@@ -1,21 +1,40 @@
 <template>
 	<div class="box u-flex u-flex-fd--c u-flex-ai--fe mb-card">
-		<div class="box-item u-flex u-flex-fd--c u-flex-jc--fe pt-xl" v-for="(service, i) in services" :key="i" :id="`${service.id}`">
+		<div
+			v-for="(service, i) in services"
+			:id="`${service.id}`"
+			:key="i"
+			class="box-item u-flex u-flex-fd--c u-flex-jc--fe pt-xl"
+		>
 			<div class="u-flex u-flex-fd--r">
 				<div class="box-item--card u-flex u-flex-jc--c">
-					<img :src="require(`~/assets/img/services/${service.icon}.png`)" class="box-item--card_img" />
+					<img
+						:src="require(`~/assets/img/services/${service.icon}.png`)"
+						class="box-item--card_img"
+					>
 				</div>
 				<div>
-					<img :src="require(`~/assets/img/services/${service.image}.jpg`)" class="box-item--img" />
+					<img
+						:src="require(`~/assets/img/services/${service.image}.jpg`)"
+						class="box-item--img"
+					>
 				</div>
 			</div>
 			<div class="box-item--about u-flex u-flex-fd--r pt-lg">
-				<div class="box-item--title mb-3xl fs-md">{{ service.title }}</div>
+				<div class="box-item--title mb-3xl fs-md">
+					{{ service.title }}
+				</div>
 				<div class="box-item--text fs-base ml-2xl">
 					{{ service.text }}
 					<ul class="service-list">
-						<li v-for="(item, i) in service.servicesItems" :key="i" class="mt-md fs-base service-list__item pr-lg u-flex u-flex-ai--fs">
-							<div class="red-dot u-flex u-flex-as--fs mt-sm mr-sm"><img src="~/assets/img/nofollow/red-dot.png" /></div>
+						<li
+							v-for="(item, i) in service.servicesItems"
+							:key="i"
+							class="mt-md fs-base service-list__item pr-lg u-flex u-flex-ai--fs"
+						>
+							<div class="red-dot u-flex u-flex-as--fs mt-sm mr-sm">
+								<img src="~/assets/img/nofollow/red-dot.png">
+							</div>
 							<p>{{ item }}</p>
 						</li>
 					</ul>

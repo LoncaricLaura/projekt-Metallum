@@ -1,10 +1,25 @@
 <template>
-	<section v-if="services" class="slider-services pt-3xl pb-6xl">
+	<section
+		v-if="services"
+		class="slider-services pt-3xl pb-6xl"
+	>
 		<div class="u-flex slider-image">
-			<splide :options="slider" class="main__slider">
-				<splide-slide v-for="(service, i) in services" :key="i" class="slide__track">
-					<img :src="require(`~/assets/img/index/image-${service.img}.png`)" :data-splide-lazy="require(`~/assets/img/index/image-${service.img}.png`)" />
-					<p class="slide__track--title">{{ service.title }}</p>
+			<splide
+				:options="slider"
+				class="main__slider"
+			>
+				<splide-slide
+					v-for="(service, i) in services"
+					:key="i"
+					class="slide__track"
+				>
+					<img
+						:src="require(`~/assets/img/index/image-${service.img}.png`)"
+						:data-splide-lazy="require(`~/assets/img/index/image-${service.img}.png`)"
+					>
+					<p class="slide__track--title">
+						{{ service.title }}
+					</p>
 				</splide-slide>
 			</splide>
 		</div>

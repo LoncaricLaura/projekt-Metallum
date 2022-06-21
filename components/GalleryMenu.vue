@@ -1,8 +1,17 @@
 <template>
 	<div class="menu u-flex u-flex-fd--c">
 		<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
-			<NuxtLink :to="localePath('/Proizvodi')" class="menu--item fs-md mtb-xl">{{ $t('gallery.menu.products.title') }}</NuxtLink>
-			<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('proizvodi')" :class="{ active: activeCategory == 'proizvodi' }">
+			<NuxtLink
+				:to="localePath('/Proizvodi')"
+				class="menu--item fs-md mtb-xl"
+			>
+				{{ $t('gallery.menu.products.title') }}
+			</NuxtLink>
+			<div
+				class="u-flex u-flex-ai--c hamburger"
+				:class="{ active: activeCategory == 'proizvodi' }"
+				@click="setActiveCategory('proizvodi')"
+			>
 				<div class="hamb-btn">
 					<div class="hamb-line" />
 					<div class="hamb-line" />
@@ -10,45 +19,73 @@
 			</div>
 		</div>
 		<transition name="fadeFromUp">
-			<div class="sub-menu u-flex u-flex-fd--c" v-show="activeCategory === 'proizvodi'">
+			<div
+				v-show="activeCategory === 'proizvodi'"
+				class="sub-menu u-flex u-flex-fd--c"
+			>
 				<div class="sub-menu mb-xs">
 					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
-						<NuxtLink :to="localePath('/galerija/#pletivo')">{{ $t('gallery.menu.products.sub_knit') }}</NuxtLink>
+						<NuxtLink :to="localePath('/galerija/#pletivo')">
+							{{ $t('gallery.menu.products.sub_knit') }}
+						</NuxtLink>
 					</div>
 				</div>
 				<div class="sub-menu mb-xxs mt-xs fs-base">
-					<NuxtLink :to="localePath('/galerija/#valovit-mreza')">{{ $t('gallery.menu.products.sub_mesh') }}</NuxtLink>
+					<NuxtLink :to="localePath('/galerija/#valovit-mreza')">
+						{{ $t('gallery.menu.products.sub_mesh') }}
+					</NuxtLink>
 				</div>
 				<div class="sub-menu mtb-sm fs-base">
-					<NuxtLink :to="localePath('/galerija/#stupovi')">{{ $t('gallery.menu.products.sub_pillars') }}</NuxtLink>
+					<NuxtLink :to="localePath('/galerija/#stupovi')">
+						{{ $t('gallery.menu.products.sub_pillars') }}
+					</NuxtLink>
 				</div>
 				<div class="sub-menu mb-sm mt-xxs">
 					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
-						<NuxtLink :to="localePath('/proizvodi/panelni-sustav')">Panelni sustav</NuxtLink>
+						<NuxtLink :to="localePath('/proizvodi/panelni-sustav')">
+							Panelni sustav
+						</NuxtLink>
 					</div>
 				</div>
 				<div class="sub-menu mb-sm mt-xxs fs-base">
-					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')">{{ $t('gallery.menu.products.sub_panel') }}</NuxtLink>
+					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')">
+						{{ $t('gallery.menu.products.sub_panel') }}
+					</NuxtLink>
 				</div>
 				<div class="sub-menu mb-sm mt-xxs fs-base">
-					<NuxtLink :to="localePath('/proizvodi/ogradni-gabioni')">{{ $t('gallery.menu.products.sub_gabions') }}</NuxtLink>
+					<NuxtLink :to="localePath('/proizvodi/ogradni-gabioni')">
+						{{ $t('gallery.menu.products.sub_gabions') }}
+					</NuxtLink>
 				</div>
 				<div class="sub-menu mt-xxs">
 					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
-						<NuxtLink :to="localePath('/proizvodi/vrata')">{{ $t('gallery.menu.products.sub_doors') }}</NuxtLink>
+						<NuxtLink :to="localePath('/proizvodi/vrata')">
+							{{ $t('gallery.menu.products.sub_doors') }}
+						</NuxtLink>
 					</div>
 				</div>
 				<div class="sub-menu mt-sm mb-lg">
 					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
-						<NuxtLink :to="localePath('/proizvodi/izrada-po-nacrtu')">{{ $t('gallery.menu.products.sub_draft') }}</NuxtLink>
+						<NuxtLink :to="localePath('/proizvodi/izrada-po-nacrtu')">
+							{{ $t('gallery.menu.products.sub_draft') }}
+						</NuxtLink>
 					</div>
 				</div>
 			</div>
 		</transition>
 
 		<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb menu--line">
-			<NuxtLink :to="localePath('/Proizvodi')" class="menu--item fs-md mtb-xl">{{ $t('gallery.menu.property.title') }}</NuxtLink>
-			<div class="u-flex u-flex-ai--c hamburger" @click="setActiveCategory('nekretnine')" :class="{ active: activeCategory == 'nekretnine' }">
+			<NuxtLink
+				:to="localePath('/Proizvodi')"
+				class="menu--item fs-md mtb-xl"
+			>
+				{{ $t('gallery.menu.property.title') }}
+			</NuxtLink>
+			<div
+				class="u-flex u-flex-ai--c hamburger"
+				:class="{ active: activeCategory == 'nekretnine' }"
+				@click="setActiveCategory('nekretnine')"
+			>
 				<div class="hamb-btn">
 					<div class="hamb-line" />
 					<div class="hamb-line" />
@@ -56,17 +93,26 @@
 			</div>
 		</div>
 		<transition name="fadeFromUp">
-			<div class="sub-menu u-flex u-flex-fd--c" v-show="activeCategory === 'nekretnine'">
+			<div
+				v-show="activeCategory === 'nekretnine'"
+				class="sub-menu u-flex u-flex-fd--c"
+			>
 				<div class="sub-menu mb-xs">
 					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
-						<NuxtLink :to="localePath('/proizvodi/pletivo')">{{ $t('gallery.menu.property.sub_ville') }}</NuxtLink>
+						<NuxtLink :to="localePath('/proizvodi/pletivo')">
+							{{ $t('gallery.menu.property.sub_ville') }}
+						</NuxtLink>
 					</div>
 				</div>
 				<div class="sub-menu mb-xxs mt-xs fs-base">
-					<NuxtLink :to="localePath('/proizvodi/valovit-mreza')">{{ $t('gallery.menu.property.sub_const') }}</NuxtLink>
+					<NuxtLink :to="localePath('/proizvodi/valovit-mreza')">
+						{{ $t('gallery.menu.property.sub_const') }}
+					</NuxtLink>
 				</div>
 				<div class="sub-menu mtb-sm fs-base">
-					<NuxtLink :to="localePath('/proizvodi/stupovi')">{{ $t('gallery.menu.property.sub_industry') }}</NuxtLink>
+					<NuxtLink :to="localePath('/proizvodi/stupovi')">
+						{{ $t('gallery.menu.property.sub_industry') }}
+					</NuxtLink>
 				</div>
 			</div>
 		</transition>
@@ -99,7 +145,7 @@ export default Vue.extend({
 	},
 	methods: {
 		setActiveCategory(category: any) {
-			this.activeCategory == category ? (this.activeCategory = '') : (this.activeCategory = category);
+			this.activeCategory == category ? this.activeCategory = '' : this.activeCategory = category;
 		}
 	}
 });

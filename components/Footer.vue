@@ -1,27 +1,41 @@
 <template>
 	<div class="footer u-flex u-flex-fd--c plr-6xl">
 		<div class="footer--logo mt-2xl">
-			<img src="~/assets/img/nofollow/logo-metallum.png" />
-			<div class="footer--text fs-lg">{{ $t('footer.subtitle') }}</div>
+			<img src="~/assets/img/nofollow/logo-metallum.png">
+			<div class="footer--text fs-lg">
+				{{ $t('footer.subtitle') }}
+			</div>
 		</div>
 		<div class="footer--row u-grid ptb-2xl">
 			<div class="u-flex u-flex-fd--c">
 				<div class="footer--menu fs-base u-flex u-flex-fd--r pt-footer">
-					<NuxtLink :to="localePath('/proizvodi')">{{ $t('footer.products_title') }}</NuxtLink>
-					<NuxtLink :to="localePath('/usluge')">{{ $t('footer.services_title') }}</NuxtLink>
-					<NuxtLink :to="localePath('/galerija')">{{ $t('footer.gallery_title') }}</NuxtLink>
-					<NuxtLink :to="localePath('/contact')">{{ $t('footer.contact_title') }}</NuxtLink>
+					<NuxtLink :to="localePath('/proizvodi')">
+						{{ $t('footer.products_title') }}
+					</NuxtLink>
+					<NuxtLink :to="localePath('/usluge')">
+						{{ $t('footer.services_title') }}
+					</NuxtLink>
+					<NuxtLink :to="localePath('/galerija')">
+						{{ $t('footer.gallery_title') }}
+					</NuxtLink>
+					<NuxtLink :to="localePath('/contact')">
+						{{ $t('footer.contact_title') }}
+					</NuxtLink>
 				</div>
 			</div>
 			<div class="footer--text2 fs-base pt-4xl">
-				<div class="pb-md">{{ $t('footer.address.title') }}</div>
+				<div class="pb-md">
+					{{ $t('footer.address.title') }}
+				</div>
 				<div>{{ $t('footer.address.street') }}</div>
 				<div>{{ $t('footer.address.city') }}</div>
 				<div>{{ $t('footer.address.cntry') }}</div>
 			</div>
 
 			<div class="footer--text2 pt-4xl fs-base">
-				<div class="footer--text2--title pb-md">{{ $t('footer.time.title') }}</div>
+				<div class="footer--text2--title pb-md">
+					{{ $t('footer.time.title') }}
+				</div>
 				<div>{{ $t('footer.time.day1') }}</div>
 				<div>{{ $t('footer.time.hour') }}</div>
 				<div>{{ $t('footer.time.day2') }}</div>
@@ -29,30 +43,43 @@
 			</div>
 			<div class="footer--catalog u-flex center">
 				<div class="footer--catalog--img">
-					<img src="~/assets/img/nofollow/katalog.png" />
+					<img src="~/assets/img/nofollow/katalog.png">
 				</div>
 				<div class="btn u-flex u-flex-as--fe pb-md">
 					{{ $t('footer.catalog') }}
-					<img src="~/assets/img/nofollow/mdi-light_download.png" class="ml-sm" />
+					<img
+						src="~/assets/img/nofollow/mdi-light_download.png"
+						class="ml-sm"
+					>
 				</div>
 			</div>
 		</div>
 
 		<div class="footer--row2 u-grid u-grid-2">
 			<div class="footer--email u-grid u-grid-2 center ptb-4xl">
-				<div class="footer--text3 fs-md">{{ $t('footer.mail.title') }}</div>
-				<div class="footer--text4 pr-3xl fs-lg">{{ $t('footer.mail.email') }}</div>
+				<div class="footer--text3 fs-md">
+					{{ $t('footer.mail.title') }}
+				</div>
+				<div class="footer--text4 pr-3xl fs-lg">
+					{{ $t('footer.mail.email') }}
+				</div>
 			</div>
 			<div class="footer--number u-grid u-grid-2 center ptb-4xl">
-				<div class="footer--text3 pl-xl fs-md">{{ $t('footer.phone.title') }}</div>
-				<div class="footer--text4 u-flex u-flex-jc--fe fs-lg">{{ $t('footer.phone.numb') }}</div>
+				<div class="footer--text3 pl-xl fs-md">
+					{{ $t('footer.phone.title') }}
+				</div>
+				<div class="footer--text4 u-flex u-flex-jc--fe fs-lg">
+					{{ $t('footer.phone.numb') }}
+				</div>
 			</div>
 		</div>
 
 		<div class="u-flex u-flex-jc--sb pt-6xl mb-md">
-			<div class="fs-base">{{ $t('footer.metallum') }}</div>
+			<div class="fs-base">
+				{{ $t('footer.metallum') }}
+			</div>
 			<div>
-				<img src="~/assets/img/nofollow/Group-2.png" />
+				<img src="~/assets/img/nofollow/Group-2.png">
 			</div>
 		</div>
 	</div>

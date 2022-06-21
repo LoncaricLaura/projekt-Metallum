@@ -1,19 +1,27 @@
 <template>
-	<section v-if="imgs" class="slider-products u-flex u-flex-ai--c u-flex-jc--c ptb-main max-width">
+	<section v-if="imgs"
+class="slider-products u-flex u-flex-ai--c u-flex-jc--c ptb-main max-width">
 		<div class="u-flex u-flex-fd--c slider-image">
-			<splide :options="slider" class="main__slider" ref="mainSlider">
-				<splide-slide v-for="(img, i) in imgs" :key="i" class="slide__track">
-					<img :src="require(`~/assets/img/products/pletivo/image-${img}.jpg`)" :data-splide-lazy="require(`~/assets/img/products/pletivo/image-${img}.jpg`)" />
+			<splide :options="slider"
+class="main__slider" ref="mainSlider">
+				<splide-slide v-for="(img, i) in imgs"
+:key="i" class="slide__track">
+					<img :src="require(`~/assets/img/products/pletivo/image-${img}.jpg`)"
+:data-splide-lazy="require(`~/assets/img/products/pletivo/image-${img}.jpg`)" >
 				</splide-slide>
 			</splide>
 
-			<splide :options="sliderThumb" class="thumb__slider" ref="sliderThumb">
-				<splide-slide v-for="(img, i) in imgs" :key="i" class="slide__track">
-					<img :src="require(`~/assets/img/products/pletivo/image-${img}.jpg`)" :data-splide-lazy="require(`~/assets/img/products/pletivo/image-${img}.jpg`)" />
+			<splide :options="sliderThumb"
+class="thumb__slider" ref="sliderThumb">
+				<splide-slide v-for="(img, i) in imgs"
+:key="i" class="slide__track">
+					<img :src="require(`~/assets/img/products/pletivo/image-${img}.jpg`)"
+:data-splide-lazy="require(`~/assets/img/products/pletivo/image-${img}.jpg`)" >
 				</splide-slide>
 			</splide>
 		</div>
-		<img src="~/assets/img/nofollow/close.png" class="close mr-xl mt-xl" @click="$emit('close')" />
+		<img src="~/assets/img/nofollow/close.png"
+class="close mr-xl mt-xl" @click="$emit('close')" >
 	</section>
 </template>
 
@@ -31,8 +39,10 @@ export default Vue.extend({
 		return {
 			slider: {
 				type: 'loop',
-				//lazyLoad: 'nearby',
-				//rewind: true,
+				/*
+				 * lazyLoad: 'nearby',
+				 * rewind: true,
+				 */
 				perPage: 1,
 
 				//focus: 'center',
@@ -65,7 +75,7 @@ export default Vue.extend({
 	},
 
 	mounted() {
-		(this as any).$refs.mainSlider.sync((this as any).$refs.sliderThumb.splide);
+		this as any.$refs.mainSlider.sync(this as any.$refs.sliderThumb.splide);
 	}
 });
 </script>
