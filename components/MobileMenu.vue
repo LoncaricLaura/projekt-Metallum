@@ -360,7 +360,8 @@ export default Vue.extend({
 			}
 		},
 		setActiveCategory(category: any) {
-			this.activeCategory == category ? this.activeCategory = '' : this.activeCategory = category;
+			// eslint-disable-next-line no-unused-expressions
+			this.activeCategory === category ? this.activeCategory = '' : this.activeCategory = category;
 		}
 	}
 });
@@ -393,7 +394,7 @@ export default Vue.extend({
 		z-index: 50;
 		top: 0;
 		left: 0;
-		background-color: $oxfordBlue;
+		background-color: $oxford-blue;
 		&--nav {
 			padding: 150px 40px;
 			padding-bottom: 50px;

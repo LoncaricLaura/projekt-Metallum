@@ -89,7 +89,7 @@
 .footer {
 	color: $secondary-color;
 	width: 100%;
-	background: $oxfordBlue;
+	background: $oxford-blue;
 	&--logo {
 		position: absolute;
 	}

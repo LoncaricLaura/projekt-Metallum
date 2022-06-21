@@ -1,3 +1,4 @@
+/* eslint-disable prefer-named-capture-group */
 const env = require('./env');
 
 const IS_PRODUCTION = env.isProduction;
@@ -118,6 +119,7 @@ export default {
 				];
 			}
 		},
+		// eslint-disable-next-line require-unicode-regexp
 		transpile: [/^vue2-google-maps($|\/)/]
 	},
 

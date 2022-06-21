@@ -624,13 +624,13 @@ export default Vue.extend({
 	}
 }
 table {
-	color: $oxfordBlue;
+	color: $oxford-blue;
 	width: 1102px;
 }
 
 .table-title {
 	font-family: $ff-serif;
-	background-color: $oxfordBlue;
+	background-color: $oxford-blue;
 	color: $secondary-color;
 	font-weight: 400;
 }

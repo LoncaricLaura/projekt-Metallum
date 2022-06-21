@@ -3,10 +3,10 @@ export const state = () => ({
 });
 
 export const mutations = {
-	toggleField(state, fieldName) {
-		state[fieldName] = !state[fieldName];
+	toggleField(store, fieldName) {
+		store[fieldName] = !store[fieldName];
 	},
-	updateField(state, [fieldName, value]) {
-		state[fieldName] = value;
+	updateField(store, [fieldName, value]) {
+		store[fieldName] = value;
 	}
 };

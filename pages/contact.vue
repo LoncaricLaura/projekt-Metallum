@@ -527,7 +527,7 @@ export default {
 		textarea {
 			border-bottom: 1px;
 			border-style: solid;
-			border-color: $oxfordBlue;
+			border-color: $oxford-blue;
 			border-top: 0;
 			border-left: 0;
 			border-right: 0;

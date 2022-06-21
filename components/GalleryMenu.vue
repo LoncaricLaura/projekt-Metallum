@@ -145,7 +145,8 @@ export default Vue.extend({
 	},
 	methods: {
 		setActiveCategory(category: any) {
-			this.activeCategory == category ? this.activeCategory = '' : this.activeCategory = category;
+			// eslint-disable-next-line no-unused-expressions
+			this.activeCategory === category ? this.activeCategory = '' : this.activeCategory = category;
 		}
 	}
 });

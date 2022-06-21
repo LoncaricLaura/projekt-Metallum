@@ -256,7 +256,7 @@
 			grid-column: 2;
 		}
 		&--katalog {
-			background-color: $oxfordBlue;
+			background-color: $oxford-blue;
 			width: 100%;
 			height: 100%;
 			font-family: $ff-serif;
@@ -296,7 +296,7 @@
 			color: $secondary-color;
 		}
 		&--katalog {
-			background-color: $oxfordBlue;
+			background-color: $oxford-blue;
 			width: 100%;
 			height: 100%;
 			font-family: $ff-serif;
@@ -366,7 +366,7 @@
 				grid-column: 2;
 			}
 			&--katalog {
-				background-color: $oxfordBlue;
+				background-color: $oxford-blue;
 				width: 100%;
 				height: 100%;
 				font-family: $ff-serif;
