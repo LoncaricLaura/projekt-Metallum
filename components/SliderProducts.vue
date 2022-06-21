@@ -97,7 +97,7 @@ export default Vue.extend({
 	},
 
 	mounted() {
-		// this as any.$refs.mainSlider.sync(this as any.$refs.sliderThumb.splide);
+		//	this as any.$refs.mainSlider.sync(this as any.$refs.sliderThumb.splide);
 	}
 });
 </script>
