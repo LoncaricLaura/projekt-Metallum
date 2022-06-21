@@ -531,6 +531,7 @@ export default {
 			border-top: 0;
 			border-left: 0;
 			border-right: 0;
+			border-bottom: 1px solid $oxford-blue;
 		}
 		.btn {
 			margin-top: 100px;

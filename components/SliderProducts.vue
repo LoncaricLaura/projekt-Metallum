@@ -53,7 +53,8 @@ export default Vue.extend({
 	name: 'Slider',
 	props: {
 		imgs: {
-			type: Array
+			type: Array,
+			default: () => ['1']
 		}
 	},
 	data() {
