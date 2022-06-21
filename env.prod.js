@@ -1,9 +1,9 @@
 const env = require('./env.dev');
 
 const IS_PRODUCTION = true;
-const SSR_PORT = 3000;
+const SSR_PORT = 3008;
 
-const BASE_APP_URL = 'https://test.lloyds.dev';
+const BASE_APP_URL = 'https://fe-ssr3.lloyds.dev';
 const BASE_BACK_API_URL = 'https://cms.url.com';
 
 module.exports = {

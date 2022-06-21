@@ -9,12 +9,10 @@ const RECAPTCHA_SECRET_KEY = '6LcKA-4dAAAAAIEu1sBoZTZ_nI_PHlPTT3W7ypH8';
 
 const SSH_USER = 'ubuntu';
 const SSH_HOST = '3.65.236.48';
-const SSH_KEY = 'path-to-pem-key-file';
-const SSH_PATH = '/var/www/html/nuxt-starter-kit';
-const GIT_USER = 'lloydsgroup';
-const GIT_TOKEN = 'NiPsXzP4mJX6x61Mou6x';
-const GIT_REPO = 'https://' + GIT_USER + ':' + GIT_TOKEN + '@gitlab.com/lloydsgroup/nuxt-starter-kit.git';
-const GIT_REF = 'origin/main';
+const SSH_KEY = '../lloyds-frontends.pem';
+const SSH_PATH = '/var/www/html/fe-ssr3';
+const GIT_REPO = 'git@github.com:lloyds-digital/metalum.git';
+const GIT_REF = 'origin/master';
 
 module.exports = {
 	isProduction: IS_PRODUCTION,
