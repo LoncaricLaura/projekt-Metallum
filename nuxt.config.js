@@ -168,16 +168,16 @@ export default {
 			},
 			from: {
 				name: APP_NAME,
-				address: 'noreply@lloyds-design.hr'
+				address: ''
 			}
 		},
 		smtp: {
-			host: 'mail.lloyds-design.hr',
+			host: '',
 			port: 465, // 25, 465 or 587
 			secure: true,
 			auth: {
-				user: 'noreply@lloyds-design.hr',
-				pass: 'x5LV%x1z@,Bp'
+				user: '',
+				pass: ''
 			}
 		}
 	},
