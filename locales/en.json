@@ -72,7 +72,7 @@
 			"title": "Phone",
 			"numb": "+385 52 869 006"
 		},
-		"metallum": "© 2021, Metallum, all rights reserved."
+		"metallum": ", Metallum, all rights reserved."
 	},
 	"home": {
 		"title": "Set boundaries",
@@ -278,7 +278,7 @@
 				"sub_knit": "Knit",
 				"sub_mesh": "Corrugated (vibro) mesh",
 				"sub_pillars": "Pillars (beehives, brackets, rungs)",
-				"sub_panel": "Panelni system",
+				"sub_panel": "Panelni systems",
 				"sub_rail": "Rail systems",
 				"sub_gabions": "Fence gabions",
 				"sub_doors": "Doors",

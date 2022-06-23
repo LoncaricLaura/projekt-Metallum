@@ -1,7 +1,9 @@
 <template>
 	<div class="footer u-flex u-flex-fd--c plr-6xl">
 		<div class="footer--logo mt-2xl">
-			<img src="~/assets/img/nofollow/logo-metallum.png">
+			<NuxtLink :to="localePath('/')">
+				<img src="~/assets/img/nofollow/logo-metallum.png">
+			</NuxtLink>
 			<div class="footer--text fs-lg">
 				{{ $t('footer.subtitle') }}
 			</div>
@@ -47,10 +49,13 @@
 				</div>
 				<div class="btn u-flex u-flex-as--fe pb-md">
 					{{ $t('footer.catalog') }}
-					<img
+					<a
+						href="/static/dummy.pdf"
+						download="dummy.pdf"
+					><img
 						src="~/assets/img/nofollow/mdi-light_download.png"
 						class="ml-sm"
-					>
+					></a>
 				</div>
 			</div>
 		</div>
@@ -76,7 +81,7 @@
 
 		<div class="u-flex u-flex-jc--sb pt-6xl mb-md">
 			<div class="fs-base">
-				{{ $t('footer.metallum') }}
+				© {{ new Date().getFullYear() }}{{ $t('footer.metallum') }}
 			</div>
 			<div>
 				<img src="~/assets/img/nofollow/Group-2.png">

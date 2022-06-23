@@ -72,7 +72,7 @@
 			"title": "Telefon",
 			"numb": "+385 52 869 006"
 		},
-		"metallum": "© 2021, Metallum, sva prava pridržana."
+		"metallum": ", Metallum, sva prava pridržana."
 	},
 	"home": {
 		"title": "Postavite granice",
@@ -278,7 +278,7 @@
 				"sub_knit": "Pletivo",
 				"sub_mesh": "Valovita (vibro) mreža",
 				"sub_pillars": "Stupovi (kosnici, konzole, prečke)",
-				"sub_panel": "Panelni sustav",
+				"sub_panel": "Panelni sustavi",
 				"sub_rail": "Pružni sustavi",
 				"sub_gabions": "Ogradni gabioni",
 				"sub_doors": "Vrata",

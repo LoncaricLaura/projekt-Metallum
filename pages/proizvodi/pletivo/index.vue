@@ -5,11 +5,15 @@
 				{{ $t('products_knit.title') }}
 			</div>
 			<div class="btn btn--primary mt-6xl">
-				{{ $t('products_knit.pdf_btn') }}
-				<img
-					class="icon ml-sm"
-					src="~/assets/img/nofollow/pdf-icon.png"
+				<a
+					href="/static/dummy.pdf"
+					download="dummy.pdf"
 				>
+					{{ $t('products_knit.pdf_btn') }}
+					<img
+						class="icon ml-sm"
+						src="~/assets/img/nofollow/pdf-icon.png"
+					></a>
 			</div>
 		</div>
 		<div class="u-flex u-flex-fd--r u-flex-jc--sb">

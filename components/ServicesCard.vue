@@ -28,8 +28,8 @@
 					{{ service.text }}
 					<ul class="service-list">
 						<li
-							v-for="(item, i) in service.servicesItems"
-							:key="i"
+							v-for="(item, n) in service.servicesItems"
+							:key="n"
 							class="mt-md fs-base service-list__item pr-lg u-flex u-flex-ai--fs"
 						>
 							<div class="red-dot u-flex u-flex-as--fs mt-sm mr-sm">
@@ -48,7 +48,8 @@
 export default {
 	props: {
 		services: {
-			type: Array
+			type: Array,
+			default: () => []
 		}
 	}
 };

@@ -2,7 +2,7 @@
 	<div class="menu u-flex u-flex-fd--c">
 		<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb">
 			<NuxtLink
-				:to="localePath('/Proizvodi')"
+				:to="localePath('/proizvodi')"
 				class="menu--item fs-md mtb-xl"
 			>
 				{{ $t('gallery.menu.products.title') }}
@@ -43,13 +43,13 @@
 				<div class="sub-menu mb-sm mt-xxs">
 					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
 						<NuxtLink :to="localePath('/proizvodi/panelni-sustav')">
-							Panelni sustav
+							{{ $t('gallery.menu.products.sub_panel') }}
 						</NuxtLink>
 					</div>
 				</div>
 				<div class="sub-menu mb-sm mt-xxs fs-base">
 					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')">
-						{{ $t('gallery.menu.products.sub_panel') }}
+						{{ $t('gallery.menu.products.sub_rail') }}
 					</NuxtLink>
 				</div>
 				<div class="sub-menu mb-sm mt-xxs fs-base">
@@ -76,7 +76,7 @@
 
 		<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb menu--line">
 			<NuxtLink
-				:to="localePath('/Proizvodi')"
+				:to="localePath('/nekretnine')"
 				class="menu--item fs-md mtb-xl"
 			>
 				{{ $t('gallery.menu.property.title') }}
@@ -99,18 +99,18 @@
 			>
 				<div class="sub-menu mb-xs">
 					<div class="u-flex u-flex-fd--r u-flex-ai--c u-flex-jc--sb fs-base">
-						<NuxtLink :to="localePath('/proizvodi/pletivo')">
+						<NuxtLink :to="localePath('/nekretnine/#ville')">
 							{{ $t('gallery.menu.property.sub_ville') }}
 						</NuxtLink>
 					</div>
 				</div>
 				<div class="sub-menu mb-xxs mt-xs fs-base">
-					<NuxtLink :to="localePath('/proizvodi/valovit-mreza')">
+					<NuxtLink :to="localePath('/nekretnine/#novogradnja')">
 						{{ $t('gallery.menu.property.sub_const') }}
 					</NuxtLink>
 				</div>
 				<div class="sub-menu mtb-sm fs-base">
-					<NuxtLink :to="localePath('/proizvodi/stupovi')">
+					<NuxtLink :to="localePath('/nekretnine/#industrija')">
 						{{ $t('gallery.menu.property.sub_industry') }}
 					</NuxtLink>
 				</div>
@@ -131,7 +131,7 @@ export default Vue.extend({
 		};
 	},
 	mounted() {
-		window.addEventListener('scroll', e => {
+		window.addEventListener('scroll', () => {
 			requestAnimationFrame(() => {
 				const scrollPos = window.scrollY;
 

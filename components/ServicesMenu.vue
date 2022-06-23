@@ -66,7 +66,7 @@ export default Vue.extend({
 		};
 	},
 	mounted() {
-		window.addEventListener('scroll', e => {
+		window.addEventListener('scroll', () => {
 			requestAnimationFrame(() => {
 				const scrollPos = window.scrollY;
 

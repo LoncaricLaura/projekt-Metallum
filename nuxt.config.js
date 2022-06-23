@@ -15,7 +15,7 @@ export default {
 	},
 
 	head: {
-		title: APP_NAME + ' |  ',
+		title: APP_NAME + ' - ograde i ogradni sustavi ',
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
@@ -30,12 +30,12 @@ export default {
 			{
 				hid: 'og:title',
 				property: 'og:title',
-				content: APP_NAME + ' - Lorem Ipsum'
+				content: APP_NAME + ' - ograde i ogradni sustavi'
 			},
 			{
 				hid: 'description',
 				name: 'description',
-				content: 'Project description'
+				content: 'Nije bitno samo ograditi radni prostor ili prostor sačuvati od upada nezvanih gostiju, već se ograda mora uklapati u okolinu i činiti je privlačnijom. To je moguće sa odabirom naših ograda koje su čvrste, trajne i privlačne za oko. Odaberite ogradu koja naglašava Vaš stil!'
 			},
 			{
 				hid: 'og:description',

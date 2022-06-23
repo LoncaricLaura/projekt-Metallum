@@ -1,7 +1,7 @@
 <template>
 	<section
 		v-if="imgs"
-		class="slider-products u-flex u-flex-ai--c u-flex-jc--c ptb-main max-width"
+		class="slider-products u-flex u-flex-ai--c u-flex-jc--c max-width"
 	>
 		<div class="u-flex u-flex-fd--c slider-image">
 			<splide
@@ -55,6 +55,9 @@ export default Vue.extend({
 		imgs: {
 			type: Array,
 			default: () => ['1']
+		},
+		isOpen: {
+			type: Boolean
 		}
 	},
 	data() {
@@ -96,16 +99,17 @@ export default Vue.extend({
 			}
 		};
 	},
-
 	mounted() {
-		//	this as any.$refs.mainSlider.sync(this as any.$refs.sliderThumb.splide);
+		//this as any.$refs.mainSlider.sync(this as any.$refs.sliderThumb.splide);
 	}
+
 });
 </script>
 
 <style lang="scss" scoped>
 .slider-products {
 	padding-bottom: 80px;
+	padding-top: 80px
 }
 .close {
 	position: absolute;

@@ -37,10 +37,13 @@
 						>
 						<p class="mt-5xl">
 							{{ $t('gallery.catalog') }}
-							<img
+							<a
+								href="/static/dummy.pdf"
+								download="dummy.pdf"
+							><img
 								src="~/assets/img/nofollow/mdi-light_download.png"
 								class="ml-sm"
-							>
+							></a>
 						</p>
 					</div>
 					<img
@@ -61,14 +64,19 @@
 					>
 					<div class="box--pletivo--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl">
 						<div class="fs-lg">
-							{{ $t('gallery.contact_desc') }}
-							<div class="box--pletivo--kontakt--btn mt-6xl">
+							<p class="mb-6xl">
+								{{ $t('gallery.contact_desc') }}
+							</p>
+							<NuxtLink
+								:to="localePath('/contact')"
+								class="box--pletivo--kontakt--btn "
+							>
 								{{ $t('gallery.contact_button') }}
 								<img
 									src="~/assets/img/gallery/kont.png"
 									class="ml-sm"
 								>
-							</div>
+							</NuxtLink>
 						</div>
 						<div class="box--pletivo--kontakt--img ml-6xl">
 							<img src="~/assets/img/gallery/kontakt.png">
@@ -112,10 +120,13 @@
 						>
 						<p class="mt-5xl">
 							{{ $t('gallery.catalog') }}
-							<img
+							<a
+								href="/static/dummy.pdf"
+								download="dummy.pdf"
+							><img
 								src="~/assets/img/nofollow/mdi-light_download.png"
 								class="ml-sm"
-							>
+							></a>
 						</p>
 					</div>
 					<img
@@ -157,14 +168,19 @@
 					>
 					<div class="box--stupovi--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl">
 						<div class="fs-lg">
-							{{ $t('gallery.contact_desc') }}
-							<div class="box--pletivo--kontakt--btn mt-6xl">
+							<p class="mb-6xl">
+								{{ $t('gallery.contact_desc') }}
+							</p>
+							<NuxtLink
+								:to="localePath('/contact')"
+								class="box--pletivo--kontakt--btn"
+							>
 								{{ $t('gallery.contact_button') }}
 								<img
 									src="~/assets/img/gallery/kont.png"
 									class="ml-sm"
 								>
-							</div>
+							</NuxtLink>
 						</div>
 						<div class="box--pletivo--kontakt--img ml-6xl">
 							<img src="~/assets/img/gallery/kontakt.png">
@@ -204,14 +220,19 @@
 					>
 					<div class="box--pletivo--kontakt u-flex u-flex-fd--r u-flex-ai--c plr-6xl ptb-6xl">
 						<div class="fs-lg">
-							{{ $t('gallery.contact_desc') }}
-							<div class="box--pletivo--kontakt--btn mt-6xl">
+							<p class="mb-6xl">
+								{{ $t('gallery.contact_desc') }}
+							</p>
+							<NuxtLink
+								:to="localePath('/contact')"
+								class="box--pletivo--kontakt--btn mt-6xl"
+							>
 								{{ $t('gallery.contact_button') }}
 								<img
 									src="~/assets/img/gallery/kont.png"
 									class="ml-sm"
 								>
-							</div>
+							</NuxtLink>
 						</div>
 						<div class="box--pletivo--kontakt--img ml-6xl">
 							<img src="~/assets/img/gallery/kontakt.png">
@@ -224,10 +245,13 @@
 						>
 						<p class="mt-5xl">
 							{{ $t('gallery.catalog') }}
-							<img
+							<a
+								href="/static/dummy.pdf"
+								download="dummy.pdf"
+							><img
 								src="~/assets/img/nofollow/mdi-light_download.png"
 								class="ml-sm"
-							>
+							></a>
 						</p>
 					</div>
 				</div>

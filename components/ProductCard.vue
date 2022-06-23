@@ -30,7 +30,8 @@
 export default {
 	props: {
 		products: {
-			type: Array
+			type: Array,
+			default: () => []
 		}
 	}
 };
@@ -145,7 +146,7 @@ h2 {
 		}
 	}
 	.btn {
-		margin-top: 10px;
+		margin-top: 0px;
 		padding: 15px 25px;
 	}
 	p {
@@ -165,6 +166,7 @@ h2 {
 			}
 		}
 	}
+
 }
 
 @media (max-width: 400px) {

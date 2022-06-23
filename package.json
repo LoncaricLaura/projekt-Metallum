@@ -26,8 +26,8 @@
 		"pre-commit-check": "npm run check-js && npm run build",
 		"deploy": "pm2 deploy prod",
 		"deploy-setup": "npm run deploy -- setup",
-		"post-deploy": "npm install && cpy --rename=env.js env.prod.js . && npm run build && pm2 restart ecosystem.config.js && pm2 save",
-		"postinstall": "npm cache clean -f && husky install && cpy --no-overwrite --rename=env.js env.dev.js ."
+		"post-deploy": "npm install && cpy --rename=env.js env.prod.js . && npm run build -- -q && pm2 restart ecosystem.config.js && pm2 save",
+		"postinstall": "npm cache clean -f && husky install && cpy --rename=env.js env.dev.js ."
 	},
 	"prettier": {
 		"printWidth": 160,

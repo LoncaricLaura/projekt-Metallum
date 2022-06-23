@@ -2,7 +2,7 @@
 	<div>
 		<div class="bg u-flex u-flex-ai--c center">
 			<p class="fs-xxl title txt-align-c">
-				{{ $t('home.title') }} <br />
+				{{ $t('home.title') }} <br>
 				{{ $t('home.title2') }}
 			</p>
 		</div>
@@ -22,12 +22,15 @@
 					<p class="fs-lg">
 						{{ $t('home.pletivo_title') }}
 					</p>
-					<NuxtLink :to="localePath('/proizvodi/pletivo')" class="btn btn--primary mt-3xl">
+					<NuxtLink
+						:to="localePath('/proizvodi/pletivo')"
+						class="btn btn--primary mt-3xl"
+					>
 						{{ $t('home.button_more') }}
 					</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-					<img src="~/assets/img/index/fence_blue_1.png" />
+					<img src="~/assets/img/index/fence_blue_1.png">
 				</div>
 			</div>
 
@@ -38,13 +41,22 @@
 						<p class="fs-lg">
 							{{ $t('home.mesh_title') }}
 						</p>
-						<NuxtLink :to="localePath('/proizvodi/valovita-mreza')" class="btn btn--primary mt-3xl">
+						<NuxtLink
+							:to="localePath('/proizvodi/valovita-mreza')"
+							class="btn btn--primary mt-3xl"
+						>
 							{{ $t('home.button_more') }}
 						</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-						<img class="box-item--img" src="~/assets/img//index/Fence-Knits.png" />
-						<img class="box-item--img-mobile" src="~/assets/img/index/Fence-Knits-mobile.png" />
+						<img
+							class="box-item--img"
+							src="~/assets/img//index/Fence-Knits.png"
+						>
+						<img
+							class="box-item--img-mobile"
+							src="~/assets/img/index/Fence-Knits-mobile.png"
+						>
 					</div>
 				</div>
 
@@ -54,13 +66,22 @@
 						<p class="fs-lg">
 							{{ $t('home.door_title') }}
 						</p>
-						<NuxtLink :to="localePath('/proizvodi/vrata')" class="btn btn--primary mt-3xl">
+						<NuxtLink
+							:to="localePath('/proizvodi/vrata')"
+							class="btn btn--primary mt-3xl"
+						>
 							{{ $t('home.button_more') }}
 						</NuxtLink>
 					</div>
 					<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-						<img class="box-item--img" src="~/assets/img/index/Garden-Door.J03.png" />
-						<img class="box-item--img-mobile" src="~/assets/img/index/Garden-Door-mobile.png" />
+						<img
+							class="box-item--img"
+							src="~/assets/img/index/Garden-Door.J03.png"
+						>
+						<img
+							class="box-item--img-mobile"
+							src="~/assets/img/index/Garden-Door-mobile.png"
+						>
 					</div>
 				</div>
 			</div>
@@ -71,12 +92,15 @@
 					<p class="fs-lg">
 						{{ $t('home.panel_title') }}
 					</p>
-					<NuxtLink :to="localePath('/proizvodi/panelni-sustav')" class="btn btn--primary mt-3xl">
+					<NuxtLink
+						:to="localePath('/proizvodi/panelni-sustav')"
+						class="btn btn--primary mt-3xl"
+					>
 						{{ $t('home.button_more') }}
 					</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-					<img src="~/assets/img/index/Barbed-Wire-Fence.G03.png" />
+					<img src="~/assets/img/index/Barbed-Wire-Fence.G03.png">
 				</div>
 			</div>
 
@@ -86,12 +110,15 @@
 					<p class="fs-lg">
 						{{ $t('home.rail_title') }}
 					</p>
-					<NuxtLink :to="localePath('/proizvodi/pruzni-sustav')" class="btn btn--primary mt-3xl">
+					<NuxtLink
+						:to="localePath('/proizvodi/pruzni-sustav')"
+						class="btn btn--primary mt-3xl"
+					>
 						{{ $t('home.button_more') }}
 					</NuxtLink>
 				</div>
 				<div class="pos-a box-item--image u-flex u-flex-jc--fe">
-					<img src="~/assets/img/index/fence_blue_1.png" />
+					<img src="~/assets/img/index/fence_blue_1.png">
 				</div>
 			</div>
 		</div>
@@ -111,35 +138,59 @@
 
 		<div class="box-services u-grid u-grid-4 plr-main box-services--text fs-md txt-align-c ptb-main">
 			<div>
-				<img src="~/assets/img/index/image-field.png" class="mb-lg" />
+				<img
+					src="~/assets/img/index/image-field.png"
+					class="mb-lg"
+				>
 				<p>{{ $t('home.services_field') }}</p>
 			</div>
 			<div>
-				<img src="~/assets/img/index/image-docs.png" class="mb-lg" />
+				<img
+					src="~/assets/img/index/image-docs.png"
+					class="mb-lg"
+				>
 				<p>{{ $t('home.services_docs') }}</p>
 			</div>
 			<div>
-				<img src="~/assets/img/index/image-fence-door.png" class="mb-4xl" />
+				<img
+					src="~/assets/img/index/image-fence-door.png"
+					class="mb-4xl"
+				>
 				<p>{{ $t('home.services_fence_door') }}</p>
 			</div>
 			<div>
-				<img src="~/assets/img/index/image-protection-el.png" class="mb-lg" />
+				<img
+					src="~/assets/img/index/image-protection-el.png"
+					class="mb-lg"
+				>
 				<p>{{ $t('home.services_protection') }}</p>
 			</div>
 			<div>
-				<img src="~/assets/img/index/image-drilling.png" class="mb-lg" />
+				<img
+					src="~/assets/img/index/image-drilling.png"
+					class="mb-lg"
+				>
 				<p>{{ $t('home.services_drilling') }}</p>
 			</div>
 			<div>
-				<img src="~/assets/img/index/image-installation.png" class="mb-lg" />
+				<img
+					src="~/assets/img/index/image-installation.png"
+					class="mb-lg"
+				>
 				<p>{{ $t('home.services_installation') }}</p>
 			</div>
 			<div>
-				<img src="~/assets/img/index/image-automation.png" class="mb-lg" />
+				<img
+					src="~/assets/img/index/image-automation.png"
+					class="mb-lg"
+				>
 				<p>{{ $t('home.services_automation') }}</p>
 			</div>
 			<div>
-				<img src="~/assets/img/index/image-service.png" class="mb-lg" />
+				<img
+					src="~/assets/img/index/image-service.png"
+					class="mb-lg"
+				>
 				<p>{{ $t('home.services_service') }}</p>
 			</div>
 		</div>
@@ -150,31 +201,35 @@
 			<div class="bg-item--text fs-xl txt-align-c">
 				{{ $t('home.contact_title') }}
 			</div>
-			<div class="btn btn--primary mt-3xl">
+			<NuxtLink
+				:to="localePath('/contact')"
+				class="btn btn--primary mt-3xl"
+			>
 				<p class="btn--text mtb-xxs">
 					{{ $t('home.contact_button') }}
 				</p>
-			</div>
+			</NuxtLink>
 		</div>
 
 		<Slider :imgs="['6']" />
 
 		<div class="box-logos u-flex u-flex-fd--r u-flex-jc--sb u-flex-as--c center plr-main pb-box">
-			<img src="~/assets/img/index/ghiastaff.png" />
+			<img src="~/assets/img/index/ghiastaff.png">
 
-			<img src="~/assets/img/index/maslinica.png" />
+			<img src="~/assets/img/index/maslinica.png">
 
-			<img src="~/assets/img/index/kempinski-hotel.png" />
+			<img src="~/assets/img/index/kempinski-hotel.png">
 
-			<img src="~/assets/img/index/valamar.png" />
+			<img src="~/assets/img/index/valamar.png">
 
-			<img src="~/assets/img/index/spina.png" />
+			<img src="~/assets/img/index/spina.png">
 		</div>
 	</div>
 </template>
 
 <script>
 export default {
+	name: 'Index',
 	data() {
 		return {
 			services: [

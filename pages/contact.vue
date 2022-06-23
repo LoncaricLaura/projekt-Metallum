@@ -5,7 +5,7 @@
 				:center="{ lat: 45.19993, lng: 14.05346 }"
 				:zoom="12"
 				:options="{ styles }"
-				style="width: 100%; height: 877px"
+				style="width: 100%; height: 877px;"
 			>
 				<GmapMarker :position="{ lat: 45.19993, lng: 14.05346 }" />
 			</GmapMap>
@@ -36,13 +36,13 @@
 				<div class="contact__mail fs-md pt-4xl">
 					{{ $t('footer.mail.title') }}
 					<p class="footer--text4 pr-3xl fs-base pt-md">
-						{{ $t('footer.mail.email') }}
+						<a href="mailto:metallum@metallum.hr">{{ $t('footer.mail.email') }}</a>
 					</p>
 				</div>
 				<div class="contact__tel fs-md pt-4xl">
 					{{ $t('footer.phone.title') }}
 					<p class="fs-base pt-md">
-						{{ $t('footer.phone.numb') }}
+						<a href="tel:+385 52 869 006">{{ $t('footer.phone.numb') }}</a>
 					</p>
 				</div>
 			</div>
@@ -508,7 +508,7 @@ export default {
 		justify-content: end;
 		width: 100%;
 	}
-	p,
+	p, a,
 	textarea {
 		font-family: $ff-sans;
 		color: $iron80;
@@ -575,5 +575,6 @@ export default {
 			padding-top: 60px;
 		}
 	}
+
 }
 </style>
